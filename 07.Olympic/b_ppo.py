@@ -60,11 +60,11 @@ class PPOAgent(object):
         self.epsilon = args.epsilon
         self.value_range = args.value_range
 
-        # total_rollouts의 20%에 해당하는 rollout 수 계산
-        entropy_coef_decay_rollouts = int(args.entropy_coef_decay_rollout * args.total_rollouts)
+        # total_rollouts 80%에 해당하는 rollout 수 계산
+        entropy_coef_decay_rollouts = max(1, int(args.entropy_coef_decay_rollout * args.total_rollouts))
         self.entropy_coef_decay_rollouts = entropy_coef_decay_rollouts
+        # entropy_coef_decay_step을 직접 계산
         self.entropy_coef_decay_step = (args.entropy_coef - 0.01) / entropy_coef_decay_rollouts
-        self.remaining_rollouts = args.total_rollouts
 
         # 랭킹 1, 2, 3
         self.best_models = {'model1': {'reward': float('-inf'), 'actor': None, 'critic': None, 'encoder': None},
@@ -231,14 +231,13 @@ class PPOAgent(object):
                     print(
                         "[Episode {:3,}, Steps {:6,}]".format(self.num_episode, self.time_step),
                         "Episode Reward: {:>9.3f},".format(np.mean(np.asarray(self.episode_reward_list))),
-                        "Entropy_coef:".format(self.entropy_coef),
+                        f"Entropy_coef: {self.entropy_coef}",
                         "Elapsed Time: {}".format(total_training_time)
                     )
                     print_episode_flag = False
-            if step_ >= self.total_rollouts - self.entropy_coef_decay_rollouts:
-                print("coef가 감소 하고 있음")
-                # 감소하는 스텝에 도달하면 entropy_coef를 서서히 감소시킴
-                self.entropy_coef -= self.entropy_coef_decay_step
+
+            if step_ < self.total_rollouts * self.entropy_coef_decay_rollouts:
+                self.entropy_coef *= max(np.exp(-self.entropy_coef_decay_step), 0.01)
 
             if step_ % self.plot_interval == 0 and self.wandb_use and self.train_flag and not self.is_evaluate:
                 # self._plot_train_history()
@@ -392,7 +391,7 @@ class PPOAgent(object):
                    f"{self.path2save_train_history}/{self.env_name}/{data_time.month}_{data_time.day}_{data_time.hour}_{data_time.minute}/encoder.pth")
 
         #  Save 랭킹 1, 2, 3
-        self._save_best_models()
+        self._check_and_save_best_models()
 
         pd.DataFrame({"actor loss": self.actor_loss_history,
                       "critic loss": self.critic_loss_history}
@@ -405,30 +404,29 @@ class PPOAgent(object):
         print(
             f"MODEL SAVE SUCCESS!!! MODEL_DIRECTORY: {data_time.month}_{data_time.day}_{data_time.hour}_{data_time.minute}")
 
-    def _save_best_models(self):
+    def _check_and_save_best_models(self):
         """Save 랭킹 1, 2, 3"""
         current_reward = np.mean(self.scores[-10:])
 
         # Update model1
         if current_reward > self.best_models['model1']['reward']:
-            self.best_models['model1']['reward'] = current_reward
-            self.best_models['model1']['actor'] = deepcopy(self.actor)
-            self.best_models['model1']['critic'] = deepcopy(self.critic)
-            self.best_models['model1']['encoder'] = deepcopy(self.encoder)
+            self._update_best_model('model1', current_reward)
 
         # Update model2
         elif current_reward > self.best_models['model2']['reward']:
-            self.best_models['model2']['reward'] = current_reward
-            self.best_models['model2']['actor'] = deepcopy(self.actor)
-            self.best_models['model2']['critic'] = deepcopy(self.critic)
-            self.best_models['model2']['encoder'] = deepcopy(self.encoder)
+            self._update_best_model('model2', current_reward)
 
         # Update model3
         elif current_reward > self.best_models['model3']['reward']:
-            self.best_models['model3']['reward'] = current_reward
-            self.best_models['model3']['actor'] = deepcopy(self.actor)
-            self.best_models['model3']['critic'] = deepcopy(self.critic)
-            self.best_models['model3']['encoder'] = deepcopy(self.encoder)
+            self._update_best_model('model3', current_reward)
+
+    def _update_best_model(self, model_name, current_reward):
+        self.best_models[model_name]['reward'] = current_reward
+        self.best_models[model_name]['actor'] = deepcopy(self.actor.state_dict())
+        self.best_models[model_name]['critic'] = deepcopy(self.critic.state_dict())
+        self.best_models[model_name]['encoder'] = deepcopy(self.encoder.state_dict())
+
+        print(f"Model {model_name} updated with reward: {current_reward}")
 
     def evaluate(self):
         self.is_evaluate = True

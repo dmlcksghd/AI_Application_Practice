@@ -46,12 +46,12 @@ def get_args(rest_args):
     parser.add_argument('--entropy_coef', type=float, default=0.99, help='coef for general adversial estimator (GAE)')
     parser.add_argument('--epsilon', type=float, default=0.2, help='clipping range for actor objective loss')
     parser.add_argument('--value_range', type=float, default=0.5, help='clipping range for critic objective loss')
-    parser.add_argument('--entropy_coef_decay_rollout', type=float, default=0.2,
+    parser.add_argument('--entropy_coef_decay_rollout', type=float, default=0.8,
                         help='Percentage of total rollouts for entropy coefficient decay')
 
     # other hyperparameters
     parser.add_argument('--rollout_len', type=int, default=4000, help='num t-steps per one rollout')
-    parser.add_argument('--total_rollouts', type=int, default=1000, help='num rollouts')
+    parser.add_argument('--total_rollouts', type=int, default=50, help='num rollouts')
     parser.add_argument('--num_epochs', type=int, default=20,
                         help='num weights updation iteration for one policy update')
     parser.add_argument('--batch_size', type=int, default=128, help='data batch size for weights updating')

@@ -1,23 +1,19 @@
 
-[Episode  10, Steps  4,000] Episode Reward:  -914.787, Entropy_coef: Elapsed Time: 00:01:11
-[Episode  20, Steps  8,000] Episode Reward:  -845.790, Entropy_coef: Elapsed Time: 00:03:32
-[Episode  30, Steps 11,507] Episode Reward:  -793.449, Entropy_coef: Elapsed Time: 00:04:58
-[Episode  40, Steps 15,330] Episode Reward:  -726.155, Entropy_coef: Elapsed Time: 00:06:31
-[Episode  50, Steps 19,117] Episode Reward:  -713.993, Entropy_coef: Elapsed Time: 00:08:14
-[Episode  60, Steps 23,117] Episode Reward:  -743.867, Entropy_coef: Elapsed Time: 00:10:03
+[Episode  10, Steps  3,858] Episode Reward:  -931.220, Entropy_coef: 0.99 Elapsed Time: 00:00:45
 Traceback (most recent call last):
   File "C:\Users\theho\git_AI_Application_Practice\07.Olympic\f_ppo_train.py", line 87, in <module>
     main(args, args.is_evaluate)
   File "C:\Users\theho\git_AI_Application_Practice\07.Olympic\f_ppo_train.py", line 52, in main
     agent.train()
-  File "C:\Users\theho\git_AI_Application_Practice\07.Olympic\b_ppo.py", line 257, in train
-    self.num_train += 1
-  File "C:\Users\theho\git_AI_Application_Practice\07.Olympic\b_ppo.py", line 318, in _update_weights
+  File "C:\Users\theho\git_AI_Application_Practice\07.Olympic\b_ppo.py", line 256, in train
+    self._update_weights()
+  File "C:\Users\theho\git_AI_Application_Practice\07.Olympic\b_ppo.py", line 294, in _update_weights
+    _, dist = self.actor(state)
   File "C:\Users\theho\anaconda3\envs\AI_Lecture\lib\site-packages\torch\nn\modules\module.py", line 1518, in _wrapped_call_impl
     return self._call_impl(*args, **kwargs)
   File "C:\Users\theho\anaconda3\envs\AI_Lecture\lib\site-packages\torch\nn\modules\module.py", line 1527, in _call_impl
     return forward_call(*args, **kwargs)
-  File "C:\Users\theho\git_AI_Application_Practice\07.Olympic\a_actor_critic.py", line 111, in forward
+  File "C:\Users\theho\git_AI_Application_Practice\07.Olympic\a_actor_critic.py", line 64, in forward
     x_1 = self.encoder(state)
   File "C:\Users\theho\anaconda3\envs\AI_Lecture\lib\site-packages\torch\nn\modules\module.py", line 1518, in _wrapped_call_impl
     return self._call_impl(*args, **kwargs)
@@ -35,24 +31,27 @@ Traceback (most recent call last):
     return self._call_impl(*args, **kwargs)
   File "C:\Users\theho\anaconda3\envs\AI_Lecture\lib\site-packages\torch\nn\modules\module.py", line 1527, in _call_impl
     return forward_call(*args, **kwargs)
-  File "C:\Users\theho\anaconda3\envs\AI_Lecture\lib\site-packages\torch\nn\modules\activation.py", line 101, in forward
-    return F.relu(input, inplace=self.inplace)
-  File "C:\Users\theho\anaconda3\envs\AI_Lecture\lib\site-packages\torch\nn\functional.py", line 1471, in relu
-    result = torch.relu(input)
+  File "C:\Users\theho\anaconda3\envs\AI_Lecture\lib\site-packages\torch\nn\modules\pooling.py", line 166, in forward
+    return F.max_pool2d(input, self.kernel_size, self.stride,
+  File "C:\Users\theho\anaconda3\envs\AI_Lecture\lib\site-packages\torch\_jit_internal.py", line 488, in fn
+    return if_false(*args, **kwargs)
+  File "C:\Users\theho\anaconda3\envs\AI_Lecture\lib\site-packages\torch\nn\functional.py", line 791, in _max_pool2d
+    return torch.max_pool2d(input, kernel_size, stride, padding, dilation, ceil_mode)
 KeyboardInterrupt
 Traceback (most recent call last):
   File "C:\Users\theho\git_AI_Application_Practice\07.Olympic\f_ppo_train.py", line 87, in <module>
     main(args, args.is_evaluate)
   File "C:\Users\theho\git_AI_Application_Practice\07.Olympic\f_ppo_train.py", line 52, in main
     agent.train()
-  File "C:\Users\theho\git_AI_Application_Practice\07.Olympic\b_ppo.py", line 257, in train
-    self.num_train += 1
-  File "C:\Users\theho\git_AI_Application_Practice\07.Olympic\b_ppo.py", line 318, in _update_weights
+  File "C:\Users\theho\git_AI_Application_Practice\07.Olympic\b_ppo.py", line 256, in train
+    self._update_weights()
+  File "C:\Users\theho\git_AI_Application_Practice\07.Olympic\b_ppo.py", line 294, in _update_weights
+    _, dist = self.actor(state)
   File "C:\Users\theho\anaconda3\envs\AI_Lecture\lib\site-packages\torch\nn\modules\module.py", line 1518, in _wrapped_call_impl
     return self._call_impl(*args, **kwargs)
   File "C:\Users\theho\anaconda3\envs\AI_Lecture\lib\site-packages\torch\nn\modules\module.py", line 1527, in _call_impl
     return forward_call(*args, **kwargs)
-  File "C:\Users\theho\git_AI_Application_Practice\07.Olympic\a_actor_critic.py", line 111, in forward
+  File "C:\Users\theho\git_AI_Application_Practice\07.Olympic\a_actor_critic.py", line 64, in forward
     x_1 = self.encoder(state)
   File "C:\Users\theho\anaconda3\envs\AI_Lecture\lib\site-packages\torch\nn\modules\module.py", line 1518, in _wrapped_call_impl
     return self._call_impl(*args, **kwargs)
@@ -70,8 +69,10 @@ Traceback (most recent call last):
     return self._call_impl(*args, **kwargs)
   File "C:\Users\theho\anaconda3\envs\AI_Lecture\lib\site-packages\torch\nn\modules\module.py", line 1527, in _call_impl
     return forward_call(*args, **kwargs)
-  File "C:\Users\theho\anaconda3\envs\AI_Lecture\lib\site-packages\torch\nn\modules\activation.py", line 101, in forward
-    return F.relu(input, inplace=self.inplace)
-  File "C:\Users\theho\anaconda3\envs\AI_Lecture\lib\site-packages\torch\nn\functional.py", line 1471, in relu
-    result = torch.relu(input)
+  File "C:\Users\theho\anaconda3\envs\AI_Lecture\lib\site-packages\torch\nn\modules\pooling.py", line 166, in forward
+    return F.max_pool2d(input, self.kernel_size, self.stride,
+  File "C:\Users\theho\anaconda3\envs\AI_Lecture\lib\site-packages\torch\_jit_internal.py", line 488, in fn
+    return if_false(*args, **kwargs)
+  File "C:\Users\theho\anaconda3\envs\AI_Lecture\lib\site-packages\torch\nn\functional.py", line 791, in _max_pool2d
+    return torch.max_pool2d(input, kernel_size, stride, padding, dilation, ceil_mode)
 KeyboardInterrupt

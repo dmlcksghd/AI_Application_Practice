@@ -1,0 +1,62 @@
+
+[Episode  10, Steps  3,493] Episode Reward:  -768.831, Entropy_coef: 0.99 Elapsed Time: 00:00:31
+[Episode  20, Steps  7,479] Episode Reward:  -788.781, Entropy_coef: 0.99 Elapsed Time: 00:01:51
+[Episode  30, Steps 11,479] Episode Reward:  -789.652, Entropy_coef: 0.99 Elapsed Time: 00:03:25
+[Episode  40, Steps 15,346] Episode Reward:  -782.134, Entropy_coef: 0.99 Elapsed Time: 00:04:40
+[Episode  50, Steps 19,094] Episode Reward:  -749.337, Entropy_coef: 0.99 Elapsed Time: 00:05:59
+[Episode  60, Steps 22,990] Episode Reward:  -746.911, Entropy_coef: 0.99 Elapsed Time: 00:07:12
+[Episode  70, Steps 26,602] Episode Reward:  -726.048, Entropy_coef: 0.99 Elapsed Time: 00:08:27
+[Episode  80, Steps 30,577] Episode Reward:  -761.090, Entropy_coef: 0.99 Elapsed Time: 00:09:37
+[Episode  90, Steps 34,166] Episode Reward:  -734.323, Entropy_coef: 0.99 Elapsed Time: 00:10:55
+[Episode 100, Steps 37,715] Episode Reward:  -740.298, Entropy_coef: 0.99 Elapsed Time: 00:12:19
+[Episode 110, Steps 41,715] Episode Reward:  -720.118, Entropy_coef: 0.99 Elapsed Time: 00:13:55
+[Episode 120, Steps 45,715] Episode Reward:  -748.822, Entropy_coef: 0.9655 Elapsed Time: 00:15:23
+[Episode 130, Steps 49,588] Episode Reward:  -774.744, Entropy_coef: 0.9410000000000001 Elapsed Time: 00:16:52
+[Episode 140, Steps 53,588] Episode Reward:  -781.330, Entropy_coef: 0.9165000000000001 Elapsed Time: 00:18:15
+[Episode 150, Steps 57,588] Episode Reward:  -794.925, Entropy_coef: 0.8920000000000001 Elapsed Time: 00:20:11
+[Episode 160, Steps 61,420] Episode Reward:  -798.735, Entropy_coef: 0.8675000000000002 Elapsed Time: 00:21:38
+[Episode 170, Steps 65,420] Episode Reward:  -794.880, Entropy_coef: 0.8430000000000002 Elapsed Time: 00:23:05
+[Episode 180, Steps 69,260] Episode Reward:  -761.430, Entropy_coef: 0.8185000000000002 Elapsed Time: 00:24:23
+[Episode 190, Steps 73,192] Episode Reward:  -758.538, Entropy_coef: 0.7940000000000003 Elapsed Time: 00:25:42
+[Episode 200, Steps 77,192] Episode Reward:  -773.811, Entropy_coef: 0.7695000000000003 Elapsed Time: 00:27:19
+[Episode 210, Steps 80,928] Episode Reward:  -799.011, Entropy_coef: 0.7450000000000003 Elapsed Time: 00:28:40
+Traceback (most recent call last):
+  File "C:\Users\theho\git_AI_Application_Practice\07.Olympic\f_ppo_train.py", line 87, in <module>
+    main(args, args.is_evaluate)
+  File "C:\Users\theho\git_AI_Application_Practice\07.Olympic\f_ppo_train.py", line 52, in main
+    agent.train()
+  File "C:\Users\theho\git_AI_Application_Practice\07.Olympic\b_ppo.py", line 209, in train
+    next_state, reward, done = self._step(action)
+  File "C:\Users\theho\git_AI_Application_Practice\07.Olympic\b_ppo.py", line 169, in _step
+    next_state, reward, terminated, truncated, _ = self.env.step(action)
+  File "C:\Users\theho\git_AI_Application_Practice\07.Olympic\d_wrappers.py", line 76, in step
+    next_observation, reward, done, info_before, info_after = self.env.step(action)
+  File "C:\Users\theho\git_AI_Application_Practice\termproject_olympic\env\olympics_integrated.py", line 92, in step
+    all_observations, reward, done, info_after = self.env_core.step(joint_action_decode)
+  File "C:\Users\theho\git_AI_Application_Practice\termproject_olympic\olympics_engine\AI_olympics.py", line 124, in step
+    obs, reward, done, _ = self.current_game.step(action_list)
+  File "C:\Users\theho\git_AI_Application_Practice\termproject_olympic\olympics_engine\scenario\running_competition.py", line 121, in step
+    obs_next = self.get_obs()
+  File "C:\Users\theho\git_AI_Application_Practice\termproject_olympic\olympics_engine\core.py", line 1253, in get_obs
+    angle = math.atan2(
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "C:\Users\theho\git_AI_Application_Practice\07.Olympic\f_ppo_train.py", line 87, in <module>
+    main(args, args.is_evaluate)
+  File "C:\Users\theho\git_AI_Application_Practice\07.Olympic\f_ppo_train.py", line 52, in main
+    agent.train()
+  File "C:\Users\theho\git_AI_Application_Practice\07.Olympic\b_ppo.py", line 209, in train
+    next_state, reward, done = self._step(action)
+  File "C:\Users\theho\git_AI_Application_Practice\07.Olympic\b_ppo.py", line 169, in _step
+    next_state, reward, terminated, truncated, _ = self.env.step(action)
+  File "C:\Users\theho\git_AI_Application_Practice\07.Olympic\d_wrappers.py", line 76, in step
+    next_observation, reward, done, info_before, info_after = self.env.step(action)
+  File "C:\Users\theho\git_AI_Application_Practice\termproject_olympic\env\olympics_integrated.py", line 92, in step
+    all_observations, reward, done, info_after = self.env_core.step(joint_action_decode)
+  File "C:\Users\theho\git_AI_Application_Practice\termproject_olympic\olympics_engine\AI_olympics.py", line 124, in step
+    obs, reward, done, _ = self.current_game.step(action_list)
+  File "C:\Users\theho\git_AI_Application_Practice\termproject_olympic\olympics_engine\scenario\running_competition.py", line 121, in step
+    obs_next = self.get_obs()
+  File "C:\Users\theho\git_AI_Application_Practice\termproject_olympic\olympics_engine\core.py", line 1253, in get_obs
+    angle = math.atan2(
+KeyboardInterrupt
