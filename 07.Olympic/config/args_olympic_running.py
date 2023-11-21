@@ -43,7 +43,7 @@ def get_args(rest_args):
     # GAE(Generalized Advantage Estimation) 알고리즘에서 사용되는 계수(coefficient)입니다. GAE는 장기적인 보상을 고려하여 에이전트의 행동 가치를 측정하는 데 사용
     parser.add_argument('--lamda', type=float, default=0.95, help='coef for general adversial estimator (GAE)')
     #  GAE는 장기적인 보상을 고려하여 에이전트의 행동 가치를 측정하는 데 사용
-    parser.add_argument('--entropy_coef', type=float, default=0.01, help='coef for general adversial estimator (GAE)')
+    parser.add_argument('--entropy_coef', type=float, default=0.99, help='coef for general adversial estimator (GAE)')
     parser.add_argument('--epsilon', type=float, default=0.2, help='clipping range for actor objective loss')
     parser.add_argument('--value_range', type=float, default=0.5, help='clipping range for critic objective loss')
     parser.add_argument('--entropy_coef_decay_rollout', type=float, default=0.2,

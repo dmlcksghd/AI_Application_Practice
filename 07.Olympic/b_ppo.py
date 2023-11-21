@@ -434,6 +434,7 @@ class PPOAgent(object):
             "Loss/actor_loss": sum(self.actor_loss_list) / len(self.actor_loss_list),
             "Loss/critic_loss": sum(self.critic_loss_list) / len(self.critic_loss_list),
             "Loss/entropy_loss": sum(self.entropy_loss_list) / len(self.entropy_loss_list),
+            "entropy_coef": self.entropy_coef,
         }
 
         wandb.log(log_dict)

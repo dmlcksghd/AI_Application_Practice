@@ -113,6 +113,15 @@ class CompetitionOlympicsEnvWrapper(gym.Wrapper):
 
         original_reward -= 0.05
 
+        # 에이전트가 가장 먼 "4" 쪽으로 이동하도록 보상 설정
+        farthest_4_position = self.get_farthest_4_position(observation[-1])
+        agent_position = np.argwhere(observation[-1] == 8)
+
+        if farthest_4_position is not None and agent_position is not None:
+            # 에이전트와 가장 먼 "4" 사이의 거리를 계산하고 보상을 조절
+            distance_to_farthest_4 = np.linalg.norm(farthest_4_position - agent_position)
+            original_reward -= 0.01 * distance_to_farthest_4    # 거리가 줄어들 수록 -보상을 적게 받음
+
         return original_reward
 
 
@@ -221,6 +230,22 @@ class CompetitionOlympicsEnvWrapper(gym.Wrapper):
             return closest_row_distance_between_fours > nearest_neighbor_row_distance_between_fours
 
         return False
+
+    def get_farthest_4_position(self, array):
+        # 배열에서 '4'값을 가진 위치를 찾음
+        four_positions = np.argwhere(array == 4)
+
+        if len(four_positions) > 0:
+            # 에이전트 위치를 찾음
+            agent_position = np.argwhere(array == 8)[0]
+
+            # 모든 '4' 위치까지의 거리를 계산하고 가장 먼 위치를 찾음
+            distances = [np.linalg.norm(agent_position - pos) for pos in four_positions]
+            farthest_4_index = np.argmax(distances)
+            farthest_4_position = four_positions[farthest_4_index]
+
+            return farthest_4_position
+
 
     def render(self, mode='human'):
         self.env.env_core.render()
