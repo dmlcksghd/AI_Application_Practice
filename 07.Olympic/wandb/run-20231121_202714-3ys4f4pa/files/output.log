@@ -1,0 +1,54 @@
+
+[Episode  10, Steps  4,000] Episode Reward:  -909.331, Elapsed Time: 00:01:05
+[Episode  20, Steps  8,000] Episode Reward:  -836.319, Elapsed Time: 00:02:57
+[Episode  30, Steps 12,000] Episode Reward:  -841.093, Elapsed Time: 00:04:50
+[Episode  40, Steps 16,000] Episode Reward:  -823.371, Elapsed Time: 00:06:35
+[Episode  50, Steps 19,846] Episode Reward:  -854.831, Elapsed Time: 00:08:34
+[Episode  60, Steps 23,782] Episode Reward:  -848.490, Elapsed Time: 00:10:49
+[Episode  70, Steps 27,618] Episode Reward:  -811.476, Elapsed Time: 00:12:35
+[Episode  80, Steps 31,508] Episode Reward:  -797.230, Elapsed Time: 00:14:03
+[Episode  90, Steps 35,508] Episode Reward:  -804.137, Elapsed Time: 00:15:28
+Traceback (most recent call last):
+  File "C:\Users\theho\git_AI_Application_Practice\07.Olympic\f_ppo_train.py", line 87, in <module>
+    main(args, args.is_evaluate)
+  File "C:\Users\theho\git_AI_Application_Practice\07.Olympic\f_ppo_train.py", line 52, in main
+    agent.train()
+  File "C:\Users\theho\git_AI_Application_Practice\07.Olympic\b_ppo.py", line 204, in train
+    episode_reward = 0
+  File "C:\Users\theho\git_AI_Application_Practice\07.Olympic\b_ppo.py", line 146, in _get_action
+    state = np.array(state)
+  File "C:\Users\theho\anaconda3\envs\AI_Lecture\lib\site-packages\torch\nn\modules\module.py", line 1518, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "C:\Users\theho\anaconda3\envs\AI_Lecture\lib\site-packages\torch\nn\modules\module.py", line 1527, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "C:\Users\theho\git_AI_Application_Practice\07.Olympic\a_actor_critic.py", line 65, in forward
+    x_2 = self.cnn_net(x_1)
+  File "C:\Users\theho\anaconda3\envs\AI_Lecture\lib\site-packages\torch\nn\modules\module.py", line 1518, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "C:\Users\theho\anaconda3\envs\AI_Lecture\lib\site-packages\torch\nn\modules\module.py", line 1527, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "C:\Users\theho\anaconda3\envs\AI_Lecture\lib\site-packages\torch\nn\modules\container.py", line 213, in forward
+    def forward(self, input):
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "C:\Users\theho\git_AI_Application_Practice\07.Olympic\f_ppo_train.py", line 87, in <module>
+    main(args, args.is_evaluate)
+  File "C:\Users\theho\git_AI_Application_Practice\07.Olympic\f_ppo_train.py", line 52, in main
+    agent.train()
+  File "C:\Users\theho\git_AI_Application_Practice\07.Olympic\b_ppo.py", line 204, in train
+    episode_reward = 0
+  File "C:\Users\theho\git_AI_Application_Practice\07.Olympic\b_ppo.py", line 146, in _get_action
+    state = np.array(state)
+  File "C:\Users\theho\anaconda3\envs\AI_Lecture\lib\site-packages\torch\nn\modules\module.py", line 1518, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "C:\Users\theho\anaconda3\envs\AI_Lecture\lib\site-packages\torch\nn\modules\module.py", line 1527, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "C:\Users\theho\git_AI_Application_Practice\07.Olympic\a_actor_critic.py", line 65, in forward
+    x_2 = self.cnn_net(x_1)
+  File "C:\Users\theho\anaconda3\envs\AI_Lecture\lib\site-packages\torch\nn\modules\module.py", line 1518, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "C:\Users\theho\anaconda3\envs\AI_Lecture\lib\site-packages\torch\nn\modules\module.py", line 1527, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "C:\Users\theho\anaconda3\envs\AI_Lecture\lib\site-packages\torch\nn\modules\container.py", line 213, in forward
+    def forward(self, input):
+KeyboardInterrupt

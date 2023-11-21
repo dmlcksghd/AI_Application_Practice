@@ -66,6 +66,11 @@ class PPOAgent(object):
         self.entropy_coef_decay_step = (args.entropy_coef - 0.01) / entropy_coef_decay_rollouts
         self.remaining_rollouts = args.total_rollouts
 
+        # 랭킹 1, 2, 3
+        self.best_models = {'model1': {'reward': float('-inf'), 'actor': None, 'critic': None, 'encoder': None},
+                            'model2': {'reward': float('-inf'), 'actor': None, 'critic': None, 'encoder': None},
+                            'model3': {'reward': float('-inf'), 'actor': None, 'critic': None, 'encoder': None}}
+
         # other hyperparameters
         self.rollout_len = args.rollout_len
         self.total_rollouts = args.total_rollouts
@@ -226,10 +231,12 @@ class PPOAgent(object):
                     print(
                         "[Episode {:3,}, Steps {:6,}]".format(self.num_episode, self.time_step),
                         "Episode Reward: {:>9.3f},".format(np.mean(np.asarray(self.episode_reward_list))),
+                        "Entropy_coef:".format(self.entropy_coef),
                         "Elapsed Time: {}".format(total_training_time)
                     )
                     print_episode_flag = False
             if step_ >= self.total_rollouts - self.entropy_coef_decay_rollouts:
+                print("coef가 감소 하고 있음")
                 # 감소하는 스텝에 도달하면 entropy_coef를 서서히 감소시킴
                 self.entropy_coef -= self.entropy_coef_decay_step
 
@@ -384,6 +391,9 @@ class PPOAgent(object):
         torch.save(self.encoder.state_dict(),
                    f"{self.path2save_train_history}/{self.env_name}/{data_time.month}_{data_time.day}_{data_time.hour}_{data_time.minute}/encoder.pth")
 
+        #  Save 랭킹 1, 2, 3
+        self._save_best_models()
+
         pd.DataFrame({"actor loss": self.actor_loss_history,
                       "critic loss": self.critic_loss_history}
                      ).to_csv(f"{self.path2save_train_history}/loss_logs.csv")
@@ -394,6 +404,31 @@ class PPOAgent(object):
 
         print(
             f"MODEL SAVE SUCCESS!!! MODEL_DIRECTORY: {data_time.month}_{data_time.day}_{data_time.hour}_{data_time.minute}")
+
+    def _save_best_models(self):
+        """Save 랭킹 1, 2, 3"""
+        current_reward = np.mean(self.scores[-10:])
+
+        # Update model1
+        if current_reward > self.best_models['model1']['reward']:
+            self.best_models['model1']['reward'] = current_reward
+            self.best_models['model1']['actor'] = deepcopy(self.actor)
+            self.best_models['model1']['critic'] = deepcopy(self.critic)
+            self.best_models['model1']['encoder'] = deepcopy(self.encoder)
+
+        # Update model2
+        elif current_reward > self.best_models['model2']['reward']:
+            self.best_models['model2']['reward'] = current_reward
+            self.best_models['model2']['actor'] = deepcopy(self.actor)
+            self.best_models['model2']['critic'] = deepcopy(self.critic)
+            self.best_models['model2']['encoder'] = deepcopy(self.encoder)
+
+        # Update model3
+        elif current_reward > self.best_models['model3']['reward']:
+            self.best_models['model3']['reward'] = current_reward
+            self.best_models['model3']['actor'] = deepcopy(self.actor)
+            self.best_models['model3']['critic'] = deepcopy(self.critic)
+            self.best_models['model3']['encoder'] = deepcopy(self.encoder)
 
     def evaluate(self):
         self.is_evaluate = True
@@ -438,4 +473,6 @@ class PPOAgent(object):
         }
 
         wandb.log(log_dict)
+
+
 
