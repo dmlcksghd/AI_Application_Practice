@@ -128,3 +128,136 @@
 2023-11-22 00:23:12,482 DEBUG   HandlerThread:8572 [handler.py:handle_request():146] handle_request: stop_status
 2023-11-22 00:23:12,482 DEBUG   SenderThread:8572 [sender.py:send_request():407] send_request: stop_status
 2023-11-22 00:23:12,518 DEBUG   HandlerThread:8572 [handler.py:handle_request():146] handle_request: internal_messages
+2023-11-22 00:23:15,756 DEBUG   HandlerThread:8572 [handler.py:handle_request():146] handle_request: status_report
+2023-11-22 00:23:20,784 DEBUG   HandlerThread:8572 [handler.py:handle_request():146] handle_request: status_report
+2023-11-22 00:23:25,814 DEBUG   HandlerThread:8572 [handler.py:handle_request():146] handle_request: status_report
+2023-11-22 00:23:27,478 DEBUG   HandlerThread:8572 [handler.py:handle_request():146] handle_request: stop_status
+2023-11-22 00:23:27,478 DEBUG   SenderThread:8572 [sender.py:send_request():407] send_request: stop_status
+2023-11-22 00:23:27,507 DEBUG   HandlerThread:8572 [handler.py:handle_request():146] handle_request: internal_messages
+2023-11-22 00:23:31,711 DEBUG   HandlerThread:8572 [handler.py:handle_request():146] handle_request: status_report
+2023-11-22 00:23:36,004 DEBUG   SenderThread:8572 [sender.py:send():380] send: stats
+2023-11-22 00:23:37,009 DEBUG   HandlerThread:8572 [handler.py:handle_request():146] handle_request: status_report
+2023-11-22 00:23:42,037 DEBUG   HandlerThread:8572 [handler.py:handle_request():146] handle_request: status_report
+2023-11-22 00:23:42,491 DEBUG   HandlerThread:8572 [handler.py:handle_request():146] handle_request: stop_status
+2023-11-22 00:23:42,491 DEBUG   SenderThread:8572 [sender.py:send_request():407] send_request: stop_status
+2023-11-22 00:23:42,512 DEBUG   HandlerThread:8572 [handler.py:handle_request():146] handle_request: internal_messages
+2023-11-22 00:23:47,723 DEBUG   HandlerThread:8572 [handler.py:handle_request():146] handle_request: status_report
+2023-11-22 00:23:52,752 DEBUG   HandlerThread:8572 [handler.py:handle_request():146] handle_request: status_report
+2023-11-22 00:23:57,485 DEBUG   HandlerThread:8572 [handler.py:handle_request():146] handle_request: stop_status
+2023-11-22 00:23:57,486 DEBUG   SenderThread:8572 [sender.py:send_request():407] send_request: stop_status
+2023-11-22 00:23:57,514 DEBUG   HandlerThread:8572 [handler.py:handle_request():146] handle_request: internal_messages
+2023-11-22 00:23:58,740 DEBUG   HandlerThread:8572 [handler.py:handle_request():146] handle_request: status_report
+2023-11-22 00:24:03,771 DEBUG   HandlerThread:8572 [handler.py:handle_request():146] handle_request: status_report
+2023-11-22 00:24:06,017 DEBUG   SenderThread:8572 [sender.py:send():380] send: stats
+2023-11-22 00:24:09,032 DEBUG   HandlerThread:8572 [handler.py:handle_request():146] handle_request: status_report
+2023-11-22 00:24:12,492 DEBUG   HandlerThread:8572 [handler.py:handle_request():146] handle_request: stop_status
+2023-11-22 00:24:12,492 DEBUG   SenderThread:8572 [sender.py:send_request():407] send_request: stop_status
+2023-11-22 00:24:12,524 DEBUG   HandlerThread:8572 [handler.py:handle_request():146] handle_request: internal_messages
+2023-11-22 00:24:14,808 DEBUG   HandlerThread:8572 [handler.py:handle_request():146] handle_request: status_report
+2023-11-22 00:24:19,851 DEBUG   HandlerThread:8572 [handler.py:handle_request():146] handle_request: status_report
+2023-11-22 00:24:23,889 INFO    Thread-16 :8572 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\theho\git_AI_Application_Practice\07.Olympic\wandb\run-20231122_002004-74h5mejs\files\output.log
+2023-11-22 00:24:24,938 DEBUG   HandlerThread:8572 [handler.py:handle_request():146] handle_request: status_report
+2023-11-22 00:24:25,824 DEBUG   HandlerThread:8572 [handler.py:handle_request():146] handle_request: partial_history
+2023-11-22 00:24:25,826 DEBUG   SenderThread:8572 [sender.py:send():380] send: history
+2023-11-22 00:24:25,826 DEBUG   SenderThread:8572 [sender.py:send_request():407] send_request: summary_record
+2023-11-22 00:24:25,827 INFO    SenderThread:8572 [sender.py:_save_file():1380] saving file wandb-summary.json with policy end
+2023-11-22 00:24:25,900 INFO    Thread-16 :8572 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\theho\git_AI_Application_Practice\07.Olympic\wandb\run-20231122_002004-74h5mejs\files\wandb-summary.json
+2023-11-22 00:24:27,482 DEBUG   HandlerThread:8572 [handler.py:handle_request():146] handle_request: stop_status
+2023-11-22 00:24:27,483 DEBUG   SenderThread:8572 [sender.py:send_request():407] send_request: stop_status
+2023-11-22 00:24:27,537 DEBUG   HandlerThread:8572 [handler.py:handle_request():146] handle_request: internal_messages
+2023-11-22 00:24:30,746 DEBUG   HandlerThread:8572 [handler.py:handle_request():146] handle_request: status_report
+2023-11-22 00:24:35,777 DEBUG   HandlerThread:8572 [handler.py:handle_request():146] handle_request: status_report
+2023-11-22 00:24:36,018 DEBUG   SenderThread:8572 [sender.py:send():380] send: stats
+2023-11-22 00:24:41,043 DEBUG   HandlerThread:8572 [handler.py:handle_request():146] handle_request: status_report
+2023-11-22 00:24:42,483 DEBUG   HandlerThread:8572 [handler.py:handle_request():146] handle_request: stop_status
+2023-11-22 00:24:42,483 DEBUG   SenderThread:8572 [sender.py:send_request():407] send_request: stop_status
+2023-11-22 00:24:42,523 DEBUG   HandlerThread:8572 [handler.py:handle_request():146] handle_request: internal_messages
+2023-11-22 00:24:46,775 DEBUG   HandlerThread:8572 [handler.py:handle_request():146] handle_request: status_report
+2023-11-22 00:24:51,802 DEBUG   HandlerThread:8572 [handler.py:handle_request():146] handle_request: status_report
+2023-11-22 00:24:56,838 DEBUG   HandlerThread:8572 [handler.py:handle_request():146] handle_request: status_report
+2023-11-22 00:24:57,476 DEBUG   HandlerThread:8572 [handler.py:handle_request():146] handle_request: stop_status
+2023-11-22 00:24:57,477 DEBUG   SenderThread:8572 [sender.py:send_request():407] send_request: stop_status
+2023-11-22 00:24:57,524 DEBUG   HandlerThread:8572 [handler.py:handle_request():146] handle_request: internal_messages
+2023-11-22 00:25:02,765 DEBUG   HandlerThread:8572 [handler.py:handle_request():146] handle_request: status_report
+2023-11-22 00:25:06,023 DEBUG   SenderThread:8572 [sender.py:send():380] send: stats
+2023-11-22 00:25:08,046 DEBUG   HandlerThread:8572 [handler.py:handle_request():146] handle_request: status_report
+2023-11-22 00:25:12,477 DEBUG   HandlerThread:8572 [handler.py:handle_request():146] handle_request: stop_status
+2023-11-22 00:25:12,477 DEBUG   SenderThread:8572 [sender.py:send_request():407] send_request: stop_status
+2023-11-22 00:25:12,525 DEBUG   HandlerThread:8572 [handler.py:handle_request():146] handle_request: internal_messages
+2023-11-22 00:25:13,780 DEBUG   HandlerThread:8572 [handler.py:handle_request():146] handle_request: status_report
+2023-11-22 00:25:18,807 DEBUG   HandlerThread:8572 [handler.py:handle_request():146] handle_request: status_report
+2023-11-22 00:25:23,834 DEBUG   HandlerThread:8572 [handler.py:handle_request():146] handle_request: status_report
+2023-11-22 00:25:27,489 DEBUG   HandlerThread:8572 [handler.py:handle_request():146] handle_request: stop_status
+2023-11-22 00:25:27,489 DEBUG   SenderThread:8572 [sender.py:send_request():407] send_request: stop_status
+2023-11-22 00:25:27,536 DEBUG   HandlerThread:8572 [handler.py:handle_request():146] handle_request: internal_messages
+2023-11-22 00:25:29,805 DEBUG   HandlerThread:8572 [handler.py:handle_request():146] handle_request: status_report
+2023-11-22 00:25:34,831 DEBUG   HandlerThread:8572 [handler.py:handle_request():146] handle_request: status_report
+2023-11-22 00:25:36,033 DEBUG   SenderThread:8572 [sender.py:send():380] send: stats
+2023-11-22 00:25:36,419 INFO    Thread-16 :8572 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\theho\git_AI_Application_Practice\07.Olympic\wandb\run-20231122_002004-74h5mejs\files\output.log
+2023-11-22 00:25:38,304 DEBUG   HandlerThread:8572 [handler.py:handle_request():146] handle_request: partial_history
+2023-11-22 00:25:38,305 DEBUG   SenderThread:8572 [sender.py:send():380] send: history
+2023-11-22 00:25:38,306 DEBUG   SenderThread:8572 [sender.py:send_request():407] send_request: summary_record
+2023-11-22 00:25:38,307 INFO    SenderThread:8572 [sender.py:_save_file():1380] saving file wandb-summary.json with policy end
+2023-11-22 00:25:38,450 INFO    Thread-16 :8572 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\theho\git_AI_Application_Practice\07.Olympic\wandb\run-20231122_002004-74h5mejs\files\wandb-summary.json
+2023-11-22 00:25:40,324 DEBUG   HandlerThread:8572 [handler.py:handle_request():146] handle_request: status_report
+2023-11-22 00:25:42,505 DEBUG   HandlerThread:8572 [handler.py:handle_request():146] handle_request: stop_status
+2023-11-22 00:25:42,506 DEBUG   SenderThread:8572 [sender.py:send_request():407] send_request: stop_status
+2023-11-22 00:25:42,520 DEBUG   HandlerThread:8572 [handler.py:handle_request():146] handle_request: internal_messages
+2023-11-22 00:25:45,774 DEBUG   HandlerThread:8572 [handler.py:handle_request():146] handle_request: status_report
+2023-11-22 00:25:45,961 DEBUG   SenderThread:8572 [sender.py:send():380] send: exit
+2023-11-22 00:25:45,961 INFO    SenderThread:8572 [sender.py:send_exit():585] handling exit code: 255
+2023-11-22 00:25:45,962 INFO    SenderThread:8572 [sender.py:send_exit():587] handling runtime: 340
+2023-11-22 00:25:45,963 INFO    SenderThread:8572 [sender.py:_save_file():1380] saving file wandb-summary.json with policy end
+2023-11-22 00:25:45,963 INFO    SenderThread:8572 [sender.py:send_exit():593] send defer
+2023-11-22 00:25:45,963 DEBUG   HandlerThread:8572 [handler.py:handle_request():146] handle_request: defer
+2023-11-22 00:25:45,963 INFO    HandlerThread:8572 [handler.py:handle_request_defer():172] handle defer: 0
+2023-11-22 00:25:45,964 DEBUG   SenderThread:8572 [sender.py:send_request():407] send_request: defer
+2023-11-22 00:25:45,964 INFO    SenderThread:8572 [sender.py:send_request_defer():609] handle sender defer: 0
+2023-11-22 00:25:45,964 INFO    SenderThread:8572 [sender.py:transition_state():613] send defer: 1
+2023-11-22 00:25:45,964 DEBUG   HandlerThread:8572 [handler.py:handle_request():146] handle_request: defer
+2023-11-22 00:25:45,964 INFO    HandlerThread:8572 [handler.py:handle_request_defer():172] handle defer: 1
+2023-11-22 00:25:45,964 DEBUG   SenderThread:8572 [sender.py:send_request():407] send_request: defer
+2023-11-22 00:25:45,965 INFO    SenderThread:8572 [sender.py:send_request_defer():609] handle sender defer: 1
+2023-11-22 00:25:45,965 INFO    SenderThread:8572 [sender.py:transition_state():613] send defer: 2
+2023-11-22 00:25:45,965 DEBUG   HandlerThread:8572 [handler.py:handle_request():146] handle_request: defer
+2023-11-22 00:25:45,965 INFO    HandlerThread:8572 [handler.py:handle_request_defer():172] handle defer: 2
+2023-11-22 00:25:45,965 INFO    HandlerThread:8572 [system_monitor.py:finish():203] Stopping system monitor
+2023-11-22 00:25:45,965 DEBUG   SystemMonitor:8572 [system_monitor.py:_start():179] Finished system metrics aggregation loop
+2023-11-22 00:25:45,965 INFO    HandlerThread:8572 [interfaces.py:finish():202] Joined cpu monitor
+2023-11-22 00:25:45,965 DEBUG   SystemMonitor:8572 [system_monitor.py:_start():183] Publishing last batch of metrics
+2023-11-22 00:25:45,966 INFO    HandlerThread:8572 [interfaces.py:finish():202] Joined disk monitor
+2023-11-22 00:25:45,967 INFO    HandlerThread:8572 [interfaces.py:finish():202] Joined memory monitor
+2023-11-22 00:25:45,967 INFO    HandlerThread:8572 [interfaces.py:finish():202] Joined network monitor
+2023-11-22 00:25:45,967 DEBUG   SenderThread:8572 [sender.py:send_request():407] send_request: defer
+2023-11-22 00:25:45,967 INFO    SenderThread:8572 [sender.py:send_request_defer():609] handle sender defer: 2
+2023-11-22 00:25:45,967 INFO    SenderThread:8572 [sender.py:transition_state():613] send defer: 3
+2023-11-22 00:25:45,967 DEBUG   SenderThread:8572 [sender.py:send():380] send: stats
+2023-11-22 00:25:45,968 DEBUG   HandlerThread:8572 [handler.py:handle_request():146] handle_request: defer
+2023-11-22 00:25:45,968 INFO    HandlerThread:8572 [handler.py:handle_request_defer():172] handle defer: 3
+2023-11-22 00:25:45,968 DEBUG   SenderThread:8572 [sender.py:send_request():407] send_request: defer
+2023-11-22 00:25:45,968 INFO    SenderThread:8572 [sender.py:send_request_defer():609] handle sender defer: 3
+2023-11-22 00:25:45,968 INFO    SenderThread:8572 [sender.py:transition_state():613] send defer: 4
+2023-11-22 00:25:45,968 DEBUG   HandlerThread:8572 [handler.py:handle_request():146] handle_request: defer
+2023-11-22 00:25:45,969 INFO    HandlerThread:8572 [handler.py:handle_request_defer():172] handle defer: 4
+2023-11-22 00:25:45,969 DEBUG   SenderThread:8572 [sender.py:send_request():407] send_request: defer
+2023-11-22 00:25:45,969 INFO    SenderThread:8572 [sender.py:send_request_defer():609] handle sender defer: 4
+2023-11-22 00:25:45,969 INFO    SenderThread:8572 [sender.py:transition_state():613] send defer: 5
+2023-11-22 00:25:45,969 DEBUG   HandlerThread:8572 [handler.py:handle_request():146] handle_request: defer
+2023-11-22 00:25:45,969 INFO    HandlerThread:8572 [handler.py:handle_request_defer():172] handle defer: 5
+2023-11-22 00:25:45,970 DEBUG   SenderThread:8572 [sender.py:send():380] send: summary
+2023-11-22 00:25:45,971 INFO    SenderThread:8572 [sender.py:_save_file():1380] saving file wandb-summary.json with policy end
+2023-11-22 00:25:45,972 DEBUG   SenderThread:8572 [sender.py:send_request():407] send_request: defer
+2023-11-22 00:25:45,972 INFO    SenderThread:8572 [sender.py:send_request_defer():609] handle sender defer: 5
+2023-11-22 00:25:45,972 INFO    SenderThread:8572 [sender.py:transition_state():613] send defer: 6
+2023-11-22 00:25:45,972 DEBUG   HandlerThread:8572 [handler.py:handle_request():146] handle_request: defer
+2023-11-22 00:25:45,972 INFO    HandlerThread:8572 [handler.py:handle_request_defer():172] handle defer: 6
+2023-11-22 00:25:45,973 DEBUG   SenderThread:8572 [sender.py:send_request():407] send_request: defer
+2023-11-22 00:25:45,973 INFO    SenderThread:8572 [sender.py:send_request_defer():609] handle sender defer: 6
+2023-11-22 00:25:45,973 INFO    SenderThread:8572 [sender.py:transition_state():613] send defer: 7
+2023-11-22 00:25:45,973 DEBUG   HandlerThread:8572 [handler.py:handle_request():146] handle_request: status_report
+2023-11-22 00:25:45,973 DEBUG   HandlerThread:8572 [handler.py:handle_request():146] handle_request: defer
+2023-11-22 00:25:45,973 INFO    HandlerThread:8572 [handler.py:handle_request_defer():172] handle defer: 7
+2023-11-22 00:25:45,974 DEBUG   SenderThread:8572 [sender.py:send_request():407] send_request: defer
+2023-11-22 00:25:45,974 INFO    SenderThread:8572 [sender.py:send_request_defer():609] handle sender defer: 7
+2023-11-22 00:25:46,541 INFO    Thread-16 :8572 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\theho\git_AI_Application_Practice\07.Olympic\wandb\run-20231122_002004-74h5mejs\files\wandb-summary.json
+2023-11-22 00:25:46,963 DEBUG   HandlerThread:8572 [handler.py:handle_request():146] handle_request: poll_exit

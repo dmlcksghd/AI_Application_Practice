@@ -1,0 +1,28 @@
+Traceback (most recent call last):
+  File "C:\Users\theho\git_AI_Application_Practice\07.Olympic\f_ppo_train.py", line 87, in <module>
+    main(args, args.is_evaluate)
+  File "C:\Users\theho\git_AI_Application_Practice\07.Olympic\f_ppo_train.py", line 52, in main
+    agent.train()
+  File "C:\Users\theho\git_AI_Application_Practice\07.Olympic\b_ppo.py", line 210, in train
+    next_state, reward, done = self._step(action)
+  File "C:\Users\theho\git_AI_Application_Practice\07.Olympic\b_ppo.py", line 170, in _step
+    next_state, reward, terminated, truncated, _ = self.env.step(action)
+  File "C:\Users\theho\git_AI_Application_Practice\07.Olympic\d_wrappers.py", line 97, in step
+    adjusted_reward = self.adjust_reward(next_observation_controlled_agent, reward_controlled)
+  File "C:\Users\theho\git_AI_Application_Practice\07.Olympic\d_wrappers.py", line 117, in adjust_reward
+    self.prev_farthest_4 = current_farthest_4
+UnboundLocalError: local variable 'current_farthest_4' referenced before assignment
+Traceback (most recent call last):
+  File "C:\Users\theho\git_AI_Application_Practice\07.Olympic\f_ppo_train.py", line 87, in <module>
+    main(args, args.is_evaluate)
+  File "C:\Users\theho\git_AI_Application_Practice\07.Olympic\f_ppo_train.py", line 52, in main
+    agent.train()
+  File "C:\Users\theho\git_AI_Application_Practice\07.Olympic\b_ppo.py", line 210, in train
+    next_state, reward, done = self._step(action)
+  File "C:\Users\theho\git_AI_Application_Practice\07.Olympic\b_ppo.py", line 170, in _step
+    next_state, reward, terminated, truncated, _ = self.env.step(action)
+  File "C:\Users\theho\git_AI_Application_Practice\07.Olympic\d_wrappers.py", line 97, in step
+    adjusted_reward = self.adjust_reward(next_observation_controlled_agent, reward_controlled)
+  File "C:\Users\theho\git_AI_Application_Practice\07.Olympic\d_wrappers.py", line 117, in adjust_reward
+    self.prev_farthest_4 = current_farthest_4
+UnboundLocalError: local variable 'current_farthest_4' referenced before assignment

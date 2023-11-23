@@ -33,6 +33,8 @@ class CompetitionOlympicsEnvWrapper(gym.Wrapper):
         self.episode_steps = 0
         self.total_steps = 0
 
+        self.prev_farthest_4 = None
+
     def reset(self):
         self.episode_steps = 0
         observation = self.env.reset()
@@ -92,7 +94,7 @@ class CompetitionOlympicsEnvWrapper(gym.Wrapper):
         reward_controlled = reward[self.controlled_agent_index]
 
         if reward_controlled == 1:
-            reward_controlled == 10
+            reward_controlled = 8
 
         adjusted_reward = self.adjust_reward(next_observation_controlled_agent, reward_controlled)
         info = {}
@@ -100,30 +102,41 @@ class CompetitionOlympicsEnvWrapper(gym.Wrapper):
         return [next_observation_controlled_agent], adjusted_reward, done, False, info
 
     def adjust_reward(self, observation, original_reward):
-        if self.isRightArrow(observation[-1]):
-            original_reward += 0.1
+        farthest_info = self.find_farthest_4(observation[-1])
+
+        if farthest_info is not None:
+            current_farthest_4, current_distance = farthest_info
         else:
-            original_reward -= 0.6
+            current_farthest_4 = None
+            current_distance = 0
+
+        if hasattr(self, 'prev_farthest_4') and self.prev_farthest_4 is not None:
+            agent_position = np.where(observation == 8)
+            prev_distance = self.calculate_distance(self.prev_farthest_4, (agent_position[0][0], agent_position[1][0]))
+
+            if np.any(current_distance < prev_distance):
+                original_reward += 0.0001
+            else:
+                original_reward -= 0.0001
+        self.prev_farthest_4 = current_farthest_4
+
+        if self.isRightArrow(observation[-1]):
+            original_reward += 0.01
+        else:
+            original_reward -= 0.06
 
         if not self.check_double_adjacency(observation[-1]):
-            original_reward -= 0.4
+            original_reward -= 0.04
 
         if np.sum(observation[-1] == 4) < np.sum(observation[-2] == 4):
+            original_reward -= 0.01
+
+        original_reward -= 0.005
+
+        if self.check_collision(observation[-1]):
             original_reward -= 0.1
 
-        original_reward -= 0.05
-
-        # 에이전트가 가장 먼 "4" 쪽으로 이동하도록 보상 설정
-        farthest_4_position = self.get_farthest_4_position(observation[-1])
-        agent_position = np.argwhere(observation[-1] == 8)
-
-        if farthest_4_position is not None and agent_position is not None:
-            # 에이전트와 가장 먼 "4" 사이의 거리를 계산하고 보상을 조절
-            distance_to_farthest_4 = np.linalg.norm(farthest_4_position - agent_position)
-            original_reward -= 0.01 * distance_to_farthest_4    # 거리가 줄어들 수록 -보상을 적게 받음
-
         return original_reward
-
 
     # 벽의 기울기에 따라 조건을 준 함수. (정상 동작 확인되지 않아 주석 처리)
     # def calculate_average_slope_of_sixes(self, positions):
@@ -231,21 +244,33 @@ class CompetitionOlympicsEnvWrapper(gym.Wrapper):
 
         return False
 
-    def get_farthest_4_position(self, array):
-        # 배열에서 '4'값을 가진 위치를 찾음
-        four_positions = np.argwhere(array == 4)
+    def calculate_distance(self, agent_pos, target_pos):
+        return np.abs(agent_pos - target_pos)
 
-        if len(four_positions) > 0:
-            # 에이전트 위치를 찾음
-            agent_position = np.argwhere(array == 8)[0]
+    def find_farthest_4(self, observation):
+        agent_position = np.where(observation == 8)
+        target_positions = np.where(observation == 4)
 
-            # 모든 '4' 위치까지의 거리를 계산하고 가장 먼 위치를 찾음
-            distances = [np.linalg.norm(agent_position - pos) for pos in four_positions]
-            farthest_4_index = np.argmax(distances)
-            farthest_4_position = four_positions[farthest_4_index]
+        if len(agent_position[0]) == 0 or len(target_positions[0]) == 0:
+            return None
 
-            return farthest_4_position
+        agent_pos = np.array([agent_position[0][0], agent_position[1][0]])
+        target_pos = np.array(list(zip(target_positions[0], target_positions[1])))
 
+        distances = np.sum(np.abs(target_pos - agent_pos), axis=1)
+        farthest_index = np.argmax(distances)
+
+        farthest_4_pos = target_pos[farthest_index]
+
+        return farthest_4_pos, distances[farthest_index]
+
+    def check_collision(self, array):
+        rows, cols = array.shape
+        for i in range(rows):
+            for j in range(cols - 1):
+                if array[i, j] == 8 and array[i, j + 1] == 6:
+                    return True
+        return False
 
     def render(self, mode='human'):
         self.env.env_core.render()
@@ -263,7 +288,7 @@ class CompetitionOlympicsEnvWrapper(gym.Wrapper):
     def get_scaled_action(self, action):
         clipped_action = np.clip(action, -1.0, 1.0)
 
-        scaled_action_0 = -100 + (clipped_action[0] + 1) / 2 * (200 - (-100))
+        scaled_action_0 = -100 + (clipped_action[0] + 1) / 2 * (170 - (-100))
         scaled_action_1 = -30 + (clipped_action[1] + 1) / 2 * (30 - (-30))
 
         return numpy.asarray([scaled_action_0, scaled_action_1])

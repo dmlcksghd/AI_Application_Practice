@@ -231,7 +231,6 @@ class PPOAgent(object):
                     print(
                         "[Episode {:3,}, Steps {:6,}]".format(self.num_episode, self.time_step),
                         "Episode Reward: {:>9.3f},".format(np.mean(np.asarray(self.episode_reward_list))),
-                        f"Entropy_coef: {self.entropy_coef}",
                         "Elapsed Time: {}".format(total_training_time)
                     )
                     print_episode_flag = False
