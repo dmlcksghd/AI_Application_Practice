@@ -1,0 +1,41 @@
+
+[Episode  10, Steps  3,982] Episode Reward:   -24.060, Elapsed Time: 00:01:09
+[Episode  20, Steps  7,693] Episode Reward:   -13.061, Elapsed Time: 00:02:34
+[Episode  30, Steps 11,643] Episode Reward:   -13.113, Elapsed Time: 00:04:17
+[Episode  40, Steps 15,591] Episode Reward:   -13.056, Elapsed Time: 00:05:30
+[Episode  50, Steps 19,146] Episode Reward:   -12.245, Elapsed Time: 00:06:46
+[Episode  60, Steps 23,011] Episode Reward:   -15.941, Elapsed Time: 00:08:08
+[Episode  70, Steps 27,011] Episode Reward:   -16.256, Elapsed Time: 00:09:45
+[Episode  80, Steps 30,507] Episode Reward:   -13.985, Elapsed Time: 00:10:59
+[Episode  90, Steps 34,325] Episode Reward:   -13.644, Elapsed Time: 00:12:21
+[Episode 100, Steps 38,275] Episode Reward:    -9.413, Elapsed Time: 00:13:49
+[Episode 110, Steps 42,007] Episode Reward:   -17.528, Elapsed Time: 00:15:26
+[Episode 120, Steps 45,855] Episode Reward:   -17.201, Elapsed Time: 00:16:59
+[Episode 130, Steps 49,569] Episode Reward:   -12.996, Elapsed Time: 00:18:37
+[Episode 140, Steps 53,364] Episode Reward:   -11.559, Elapsed Time: 00:20:12
+[Episode 150, Steps 57,225] Episode Reward:   -11.966, Elapsed Time: 00:21:36
+[Episode 160, Steps 61,225] Episode Reward:   -19.867, Elapsed Time: 00:22:53
+[Episode 170, Steps 64,989] Episode Reward:   -25.653, Elapsed Time: 00:24:28
+[Episode 180, Steps 68,662] Episode Reward:   -22.728, Elapsed Time: 00:25:52
+[Episode 190, Steps 72,662] Episode Reward:   -23.339, Elapsed Time: 00:27:24
+[Episode 200, Steps 76,275] Episode Reward:   -21.386, Elapsed Time: 00:28:56
+[Episode 210, Steps 79,720] Episode Reward:   -17.005, Elapsed Time: 00:29:46
+[Episode 220, Steps 83,675] Episode Reward:   -13.058, Elapsed Time: 00:31:11
+[Episode 230, Steps 87,238] Episode Reward:    -9.431, Elapsed Time: 00:32:35
+[Episode 240, Steps 90,671] Episode Reward:    -8.993, Elapsed Time: 00:34:08
+[Episode 250, Steps 94,653] Episode Reward:   -14.244, Elapsed Time: 00:36:04
+[Episode 260, Steps 98,371] Episode Reward:   -10.669, Elapsed Time: 00:37:17
+[Episode 270, Steps 101,865] Episode Reward:   -10.537, Elapsed Time: 00:38:45
+[Episode 280, Steps 105,476] Episode Reward:    -6.786, Elapsed Time: 00:40:25
+[Episode 290, Steps 108,896] Episode Reward:    -2.567, Elapsed Time: 00:41:52
+[Episode 300, Steps 112,820] Episode Reward:    -9.507, Elapsed Time: 00:43:34
+[Episode 310, Steps 116,527] Episode Reward:    -7.533, Elapsed Time: 00:45:07
+[Episode 320, Steps 120,435] Episode Reward:   -15.842, Elapsed Time: 00:46:46
+[Episode 330, Steps 124,221] Episode Reward:    -9.043, Elapsed Time: 00:48:01
+[Episode 340, Steps 127,769] Episode Reward:    -5.776, Elapsed Time: 00:49:09
+[Episode 350, Steps 131,490] Episode Reward:    -6.428, Elapsed Time: 00:50:33
+[Episode 360, Steps 134,855] Episode Reward:    -0.168, Elapsed Time: 00:51:41
+[Episode 370, Steps 138,134] Episode Reward:     3.960, Elapsed Time: 00:53:03
+It's solved! 10 episode reward mean = 22.933169999999976
+Model model1 updated with reward: 22.933169999999976
+MODEL SAVE SUCCESS!!! MODEL_DIRECTORY: 11_23_19_0

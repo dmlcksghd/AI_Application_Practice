@@ -11,10 +11,10 @@ class test_agent:
         self.actor = ContinuousActor(self.encoder, torch.device("cpu")).apply(init_weights).to(torch.device("cpu"))
 
         self.actor.load_state_dict(torch.load(
-            "C:/Users/theho/pythonProject/AI_Application_Practice/07.Olympic/train_history/actor.pth",
+            "C:/Users/theho/git_AI_Application_Practice/07.Olympic/train_history/olympics-running/11_26_0_47/actor.pth",
             map_location=self.device))
         self.encoder.load_state_dict(torch.load(
-            "C:/Users/theho/pythonProject/AI_Application_Practice/07.Olympic/train_history/encoder.pth",
+            "C:/Users/theho/git_AI_Application_Practice/07.Olympic/train_history/olympics-running/11_26_0_47/encoder.pth",
             map_location=self.device))
 
         self.frame_stack = 4

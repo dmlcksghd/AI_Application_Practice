@@ -134,7 +134,7 @@ class CompetitionOlympicsEnvWrapper(gym.Wrapper):
         original_reward -= 0.005
 
         if self.check_collision(observation[-1]):
-            original_reward -= 0.1
+            original_reward -= 0.5
 
         return original_reward
 
@@ -288,7 +288,7 @@ class CompetitionOlympicsEnvWrapper(gym.Wrapper):
     def get_scaled_action(self, action):
         clipped_action = np.clip(action, -1.0, 1.0)
 
-        scaled_action_0 = -100 + (clipped_action[0] + 1) / 2 * (170 - (-100))
+        scaled_action_0 = -100 + (clipped_action[0] + 1) / 2 * (200 - (-100))
         scaled_action_1 = -30 + (clipped_action[1] + 1) / 2 * (30 - (-30))
 
         return numpy.asarray([scaled_action_0, scaled_action_1])

@@ -43,7 +43,7 @@ def get_args(rest_args):
     # GAE(Generalized Advantage Estimation) 알고리즘에서 사용되는 계수(coefficient)입니다. GAE는 장기적인 보상을 고려하여 에이전트의 행동 가치를 측정하는 데 사용
     parser.add_argument('--lamda', type=float, default=0.95, help='coef for general adversial estimator (GAE)')
     #  GAE는 장기적인 보상을 고려하여 에이전트의 행동 가치를 측정하는 데 사용
-    parser.add_argument('--entropy_coef', type=float, default=0.99, help='coef for general adversial estimator (GAE)')
+    parser.add_argument('--entropy_coef', type=float, default=0.01, help='coef for general adversial estimator (GAE)')
     parser.add_argument('--epsilon', type=float, default=0.2, help='clipping range for actor objective loss')
     parser.add_argument('--value_range', type=float, default=0.5, help='clipping range for critic objective loss')
     parser.add_argument('--entropy_coef_decay_rollout', type=float, default=0.8,
@@ -68,7 +68,7 @@ def get_args(rest_args):
 
     # etc.
     parser.add_argument('--is_evaluate', type=boolean_argument, default=False, help='for evaluation')
-    parser.add_argument('--solved_reward', type=int, default=1, help='desired reward')
+    parser.add_argument('--solved_reward', type=int, default=90, help='desired reward')
     parser.add_argument('--plot_interval', type=int, default=1, help='interval for plotting train history')
     parser.add_argument('--print_episode_interval', type=int, default=10, help='interval for printing train history')
 
@@ -77,10 +77,7 @@ def get_args(rest_args):
     parser.add_argument('--controlled_agent_index', type=int, default=1, help='controlled agent index')
     parser.add_argument('--frame_stack', type=int, default=4, help='frame stack')
     parser.add_argument('--wandb_use', type=boolean_argument, default=True, help='wandb_use')
-    parser.add_argument('--load_model', type=boolean_argument, default=False, help='load previous model')
-    parser.add_argument('--load_model_time', type=str, default="11_21_16_20", help='month_day_hour_minute')
-
-
-
+    parser.add_argument('--load_model', type=boolean_argument, default=True, help='load previous model')
+    parser.add_argument('--load_model_time', type=str, default="11_26_0_47", help='month_day_hour_minute')
 
     return parser.parse_args(rest_args)

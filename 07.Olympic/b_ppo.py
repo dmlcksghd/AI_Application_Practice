@@ -15,7 +15,6 @@ from datetime import datetime
 from collections import deque
 from copy import deepcopy
 
-
 class PPOAgent(object):
     """PPOAgent.
     Parameters:
