@@ -1,0 +1,48 @@
+
+[Episode  10, Steps  3,108] Episode Reward:    41.272, Elapsed Time: 00:00:47
+[Episode  20, Steps  5,776] Episode Reward:    23.002, Elapsed Time: 00:01:43
+[Episode  30, Steps  8,706] Episode Reward:    23.181, Elapsed Time: 00:02:55
+Traceback (most recent call last):
+  File "C:\Users\theho\git_AI_Application_Practice\07.Olympic\f_ppo_train.py", line 87, in <module>
+    main(args, args.is_evaluate)
+  File "C:\Users\theho\git_AI_Application_Practice\07.Olympic\f_ppo_train.py", line 52, in main
+    agent.train()
+  File "C:\Users\theho\git_AI_Application_Practice\07.Olympic\b_ppo.py", line 209, in train
+    next_state, reward, done = self._step(action)
+  File "C:\Users\theho\git_AI_Application_Practice\07.Olympic\b_ppo.py", line 169, in _step
+    next_state, reward, terminated, truncated, _ = self.env.step(action)
+  File "C:\Users\theho\git_AI_Application_Practice\07.Olympic\d_wrappers.py", line 84, in step
+    next_observation, reward, done, info_before, info_after = self.env.step(action)
+  File "C:\Users\theho\git_AI_Application_Practice\termproject_olympic\env\olympics_integrated.py", line 92, in step
+    all_observations, reward, done, info_after = self.env_core.step(joint_action_decode)
+  File "C:\Users\theho\git_AI_Application_Practice\termproject_olympic\olympics_engine\AI_olympics.py", line 124, in step
+    obs, reward, done, _ = self.current_game.step(action_list)
+  File "C:\Users\theho\git_AI_Application_Practice\termproject_olympic\olympics_engine\scenario\running_competition.py", line 121, in step
+    obs_next = self.get_obs()
+  File "C:\Users\theho\git_AI_Application_Practice\termproject_olympic\olympics_engine\core.py", line 1239, in get_obs
+    original_point = rotate2(
+  File "C:\Users\theho\git_AI_Application_Practice\termproject_olympic\olympics_engine\tools\func.py", line 36, in rotate2
+    def rotate2(x, y, theta):
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "C:\Users\theho\git_AI_Application_Practice\07.Olympic\f_ppo_train.py", line 87, in <module>
+    main(args, args.is_evaluate)
+  File "C:\Users\theho\git_AI_Application_Practice\07.Olympic\f_ppo_train.py", line 52, in main
+    agent.train()
+  File "C:\Users\theho\git_AI_Application_Practice\07.Olympic\b_ppo.py", line 209, in train
+    next_state, reward, done = self._step(action)
+  File "C:\Users\theho\git_AI_Application_Practice\07.Olympic\b_ppo.py", line 169, in _step
+    next_state, reward, terminated, truncated, _ = self.env.step(action)
+  File "C:\Users\theho\git_AI_Application_Practice\07.Olympic\d_wrappers.py", line 84, in step
+    next_observation, reward, done, info_before, info_after = self.env.step(action)
+  File "C:\Users\theho\git_AI_Application_Practice\termproject_olympic\env\olympics_integrated.py", line 92, in step
+    all_observations, reward, done, info_after = self.env_core.step(joint_action_decode)
+  File "C:\Users\theho\git_AI_Application_Practice\termproject_olympic\olympics_engine\AI_olympics.py", line 124, in step
+    obs, reward, done, _ = self.current_game.step(action_list)
+  File "C:\Users\theho\git_AI_Application_Practice\termproject_olympic\olympics_engine\scenario\running_competition.py", line 121, in step
+    obs_next = self.get_obs()
+  File "C:\Users\theho\git_AI_Application_Practice\termproject_olympic\olympics_engine\core.py", line 1239, in get_obs
+    original_point = rotate2(
+  File "C:\Users\theho\git_AI_Application_Practice\termproject_olympic\olympics_engine\tools\func.py", line 36, in rotate2
+    def rotate2(x, y, theta):
+KeyboardInterrupt

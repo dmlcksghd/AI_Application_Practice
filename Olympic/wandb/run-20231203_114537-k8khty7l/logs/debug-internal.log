@@ -1,0 +1,91 @@
+2023-12-03 11:45:37,751 INFO    StreamThr :11936 [internal.py:wandb_internal():86] W&B internal server running at pid: 11936, started at: 2023-12-03 11:45:37.749171
+2023-12-03 11:45:37,754 DEBUG   HandlerThread:11936 [handler.py:handle_request():146] handle_request: status
+2023-12-03 11:45:37,765 INFO    WriterThread:11936 [datastore.py:open_for_write():85] open: C:\Users\theho\git_AI_Application_Practice\07.Olympic\wandb\run-20231203_114537-k8khty7l\run-k8khty7l.wandb
+2023-12-03 11:45:37,766 DEBUG   SenderThread:11936 [sender.py:send():380] send: header
+2023-12-03 11:45:37,890 DEBUG   SenderThread:11936 [sender.py:send():380] send: run
+2023-12-03 11:45:42,892 DEBUG   HandlerThread:11936 [handler.py:handle_request():146] handle_request: keepalive
+2023-12-03 11:45:47,895 DEBUG   HandlerThread:11936 [handler.py:handle_request():146] handle_request: keepalive
+2023-12-03 11:45:52,897 DEBUG   HandlerThread:11936 [handler.py:handle_request():146] handle_request: keepalive
+2023-12-03 11:45:57,898 DEBUG   HandlerThread:11936 [handler.py:handle_request():146] handle_request: keepalive
+2023-12-03 11:46:02,902 DEBUG   HandlerThread:11936 [handler.py:handle_request():146] handle_request: keepalive
+2023-12-03 11:46:07,904 DEBUG   HandlerThread:11936 [handler.py:handle_request():146] handle_request: keepalive
+2023-12-03 11:46:12,905 DEBUG   HandlerThread:11936 [handler.py:handle_request():146] handle_request: keepalive
+2023-12-03 11:46:17,907 DEBUG   HandlerThread:11936 [handler.py:handle_request():146] handle_request: keepalive
+2023-12-03 11:46:22,909 DEBUG   HandlerThread:11936 [handler.py:handle_request():146] handle_request: keepalive
+2023-12-03 11:46:27,912 DEBUG   HandlerThread:11936 [handler.py:handle_request():146] handle_request: keepalive
+2023-12-03 11:46:32,914 DEBUG   HandlerThread:11936 [handler.py:handle_request():146] handle_request: keepalive
+2023-12-03 11:46:37,915 DEBUG   HandlerThread:11936 [handler.py:handle_request():146] handle_request: keepalive
+2023-12-03 11:46:42,622 INFO    SenderThread:11936 [retry.py:__call__():172] Retry attempt failed:
+Traceback (most recent call last):
+  File "C:\Users\theho\anaconda3\envs\AI_Lecture\lib\site-packages\urllib3\connectionpool.py", line 537, in _make_request
+    response = conn.getresponse()
+  File "C:\Users\theho\anaconda3\envs\AI_Lecture\lib\site-packages\urllib3\connection.py", line 461, in getresponse
+    httplib_response = super().getresponse()
+  File "C:\Users\theho\anaconda3\envs\AI_Lecture\lib\http\client.py", line 1375, in getresponse
+    response.begin()
+  File "C:\Users\theho\anaconda3\envs\AI_Lecture\lib\http\client.py", line 318, in begin
+    version, status, reason = self._read_status()
+  File "C:\Users\theho\anaconda3\envs\AI_Lecture\lib\http\client.py", line 279, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+  File "C:\Users\theho\anaconda3\envs\AI_Lecture\lib\socket.py", line 705, in readinto
+    return self._sock.recv_into(b)
+  File "C:\Users\theho\anaconda3\envs\AI_Lecture\lib\ssl.py", line 1307, in recv_into
+    return self.read(nbytes, buffer)
+  File "C:\Users\theho\anaconda3\envs\AI_Lecture\lib\ssl.py", line 1163, in read
+    return self._sslobj.read(len, buffer)
+TimeoutError: The read operation timed out
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\theho\anaconda3\envs\AI_Lecture\lib\site-packages\requests\adapters.py", line 486, in send
+    resp = conn.urlopen(
+  File "C:\Users\theho\anaconda3\envs\AI_Lecture\lib\site-packages\urllib3\connectionpool.py", line 845, in urlopen
+    retries = retries.increment(
+  File "C:\Users\theho\anaconda3\envs\AI_Lecture\lib\site-packages\urllib3\util\retry.py", line 470, in increment
+    raise reraise(type(error), error, _stacktrace)
+  File "C:\Users\theho\anaconda3\envs\AI_Lecture\lib\site-packages\urllib3\util\util.py", line 39, in reraise
+    raise value
+  File "C:\Users\theho\anaconda3\envs\AI_Lecture\lib\site-packages\urllib3\connectionpool.py", line 791, in urlopen
+    response = self._make_request(
+  File "C:\Users\theho\anaconda3\envs\AI_Lecture\lib\site-packages\urllib3\connectionpool.py", line 539, in _make_request
+    self._raise_timeout(err=e, url=url, timeout_value=read_timeout)
+  File "C:\Users\theho\anaconda3\envs\AI_Lecture\lib\site-packages\urllib3\connectionpool.py", line 371, in _raise_timeout
+    raise ReadTimeoutError(
+urllib3.exceptions.ReadTimeoutError: HTTPSConnectionPool(host='api.wandb.ai', port=443): Read timed out. (read timeout=20)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\theho\anaconda3\envs\AI_Lecture\lib\site-packages\wandb\sdk\lib\retry.py", line 131, in __call__
+    result = self._call_fn(*args, **kwargs)
+  File "C:\Users\theho\anaconda3\envs\AI_Lecture\lib\site-packages\wandb\sdk\internal\internal_api.py", line 366, in execute
+    return self.client.execute(*args, **kwargs)  # type: ignore
+  File "C:\Users\theho\anaconda3\envs\AI_Lecture\lib\site-packages\wandb\vendor\gql-0.2.0\wandb_gql\client.py", line 52, in execute
+    result = self._get_result(document, *args, **kwargs)
+  File "C:\Users\theho\anaconda3\envs\AI_Lecture\lib\site-packages\wandb\vendor\gql-0.2.0\wandb_gql\client.py", line 60, in _get_result
+    return self.transport.execute(document, *args, **kwargs)
+  File "C:\Users\theho\anaconda3\envs\AI_Lecture\lib\site-packages\wandb\sdk\lib\gql_request.py", line 58, in execute
+    request = self.session.post(self.url, **post_args)
+  File "C:\Users\theho\anaconda3\envs\AI_Lecture\lib\site-packages\requests\sessions.py", line 637, in post
+    return self.request("POST", url, data=data, json=json, **kwargs)
+  File "C:\Users\theho\anaconda3\envs\AI_Lecture\lib\site-packages\requests\sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+  File "C:\Users\theho\anaconda3\envs\AI_Lecture\lib\site-packages\requests\sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+  File "C:\Users\theho\anaconda3\envs\AI_Lecture\lib\site-packages\requests\adapters.py", line 532, in send
+    raise ReadTimeout(e, request=request)
+requests.exceptions.ReadTimeout: HTTPSConnectionPool(host='api.wandb.ai', port=443): Read timed out. (read timeout=20)
+2023-12-03 11:46:42,917 DEBUG   HandlerThread:11936 [handler.py:handle_request():146] handle_request: keepalive
+2023-12-03 11:46:47,918 DEBUG   HandlerThread:11936 [handler.py:handle_request():146] handle_request: keepalive
+2023-12-03 11:46:52,918 DEBUG   HandlerThread:11936 [handler.py:handle_request():146] handle_request: keepalive
+2023-12-03 11:46:57,919 DEBUG   HandlerThread:11936 [handler.py:handle_request():146] handle_request: keepalive
+2023-12-03 11:47:02,921 DEBUG   HandlerThread:11936 [handler.py:handle_request():146] handle_request: keepalive
+2023-12-03 11:47:07,922 DEBUG   HandlerThread:11936 [handler.py:handle_request():146] handle_request: cancel
+2023-12-03 11:47:07,922 DEBUG   HandlerThread:11936 [handler.py:handle_request():146] handle_request: cancel
+2023-12-03 11:47:07,922 DEBUG   SenderThread:11936 [sender.py:send():389] Record cancelled: run
+2023-12-03 11:47:07,923 DEBUG   HandlerThread:11936 [handler.py:handle_request():146] handle_request: status_report
+2023-12-03 11:47:08,456 DEBUG   HandlerThread:11936 [handler.py:handle_request():146] handle_request: shutdown
+2023-12-03 11:47:08,456 INFO    HandlerThread:11936 [handler.py:finish():866] shutting down handler
+2023-12-03 11:47:08,935 INFO    SenderThread:11936 [sender.py:finish():1536] shutting down sender
+2023-12-03 11:47:08,935 INFO    WriterThread:11936 [datastore.py:close():294] close: C:\Users\theho\git_AI_Application_Practice\07.Olympic\wandb\run-20231203_114537-k8khty7l\run-k8khty7l.wandb

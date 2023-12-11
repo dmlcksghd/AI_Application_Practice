@@ -1,0 +1,45 @@
+{
+    "os": "Windows-10-10.0.19045-SP0",
+    "python": "3.10.13",
+    "heartbeatAt": "2023-11-21T11:27:16.398222",
+    "startedAt": "2023-11-21T11:27:14.063135",
+    "docker": null,
+    "cuda": null,
+    "args": [],
+    "state": "running",
+    "program": "C:\\Users\\theho\\git_AI_Application_Practice\\07.Olympic\\f_ppo_train.py",
+    "codePathLocal": "f_ppo_train.py",
+    "codePath": "07.Olympic\\f_ppo_train.py",
+    "git": {
+        "remote": "https://github.com/dmlcksghd/AI_Application_Practice.git",
+        "commit": "6fe514998d53ff1f5017fa68674c4330206feb37"
+    },
+    "email": "dmlcksghd",
+    "root": "C:/Users/theho/git_AI_Application_Practice",
+    "host": "DESKTOP-6GREP35",
+    "username": "theho",
+    "executable": "C:\\Users\\theho\\anaconda3\\envs\\AI_Lecture\\python.exe",
+    "cpu_count": 6,
+    "cpu_count_logical": 12,
+    "cpu_freq": {
+        "current": 3400.0,
+        "min": 0.0,
+        "max": 3400.0
+    },
+    "cpu_freq_per_core": [
+        {
+            "current": 3400.0,
+            "min": 0.0,
+            "max": 3400.0
+        }
+    ],
+    "disk": {
+        "/": {
+            "total": 464.688663482666,
+            "used": 237.54015350341797
+        }
+    },
+    "memory": {
+        "total": 15.948715209960938
+    }
+}

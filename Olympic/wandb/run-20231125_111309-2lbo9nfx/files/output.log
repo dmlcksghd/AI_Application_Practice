@@ -1,0 +1,30 @@
+
+[Episode  10, Steps  3,356] Episode Reward:    -0.942, Elapsed Time: 00:00:55
+Traceback (most recent call last):
+  File "C:\Users\theho\git_AI_Application_Practice\07.Olympic\f_ppo_train.py", line 87, in <module>
+    main(args, args.is_evaluate)
+  File "C:\Users\theho\git_AI_Application_Practice\07.Olympic\f_ppo_train.py", line 52, in main
+    agent.train()
+  File "C:\Users\theho\git_AI_Application_Practice\07.Olympic\b_ppo.py", line 255, in train
+    self._update_weights()
+  File "C:\Users\theho\git_AI_Application_Practice\07.Olympic\b_ppo.py", line 324, in _update_weights
+    actor_loss.backward()
+  File "C:\Users\theho\anaconda3\envs\AI_Lecture\lib\site-packages\torch\_tensor.py", line 492, in backward
+    torch.autograd.backward(
+  File "C:\Users\theho\anaconda3\envs\AI_Lecture\lib\site-packages\torch\autograd\__init__.py", line 251, in backward
+    Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "C:\Users\theho\git_AI_Application_Practice\07.Olympic\f_ppo_train.py", line 87, in <module>
+    main(args, args.is_evaluate)
+  File "C:\Users\theho\git_AI_Application_Practice\07.Olympic\f_ppo_train.py", line 52, in main
+    agent.train()
+  File "C:\Users\theho\git_AI_Application_Practice\07.Olympic\b_ppo.py", line 255, in train
+    self._update_weights()
+  File "C:\Users\theho\git_AI_Application_Practice\07.Olympic\b_ppo.py", line 324, in _update_weights
+    actor_loss.backward()
+  File "C:\Users\theho\anaconda3\envs\AI_Lecture\lib\site-packages\torch\_tensor.py", line 492, in backward
+    torch.autograd.backward(
+  File "C:\Users\theho\anaconda3\envs\AI_Lecture\lib\site-packages\torch\autograd\__init__.py", line 251, in backward
+    Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+KeyboardInterrupt

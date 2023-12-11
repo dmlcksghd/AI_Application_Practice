@@ -1,0 +1,24 @@
+Traceback (most recent call last):
+  File "C:\Users\theho\git_AI_Application_Practice\07.Olympic\f_ppo_train.py", line 87, in <module>
+    main(args, args.is_evaluate)
+  File "C:\Users\theho\git_AI_Application_Practice\07.Olympic\f_ppo_train.py", line 52, in main
+    agent.train()
+  File "C:\Users\theho\git_AI_Application_Practice\07.Olympic\b_ppo.py", line 210, in train
+    next_state, reward, done = self._step(action)
+  File "C:\Users\theho\git_AI_Application_Practice\07.Olympic\b_ppo.py", line 170, in _step
+    next_state, reward, terminated, truncated, _ = self.env.step(action)
+  File "C:\Users\theho\git_AI_Application_Practice\07.Olympic\d_wrappers.py", line 79, in step
+    new_agent_position = np.argwhere(next_observation[self.controlled_agent_index][-1] == 8)
+KeyError: -1
+Traceback (most recent call last):
+  File "C:\Users\theho\git_AI_Application_Practice\07.Olympic\f_ppo_train.py", line 87, in <module>
+    main(args, args.is_evaluate)
+  File "C:\Users\theho\git_AI_Application_Practice\07.Olympic\f_ppo_train.py", line 52, in main
+    agent.train()
+  File "C:\Users\theho\git_AI_Application_Practice\07.Olympic\b_ppo.py", line 210, in train
+    next_state, reward, done = self._step(action)
+  File "C:\Users\theho\git_AI_Application_Practice\07.Olympic\b_ppo.py", line 170, in _step
+    next_state, reward, terminated, truncated, _ = self.env.step(action)
+  File "C:\Users\theho\git_AI_Application_Practice\07.Olympic\d_wrappers.py", line 79, in step
+    new_agent_position = np.argwhere(next_observation[self.controlled_agent_index][-1] == 8)
+KeyError: -1

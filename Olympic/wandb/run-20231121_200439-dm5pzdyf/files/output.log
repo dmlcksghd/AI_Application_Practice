@@ -1,0 +1,57 @@
+
+[Episode  10, Steps  4,000] Episode Reward:  -886.126, Elapsed Time: 00:01:11
+[Episode  20, Steps  7,909] Episode Reward:  -831.412, Elapsed Time: 00:02:43
+[Episode  30, Steps 11,705] Episode Reward:  -810.562, Elapsed Time: 00:04:21
+[Episode  40, Steps 15,505] Episode Reward:  -765.979, Elapsed Time: 00:05:58
+[Episode  50, Steps 19,505] Episode Reward:  -774.459, Elapsed Time: 00:07:57
+[Episode  60, Steps 23,230] Episode Reward:  -773.702, Elapsed Time: 00:09:53
+[Episode  70, Steps 27,080] Episode Reward:  -769.028, Elapsed Time: 00:11:35
+[Episode  80, Steps 31,060] Episode Reward:  -768.115, Elapsed Time: 00:13:26
+[Episode  90, Steps 35,060] Episode Reward:  -780.615, Elapsed Time: 00:15:11
+[Episode 100, Steps 39,060] Episode Reward:  -804.276, Elapsed Time: 00:16:52
+[Episode 110, Steps 42,770] Episode Reward:  -792.227, Elapsed Time: 00:18:36
+[Episode 120, Steps 46,770] Episode Reward:  -806.664, Elapsed Time: 00:20:38
+Traceback (most recent call last):
+  File "C:\Users\theho\git_AI_Application_Practice\07.Olympic\f_ppo_train.py", line 87, in <module>
+    main(args, args.is_evaluate)
+  File "C:\Users\theho\git_AI_Application_Practice\07.Olympic\f_ppo_train.py", line 52, in main
+    agent.train()
+  File "C:\Users\theho\git_AI_Application_Practice\07.Olympic\b_ppo.py", line 205, in train
+    next_state, reward, done = self._step(action)
+  File "C:\Users\theho\git_AI_Application_Practice\07.Olympic\b_ppo.py", line 165, in _step
+    next_state, reward, terminated, truncated, _ = self.env.step(action)
+  File "C:\Users\theho\git_AI_Application_Practice\07.Olympic\d_wrappers.py", line 76, in step
+    next_observation, reward, done, info_before, info_after = self.env.step(action)
+  File "C:\Users\theho\git_AI_Application_Practice\termproject_olympic\env\olympics_integrated.py", line 92, in step
+    all_observations, reward, done, info_after = self.env_core.step(joint_action_decode)
+  File "C:\Users\theho\git_AI_Application_Practice\termproject_olympic\olympics_engine\AI_olympics.py", line 124, in step
+    obs, reward, done, _ = self.current_game.step(action_list)
+  File "C:\Users\theho\git_AI_Application_Practice\termproject_olympic\olympics_engine\scenario\running_competition.py", line 121, in step
+    obs_next = self.get_obs()
+  File "C:\Users\theho\git_AI_Application_Practice\termproject_olympic\olympics_engine\core.py", line 1257, in get_obs
+    if get_obs_check_radian(
+  File "C:\Users\theho\git_AI_Application_Practice\termproject_olympic\olympics_engine\tools\func.py", line 73, in get_obs_check_radian
+    def get_obs_check_radian(start_radian, end_radian, angle):
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "C:\Users\theho\git_AI_Application_Practice\07.Olympic\f_ppo_train.py", line 87, in <module>
+    main(args, args.is_evaluate)
+  File "C:\Users\theho\git_AI_Application_Practice\07.Olympic\f_ppo_train.py", line 52, in main
+    agent.train()
+  File "C:\Users\theho\git_AI_Application_Practice\07.Olympic\b_ppo.py", line 205, in train
+    next_state, reward, done = self._step(action)
+  File "C:\Users\theho\git_AI_Application_Practice\07.Olympic\b_ppo.py", line 165, in _step
+    next_state, reward, terminated, truncated, _ = self.env.step(action)
+  File "C:\Users\theho\git_AI_Application_Practice\07.Olympic\d_wrappers.py", line 76, in step
+    next_observation, reward, done, info_before, info_after = self.env.step(action)
+  File "C:\Users\theho\git_AI_Application_Practice\termproject_olympic\env\olympics_integrated.py", line 92, in step
+    all_observations, reward, done, info_after = self.env_core.step(joint_action_decode)
+  File "C:\Users\theho\git_AI_Application_Practice\termproject_olympic\olympics_engine\AI_olympics.py", line 124, in step
+    obs, reward, done, _ = self.current_game.step(action_list)
+  File "C:\Users\theho\git_AI_Application_Practice\termproject_olympic\olympics_engine\scenario\running_competition.py", line 121, in step
+    obs_next = self.get_obs()
+  File "C:\Users\theho\git_AI_Application_Practice\termproject_olympic\olympics_engine\core.py", line 1257, in get_obs
+    if get_obs_check_radian(
+  File "C:\Users\theho\git_AI_Application_Practice\termproject_olympic\olympics_engine\tools\func.py", line 73, in get_obs_check_radian
+    def get_obs_check_radian(start_radian, end_radian, angle):
+KeyboardInterrupt

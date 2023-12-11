@@ -1,0 +1,8 @@
+
+[Episode  10, Steps  2,825] Episode Reward:    31.726, Elapsed Time: 00:00:46
+[Episode  20, Steps  6,179] Episode Reward:    17.977, Elapsed Time: 00:02:08
+[Episode  30, Steps  8,727] Episode Reward:    24.897, Elapsed Time: 00:03:33
+[Episode  40, Steps 11,098] Episode Reward:    32.318, Elapsed Time: 00:04:25
+It's solved! 10 episode reward mean = 57.264700000000026
+Model model1 updated with reward: 57.264700000000026
+MODEL SAVE SUCCESS!!! MODEL_DIRECTORY: 12_2_12_55

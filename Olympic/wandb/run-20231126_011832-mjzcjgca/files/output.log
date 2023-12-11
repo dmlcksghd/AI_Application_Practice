@@ -1,0 +1,42 @@
+
+[Episode  10, Steps  2,941] Episode Reward:    48.747, Elapsed Time: 00:00:57
+Traceback (most recent call last):
+  File "C:\Users\theho\git_AI_Application_Practice\07.Olympic\f_ppo_train.py", line 87, in <module>
+    main(args, args.is_evaluate)
+  File "C:\Users\theho\git_AI_Application_Practice\07.Olympic\f_ppo_train.py", line 52, in main
+    agent.train()
+  File "C:\Users\theho\git_AI_Application_Practice\07.Olympic\b_ppo.py", line 255, in train
+    self._update_weights()
+  File "C:\Users\theho\git_AI_Application_Practice\07.Olympic\b_ppo.py", line 327, in _update_weights
+    self.actor_optimizer.step()
+  File "C:\Users\theho\anaconda3\envs\AI_Lecture\lib\site-packages\torch\optim\optimizer.py", line 373, in wrapper
+    out = func(*args, **kwargs)
+  File "C:\Users\theho\anaconda3\envs\AI_Lecture\lib\site-packages\torch\optim\optimizer.py", line 76, in _use_grad
+    ret = func(self, *args, **kwargs)
+  File "C:\Users\theho\anaconda3\envs\AI_Lecture\lib\site-packages\torch\optim\adam.py", line 163, in step
+    adam(
+  File "C:\Users\theho\anaconda3\envs\AI_Lecture\lib\site-packages\torch\optim\adam.py", line 311, in adam
+    func(params,
+  File "C:\Users\theho\anaconda3\envs\AI_Lecture\lib\site-packages\torch\optim\adam.py", line 385, in _single_tensor_adam
+    exp_avg_sq.mul_(beta2).addcmul_(grad, grad.conj(), value=1 - beta2)
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "C:\Users\theho\git_AI_Application_Practice\07.Olympic\f_ppo_train.py", line 87, in <module>
+    main(args, args.is_evaluate)
+  File "C:\Users\theho\git_AI_Application_Practice\07.Olympic\f_ppo_train.py", line 52, in main
+    agent.train()
+  File "C:\Users\theho\git_AI_Application_Practice\07.Olympic\b_ppo.py", line 255, in train
+    self._update_weights()
+  File "C:\Users\theho\git_AI_Application_Practice\07.Olympic\b_ppo.py", line 327, in _update_weights
+    self.actor_optimizer.step()
+  File "C:\Users\theho\anaconda3\envs\AI_Lecture\lib\site-packages\torch\optim\optimizer.py", line 373, in wrapper
+    out = func(*args, **kwargs)
+  File "C:\Users\theho\anaconda3\envs\AI_Lecture\lib\site-packages\torch\optim\optimizer.py", line 76, in _use_grad
+    ret = func(self, *args, **kwargs)
+  File "C:\Users\theho\anaconda3\envs\AI_Lecture\lib\site-packages\torch\optim\adam.py", line 163, in step
+    adam(
+  File "C:\Users\theho\anaconda3\envs\AI_Lecture\lib\site-packages\torch\optim\adam.py", line 311, in adam
+    func(params,
+  File "C:\Users\theho\anaconda3\envs\AI_Lecture\lib\site-packages\torch\optim\adam.py", line 385, in _single_tensor_adam
+    exp_avg_sq.mul_(beta2).addcmul_(grad, grad.conj(), value=1 - beta2)
+KeyboardInterrupt

@@ -1,0 +1,32 @@
+Traceback (most recent call last):
+  File "C:\Users\theho\git_AI_Application_Practice\07.Olympic\f_ppo_train.py", line 87, in <module>
+    main(args, args.is_evaluate)
+  File "C:\Users\theho\git_AI_Application_Practice\07.Olympic\f_ppo_train.py", line 52, in main
+    agent.train()
+  File "C:\Users\theho\git_AI_Application_Practice\07.Olympic\b_ppo.py", line 210, in train
+    next_state, reward, done = self._step(action)
+  File "C:\Users\theho\git_AI_Application_Practice\07.Olympic\b_ppo.py", line 170, in _step
+    next_state, reward, terminated, truncated, _ = self.env.step(action)
+  File "C:\Users\theho\git_AI_Application_Practice\07.Olympic\d_wrappers.py", line 99, in step
+    adjusted_reward = self.adjust_reward(next_observation_controlled_agent, reward_controlled)
+  File "C:\Users\theho\git_AI_Application_Practice\07.Olympic\d_wrappers.py", line 115, in adjust_reward
+    prev_distance = self.calculate_distance(self.prev_farthest_4, (agent_position[0][0], agent_position[1][0]))
+  File "C:\Users\theho\git_AI_Application_Practice\07.Olympic\d_wrappers.py", line 247, in calculate_distance
+    return np.abs(agent_pos - target_pos)
+TypeError: unsupported operand type(s) for -: 'NoneType' and 'tuple'
+Traceback (most recent call last):
+  File "C:\Users\theho\git_AI_Application_Practice\07.Olympic\f_ppo_train.py", line 87, in <module>
+    main(args, args.is_evaluate)
+  File "C:\Users\theho\git_AI_Application_Practice\07.Olympic\f_ppo_train.py", line 52, in main
+    agent.train()
+  File "C:\Users\theho\git_AI_Application_Practice\07.Olympic\b_ppo.py", line 210, in train
+    next_state, reward, done = self._step(action)
+  File "C:\Users\theho\git_AI_Application_Practice\07.Olympic\b_ppo.py", line 170, in _step
+    next_state, reward, terminated, truncated, _ = self.env.step(action)
+  File "C:\Users\theho\git_AI_Application_Practice\07.Olympic\d_wrappers.py", line 99, in step
+    adjusted_reward = self.adjust_reward(next_observation_controlled_agent, reward_controlled)
+  File "C:\Users\theho\git_AI_Application_Practice\07.Olympic\d_wrappers.py", line 115, in adjust_reward
+    prev_distance = self.calculate_distance(self.prev_farthest_4, (agent_position[0][0], agent_position[1][0]))
+  File "C:\Users\theho\git_AI_Application_Practice\07.Olympic\d_wrappers.py", line 247, in calculate_distance
+    return np.abs(agent_pos - target_pos)
+TypeError: unsupported operand type(s) for -: 'NoneType' and 'tuple'

@@ -1,0 +1,53 @@
+
+[Episode  10, Steps  3,155] Episode Reward:    -1.570, Elapsed Time: 00:01:00
+[Episode  20, Steps  6,514] Episode Reward:     6.555, Elapsed Time: 00:02:31
+[Episode  30, Steps  9,515] Episode Reward:    12.215, Elapsed Time: 00:04:03
+[Episode  40, Steps 12,900] Episode Reward:    22.785, Elapsed Time: 00:05:47
+[Episode  50, Steps 15,785] Episode Reward:    22.251, Elapsed Time: 00:06:38
+[Episode  60, Steps 18,644] Episode Reward:    26.499, Elapsed Time: 00:07:57
+[Episode  70, Steps 21,783] Episode Reward:    17.515, Elapsed Time: 00:09:40
+[Episode  80, Steps 24,942] Episode Reward:    20.371, Elapsed Time: 00:11:20
+Traceback (most recent call last):
+  File "C:\Users\theho\git_AI_Application_Practice\07.Olympic\f_ppo_train.py", line 87, in <module>
+    main(args, args.is_evaluate)
+  File "C:\Users\theho\git_AI_Application_Practice\07.Olympic\f_ppo_train.py", line 52, in main
+    agent.train()
+  File "C:\Users\theho\git_AI_Application_Practice\07.Olympic\b_ppo.py", line 209, in train
+    next_state, reward, done = self._step(action)
+  File "C:\Users\theho\git_AI_Application_Practice\07.Olympic\b_ppo.py", line 169, in _step
+    next_state, reward, terminated, truncated, _ = self.env.step(action)
+  File "C:\Users\theho\git_AI_Application_Practice\07.Olympic\d_wrappers.py", line 78, in step
+    next_observation, reward, done, info_before, info_after = self.env.step(action)
+  File "C:\Users\theho\git_AI_Application_Practice\termproject_olympic\env\olympics_integrated.py", line 92, in step
+    all_observations, reward, done, info_after = self.env_core.step(joint_action_decode)
+  File "C:\Users\theho\git_AI_Application_Practice\termproject_olympic\olympics_engine\AI_olympics.py", line 124, in step
+    obs, reward, done, _ = self.current_game.step(action_list)
+  File "C:\Users\theho\git_AI_Application_Practice\termproject_olympic\olympics_engine\scenario\running_competition.py", line 121, in step
+    obs_next = self.get_obs()
+  File "C:\Users\theho\git_AI_Application_Practice\termproject_olympic\olympics_engine\core.py", line 1239, in get_obs
+    original_point = rotate2(
+  File "C:\Users\theho\git_AI_Application_Practice\termproject_olympic\olympics_engine\tools\func.py", line 41, in rotate2
+    y_n = -math.sin(theta * math.pi / 180) * x + math.cos(theta * math.pi / 180) * y
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "C:\Users\theho\git_AI_Application_Practice\07.Olympic\f_ppo_train.py", line 87, in <module>
+    main(args, args.is_evaluate)
+  File "C:\Users\theho\git_AI_Application_Practice\07.Olympic\f_ppo_train.py", line 52, in main
+    agent.train()
+  File "C:\Users\theho\git_AI_Application_Practice\07.Olympic\b_ppo.py", line 209, in train
+    next_state, reward, done = self._step(action)
+  File "C:\Users\theho\git_AI_Application_Practice\07.Olympic\b_ppo.py", line 169, in _step
+    next_state, reward, terminated, truncated, _ = self.env.step(action)
+  File "C:\Users\theho\git_AI_Application_Practice\07.Olympic\d_wrappers.py", line 78, in step
+    next_observation, reward, done, info_before, info_after = self.env.step(action)
+  File "C:\Users\theho\git_AI_Application_Practice\termproject_olympic\env\olympics_integrated.py", line 92, in step
+    all_observations, reward, done, info_after = self.env_core.step(joint_action_decode)
+  File "C:\Users\theho\git_AI_Application_Practice\termproject_olympic\olympics_engine\AI_olympics.py", line 124, in step
+    obs, reward, done, _ = self.current_game.step(action_list)
+  File "C:\Users\theho\git_AI_Application_Practice\termproject_olympic\olympics_engine\scenario\running_competition.py", line 121, in step
+    obs_next = self.get_obs()
+  File "C:\Users\theho\git_AI_Application_Practice\termproject_olympic\olympics_engine\core.py", line 1239, in get_obs
+    original_point = rotate2(
+  File "C:\Users\theho\git_AI_Application_Practice\termproject_olympic\olympics_engine\tools\func.py", line 41, in rotate2
+    y_n = -math.sin(theta * math.pi / 180) * x + math.cos(theta * math.pi / 180) * y
+KeyboardInterrupt

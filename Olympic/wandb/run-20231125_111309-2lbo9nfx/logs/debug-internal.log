@@ -1,0 +1,358 @@
+2023-11-25 11:13:09,069 INFO    StreamThr :17624 [internal.py:wandb_internal():86] W&B internal server running at pid: 17624, started at: 2023-11-25 11:13:09.068546
+2023-11-25 11:13:09,070 DEBUG   HandlerThread:17624 [handler.py:handle_request():146] handle_request: status
+2023-11-25 11:13:09,076 INFO    WriterThread:17624 [datastore.py:open_for_write():85] open: C:\Users\theho\git_AI_Application_Practice\07.Olympic\wandb\run-20231125_111309-2lbo9nfx\run-2lbo9nfx.wandb
+2023-11-25 11:13:09,077 DEBUG   SenderThread:17624 [sender.py:send():380] send: header
+2023-11-25 11:13:09,155 DEBUG   SenderThread:17624 [sender.py:send():380] send: run
+2023-11-25 11:13:10,167 INFO    SenderThread:17624 [dir_watcher.py:__init__():211] watching files in: C:\Users\theho\git_AI_Application_Practice\07.Olympic\wandb\run-20231125_111309-2lbo9nfx\files
+2023-11-25 11:13:10,167 INFO    SenderThread:17624 [sender.py:_start_run_threads():1124] run started: 2lbo9nfx with start time 1700878389.070547
+2023-11-25 11:13:10,186 DEBUG   HandlerThread:17624 [handler.py:handle_request():146] handle_request: check_version
+2023-11-25 11:13:10,186 DEBUG   SenderThread:17624 [sender.py:send_request():407] send_request: check_version
+2023-11-25 11:13:10,805 DEBUG   HandlerThread:17624 [handler.py:handle_request():146] handle_request: run_start
+2023-11-25 11:13:10,822 DEBUG   HandlerThread:17624 [system_info.py:__init__():32] System info init
+2023-11-25 11:13:10,822 DEBUG   HandlerThread:17624 [system_info.py:__init__():47] System info init done
+2023-11-25 11:13:10,823 INFO    HandlerThread:17624 [system_monitor.py:start():194] Starting system monitor
+2023-11-25 11:13:10,823 INFO    SystemMonitor:17624 [system_monitor.py:_start():158] Starting system asset monitoring threads
+2023-11-25 11:13:10,823 INFO    HandlerThread:17624 [system_monitor.py:probe():214] Collecting system info
+2023-11-25 11:13:10,828 INFO    SystemMonitor:17624 [interfaces.py:start():190] Started cpu monitoring
+2023-11-25 11:13:10,833 DEBUG   HandlerThread:17624 [system_info.py:probe():196] Probing system
+2023-11-25 11:13:10,833 INFO    SystemMonitor:17624 [interfaces.py:start():190] Started disk monitoring
+2023-11-25 11:13:10,844 INFO    SystemMonitor:17624 [interfaces.py:start():190] Started memory monitoring
+2023-11-25 11:13:10,858 INFO    SystemMonitor:17624 [interfaces.py:start():190] Started network monitoring
+2023-11-25 11:13:10,860 DEBUG   HandlerThread:17624 [system_info.py:_probe_git():181] Probing git
+2023-11-25 11:13:11,006 DEBUG   HandlerThread:17624 [system_info.py:_probe_git():189] Probing git done
+2023-11-25 11:13:11,006 DEBUG   HandlerThread:17624 [system_info.py:probe():244] Probing system done
+2023-11-25 11:13:11,006 DEBUG   HandlerThread:17624 [system_monitor.py:probe():223] {'os': 'Windows-10-10.0.19045-SP0', 'python': '3.10.13', 'heartbeatAt': '2023-11-25T02:13:10.834223', 'startedAt': '2023-11-25T02:13:09.057544', 'docker': None, 'cuda': None, 'args': (), 'state': 'running', 'program': 'C:\\Users\\theho\\git_AI_Application_Practice\\07.Olympic\\f_ppo_train.py', 'codePathLocal': 'f_ppo_train.py', 'codePath': '07.Olympic\\f_ppo_train.py', 'git': {'remote': 'https://github.com/dmlcksghd/AI_Application_Practice.git', 'commit': '64f8938f6e2435bc209d01140cb58f05f6deb467'}, 'email': 'dmlcksghd', 'root': 'C:/Users/theho/git_AI_Application_Practice', 'host': 'DESKTOP-6GREP35', 'username': 'theho', 'executable': 'C:\\Users\\theho\\anaconda3\\envs\\AI_Lecture\\python.exe', 'cpu_count': 6, 'cpu_count_logical': 12, 'cpu_freq': {'current': 3400.0, 'min': 0.0, 'max': 3400.0}, 'cpu_freq_per_core': [{'current': 3400.0, 'min': 0.0, 'max': 3400.0}], 'disk': {'/': {'total': 464.688663482666, 'used': 280.2708969116211}}, 'memory': {'total': 15.948715209960938}}
+2023-11-25 11:13:11,006 INFO    HandlerThread:17624 [system_monitor.py:probe():224] Finished collecting system info
+2023-11-25 11:13:11,006 INFO    HandlerThread:17624 [system_monitor.py:probe():227] Publishing system info
+2023-11-25 11:13:11,006 DEBUG   HandlerThread:17624 [system_info.py:_save_pip():52] Saving list of pip packages installed into the current environment
+2023-11-25 11:13:11,008 DEBUG   HandlerThread:17624 [system_info.py:_save_pip():68] Saving pip packages done
+2023-11-25 11:13:11,008 DEBUG   HandlerThread:17624 [system_info.py:_save_conda():75] Saving list of conda packages installed into the current environment
+2023-11-25 11:13:11,181 INFO    Thread-16 :17624 [dir_watcher.py:_on_file_created():271] file/dir created: C:\Users\theho\git_AI_Application_Practice\07.Olympic\wandb\run-20231125_111309-2lbo9nfx\files\requirements.txt
+2023-11-25 11:13:11,181 INFO    Thread-16 :17624 [dir_watcher.py:_on_file_created():271] file/dir created: C:\Users\theho\git_AI_Application_Practice\07.Olympic\wandb\run-20231125_111309-2lbo9nfx\files\conda-environment.yaml
+2023-11-25 11:13:17,214 INFO    Thread-16 :17624 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\theho\git_AI_Application_Practice\07.Olympic\wandb\run-20231125_111309-2lbo9nfx\files\conda-environment.yaml
+2023-11-25 11:13:17,346 DEBUG   HandlerThread:17624 [system_info.py:_save_conda():87] Saving conda packages done
+2023-11-25 11:13:17,348 INFO    HandlerThread:17624 [system_monitor.py:probe():229] Finished publishing system info
+2023-11-25 11:13:17,365 DEBUG   HandlerThread:17624 [handler.py:handle_request():146] handle_request: status_report
+2023-11-25 11:13:17,365 DEBUG   HandlerThread:17624 [handler.py:handle_request():146] handle_request: keepalive
+2023-11-25 11:13:17,365 DEBUG   SenderThread:17624 [sender.py:send():380] send: files
+2023-11-25 11:13:17,365 INFO    SenderThread:17624 [sender.py:_save_file():1380] saving file wandb-metadata.json with policy now
+2023-11-25 11:13:17,377 DEBUG   HandlerThread:17624 [handler.py:handle_request():146] handle_request: stop_status
+2023-11-25 11:13:17,377 DEBUG   HandlerThread:17624 [handler.py:handle_request():146] handle_request: internal_messages
+2023-11-25 11:13:17,378 DEBUG   SenderThread:17624 [sender.py:send_request():407] send_request: stop_status
+2023-11-25 11:13:18,220 INFO    Thread-16 :17624 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\theho\git_AI_Application_Practice\07.Olympic\wandb\run-20231125_111309-2lbo9nfx\files\conda-environment.yaml
+2023-11-25 11:13:18,220 INFO    Thread-16 :17624 [dir_watcher.py:_on_file_created():271] file/dir created: C:\Users\theho\git_AI_Application_Practice\07.Olympic\wandb\run-20231125_111309-2lbo9nfx\files\wandb-metadata.json
+2023-11-25 11:13:18,337 DEBUG   SenderThread:17624 [sender.py:send():380] send: telemetry
+2023-11-25 11:13:18,790 INFO    wandb-upload_0:17624 [upload_job.py:push():131] Uploaded file C:\Users\theho\AppData\Local\Temp\tmpar0l3va9wandb\b64xutvg-wandb-metadata.json
+2023-11-25 11:13:20,349 DEBUG   HandlerThread:17624 [handler.py:handle_request():146] handle_request: status_report
+2023-11-25 11:13:25,375 DEBUG   HandlerThread:17624 [handler.py:handle_request():146] handle_request: status_report
+2023-11-25 11:13:30,402 DEBUG   HandlerThread:17624 [handler.py:handle_request():146] handle_request: status_report
+2023-11-25 11:13:32,366 DEBUG   HandlerThread:17624 [handler.py:handle_request():146] handle_request: internal_messages
+2023-11-25 11:13:32,390 DEBUG   HandlerThread:17624 [handler.py:handle_request():146] handle_request: stop_status
+2023-11-25 11:13:32,390 DEBUG   SenderThread:17624 [sender.py:send_request():407] send_request: stop_status
+2023-11-25 11:13:35,625 DEBUG   HandlerThread:17624 [handler.py:handle_request():146] handle_request: status_report
+2023-11-25 11:13:40,658 DEBUG   HandlerThread:17624 [handler.py:handle_request():146] handle_request: status_report
+2023-11-25 11:13:41,344 INFO    Thread-16 :17624 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\theho\git_AI_Application_Practice\07.Olympic\wandb\run-20231125_111309-2lbo9nfx\files\config.yaml
+2023-11-25 11:13:45,919 DEBUG   HandlerThread:17624 [handler.py:handle_request():146] handle_request: status_report
+2023-11-25 11:13:47,381 DEBUG   HandlerThread:17624 [handler.py:handle_request():146] handle_request: stop_status
+2023-11-25 11:13:47,381 DEBUG   SenderThread:17624 [sender.py:send_request():407] send_request: stop_status
+2023-11-25 11:13:47,383 DEBUG   HandlerThread:17624 [handler.py:handle_request():146] handle_request: internal_messages
+2023-11-25 11:13:51,711 DEBUG   HandlerThread:17624 [handler.py:handle_request():146] handle_request: status_report
+2023-11-25 11:13:56,737 DEBUG   HandlerThread:17624 [handler.py:handle_request():146] handle_request: status_report
+2023-11-25 11:14:01,766 DEBUG   HandlerThread:17624 [handler.py:handle_request():146] handle_request: status_report
+2023-11-25 11:14:02,381 DEBUG   HandlerThread:17624 [handler.py:handle_request():146] handle_request: internal_messages
+2023-11-25 11:14:02,381 DEBUG   HandlerThread:17624 [handler.py:handle_request():146] handle_request: stop_status
+2023-11-25 11:14:02,381 DEBUG   SenderThread:17624 [sender.py:send_request():407] send_request: stop_status
+2023-11-25 11:14:07,708 DEBUG   HandlerThread:17624 [handler.py:handle_request():146] handle_request: status_report
+2023-11-25 11:14:10,859 DEBUG   SystemMonitor:17624 [system_monitor.py:_start():172] Starting system metrics aggregation loop
+2023-11-25 11:14:10,860 DEBUG   SenderThread:17624 [sender.py:send():380] send: stats
+2023-11-25 11:14:13,649 INFO    Thread-16 :17624 [dir_watcher.py:_on_file_created():271] file/dir created: C:\Users\theho\git_AI_Application_Practice\07.Olympic\wandb\run-20231125_111309-2lbo9nfx\files\output.log
+2023-11-25 11:14:13,694 DEBUG   HandlerThread:17624 [handler.py:handle_request():146] handle_request: status_report
+2023-11-25 11:14:15,677 INFO    Thread-16 :17624 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\theho\git_AI_Application_Practice\07.Olympic\wandb\run-20231125_111309-2lbo9nfx\files\output.log
+2023-11-25 11:14:17,377 DEBUG   HandlerThread:17624 [handler.py:handle_request():146] handle_request: internal_messages
+2023-11-25 11:14:17,399 DEBUG   HandlerThread:17624 [handler.py:handle_request():146] handle_request: stop_status
+2023-11-25 11:14:17,400 DEBUG   SenderThread:17624 [sender.py:send_request():407] send_request: stop_status
+2023-11-25 11:14:19,681 DEBUG   HandlerThread:17624 [handler.py:handle_request():146] handle_request: status_report
+2023-11-25 11:14:24,707 DEBUG   HandlerThread:17624 [handler.py:handle_request():146] handle_request: status_report
+2023-11-25 11:14:29,736 DEBUG   HandlerThread:17624 [handler.py:handle_request():146] handle_request: status_report
+2023-11-25 11:14:32,365 DEBUG   HandlerThread:17624 [handler.py:handle_request():146] handle_request: internal_messages
+2023-11-25 11:14:32,388 DEBUG   HandlerThread:17624 [handler.py:handle_request():146] handle_request: stop_status
+2023-11-25 11:14:32,389 DEBUG   SenderThread:17624 [sender.py:send_request():407] send_request: stop_status
+2023-11-25 11:14:35,649 DEBUG   HandlerThread:17624 [handler.py:handle_request():146] handle_request: status_report
+2023-11-25 11:14:40,676 DEBUG   HandlerThread:17624 [handler.py:handle_request():146] handle_request: status_report
+2023-11-25 11:14:40,872 DEBUG   SenderThread:17624 [sender.py:send():380] send: stats
+2023-11-25 11:14:45,898 DEBUG   HandlerThread:17624 [handler.py:handle_request():146] handle_request: status_report
+2023-11-25 11:14:47,366 DEBUG   HandlerThread:17624 [handler.py:handle_request():146] handle_request: internal_messages
+2023-11-25 11:14:47,386 DEBUG   HandlerThread:17624 [handler.py:handle_request():146] handle_request: stop_status
+2023-11-25 11:14:47,386 DEBUG   SenderThread:17624 [sender.py:send_request():407] send_request: stop_status
+2023-11-25 11:14:51,326 DEBUG   HandlerThread:17624 [handler.py:handle_request():146] handle_request: status_report
+2023-11-25 11:14:51,327 DEBUG   SenderThread:17624 [sender.py:send():380] send: exit
+2023-11-25 11:14:51,327 INFO    SenderThread:17624 [sender.py:send_exit():585] handling exit code: 255
+2023-11-25 11:14:51,327 INFO    SenderThread:17624 [sender.py:send_exit():587] handling runtime: 100
+2023-11-25 11:14:51,328 INFO    SenderThread:17624 [sender.py:_save_file():1380] saving file wandb-summary.json with policy end
+2023-11-25 11:14:51,329 INFO    SenderThread:17624 [sender.py:send_exit():593] send defer
+2023-11-25 11:14:51,329 DEBUG   HandlerThread:17624 [handler.py:handle_request():146] handle_request: defer
+2023-11-25 11:14:51,329 INFO    HandlerThread:17624 [handler.py:handle_request_defer():172] handle defer: 0
+2023-11-25 11:14:51,330 DEBUG   SenderThread:17624 [sender.py:send_request():407] send_request: defer
+2023-11-25 11:14:51,330 INFO    SenderThread:17624 [sender.py:send_request_defer():609] handle sender defer: 0
+2023-11-25 11:14:51,330 INFO    SenderThread:17624 [sender.py:transition_state():613] send defer: 1
+2023-11-25 11:14:51,330 DEBUG   HandlerThread:17624 [handler.py:handle_request():146] handle_request: defer
+2023-11-25 11:14:51,330 INFO    HandlerThread:17624 [handler.py:handle_request_defer():172] handle defer: 1
+2023-11-25 11:14:51,330 DEBUG   SenderThread:17624 [sender.py:send_request():407] send_request: defer
+2023-11-25 11:14:51,330 INFO    SenderThread:17624 [sender.py:send_request_defer():609] handle sender defer: 1
+2023-11-25 11:14:51,331 INFO    SenderThread:17624 [sender.py:transition_state():613] send defer: 2
+2023-11-25 11:14:51,331 DEBUG   HandlerThread:17624 [handler.py:handle_request():146] handle_request: defer
+2023-11-25 11:14:51,331 INFO    HandlerThread:17624 [handler.py:handle_request_defer():172] handle defer: 2
+2023-11-25 11:14:51,331 INFO    HandlerThread:17624 [system_monitor.py:finish():203] Stopping system monitor
+2023-11-25 11:14:51,331 DEBUG   SystemMonitor:17624 [system_monitor.py:_start():179] Finished system metrics aggregation loop
+2023-11-25 11:14:51,331 INFO    HandlerThread:17624 [interfaces.py:finish():202] Joined cpu monitor
+2023-11-25 11:14:51,332 DEBUG   SystemMonitor:17624 [system_monitor.py:_start():183] Publishing last batch of metrics
+2023-11-25 11:14:51,332 INFO    HandlerThread:17624 [interfaces.py:finish():202] Joined disk monitor
+2023-11-25 11:14:51,333 INFO    HandlerThread:17624 [interfaces.py:finish():202] Joined memory monitor
+2023-11-25 11:14:51,333 INFO    HandlerThread:17624 [interfaces.py:finish():202] Joined network monitor
+2023-11-25 11:14:51,333 DEBUG   SenderThread:17624 [sender.py:send_request():407] send_request: defer
+2023-11-25 11:14:51,333 INFO    SenderThread:17624 [sender.py:send_request_defer():609] handle sender defer: 2
+2023-11-25 11:14:51,334 INFO    SenderThread:17624 [sender.py:transition_state():613] send defer: 3
+2023-11-25 11:14:51,334 DEBUG   SenderThread:17624 [sender.py:send():380] send: stats
+2023-11-25 11:14:51,334 DEBUG   HandlerThread:17624 [handler.py:handle_request():146] handle_request: defer
+2023-11-25 11:14:51,334 INFO    HandlerThread:17624 [handler.py:handle_request_defer():172] handle defer: 3
+2023-11-25 11:14:51,334 DEBUG   SenderThread:17624 [sender.py:send_request():407] send_request: defer
+2023-11-25 11:14:51,335 INFO    SenderThread:17624 [sender.py:send_request_defer():609] handle sender defer: 3
+2023-11-25 11:14:51,335 INFO    SenderThread:17624 [sender.py:transition_state():613] send defer: 4
+2023-11-25 11:14:51,335 DEBUG   HandlerThread:17624 [handler.py:handle_request():146] handle_request: defer
+2023-11-25 11:14:51,335 INFO    HandlerThread:17624 [handler.py:handle_request_defer():172] handle defer: 4
+2023-11-25 11:14:51,335 DEBUG   SenderThread:17624 [sender.py:send_request():407] send_request: defer
+2023-11-25 11:14:51,335 INFO    SenderThread:17624 [sender.py:send_request_defer():609] handle sender defer: 4
+2023-11-25 11:14:51,335 INFO    SenderThread:17624 [sender.py:transition_state():613] send defer: 5
+2023-11-25 11:14:51,335 DEBUG   HandlerThread:17624 [handler.py:handle_request():146] handle_request: defer
+2023-11-25 11:14:51,336 INFO    HandlerThread:17624 [handler.py:handle_request_defer():172] handle defer: 5
+2023-11-25 11:14:51,336 DEBUG   SenderThread:17624 [sender.py:send():380] send: summary
+2023-11-25 11:14:51,337 INFO    SenderThread:17624 [sender.py:_save_file():1380] saving file wandb-summary.json with policy end
+2023-11-25 11:14:51,337 DEBUG   SenderThread:17624 [sender.py:send_request():407] send_request: defer
+2023-11-25 11:14:51,337 INFO    SenderThread:17624 [sender.py:send_request_defer():609] handle sender defer: 5
+2023-11-25 11:14:51,337 INFO    SenderThread:17624 [sender.py:transition_state():613] send defer: 6
+2023-11-25 11:14:51,338 DEBUG   HandlerThread:17624 [handler.py:handle_request():146] handle_request: defer
+2023-11-25 11:14:51,338 INFO    HandlerThread:17624 [handler.py:handle_request_defer():172] handle defer: 6
+2023-11-25 11:14:51,338 DEBUG   SenderThread:17624 [sender.py:send_request():407] send_request: defer
+2023-11-25 11:14:51,338 INFO    SenderThread:17624 [sender.py:send_request_defer():609] handle sender defer: 6
+2023-11-25 11:14:51,338 INFO    SenderThread:17624 [sender.py:transition_state():613] send defer: 7
+2023-11-25 11:14:51,338 DEBUG   HandlerThread:17624 [handler.py:handle_request():146] handle_request: status_report
+2023-11-25 11:14:51,338 DEBUG   HandlerThread:17624 [handler.py:handle_request():146] handle_request: defer
+2023-11-25 11:14:51,339 INFO    HandlerThread:17624 [handler.py:handle_request_defer():172] handle defer: 7
+2023-11-25 11:14:51,339 DEBUG   SenderThread:17624 [sender.py:send_request():407] send_request: defer
+2023-11-25 11:14:51,339 INFO    SenderThread:17624 [sender.py:send_request_defer():609] handle sender defer: 7
+2023-11-25 11:14:52,129 INFO    Thread-16 :17624 [dir_watcher.py:_on_file_created():271] file/dir created: C:\Users\theho\git_AI_Application_Practice\07.Olympic\wandb\run-20231125_111309-2lbo9nfx\files\wandb-summary.json
+2023-11-25 11:14:52,339 DEBUG   HandlerThread:17624 [handler.py:handle_request():146] handle_request: poll_exit
+2023-11-25 11:14:53,368 INFO    SenderThread:17624 [sender.py:transition_state():613] send defer: 8
+2023-11-25 11:14:53,368 DEBUG   SenderThread:17624 [sender.py:send_request():407] send_request: poll_exit
+2023-11-25 11:14:53,368 DEBUG   HandlerThread:17624 [handler.py:handle_request():146] handle_request: defer
+2023-11-25 11:14:53,369 INFO    HandlerThread:17624 [handler.py:handle_request_defer():172] handle defer: 8
+2023-11-25 11:14:53,369 DEBUG   SenderThread:17624 [sender.py:send_request():407] send_request: defer
+2023-11-25 11:14:53,369 INFO    SenderThread:17624 [sender.py:send_request_defer():609] handle sender defer: 8
+2023-11-25 11:14:53,369 INFO    SenderThread:17624 [job_builder.py:build():298] Attempting to build job artifact
+2023-11-25 11:14:53,370 INFO    SenderThread:17624 [job_builder.py:_get_source_type():428] is repo sourced job
+2023-11-25 11:14:53,969 INFO    SenderThread:17624 [job_builder.py:build():404] adding wandb-job metadata file
+2023-11-25 11:14:53,994 INFO    SenderThread:17624 [sender.py:transition_state():613] send defer: 9
+2023-11-25 11:14:53,994 DEBUG   HandlerThread:17624 [handler.py:handle_request():146] handle_request: defer
+2023-11-25 11:14:53,994 DEBUG   SenderThread:17624 [sender.py:send():380] send: artifact
+2023-11-25 11:14:53,994 INFO    HandlerThread:17624 [handler.py:handle_request_defer():172] handle defer: 9
+2023-11-25 11:14:54,140 INFO    Thread-16 :17624 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\theho\git_AI_Application_Practice\07.Olympic\wandb\run-20231125_111309-2lbo9nfx\files\output.log
+2023-11-25 11:14:55,403 INFO    wandb-upload_0:17624 [upload_job.py:push():86] Skipped uploading C:\Users\theho\AppData\Local\wandb\wandb\artifacts\staging\tmppb1qrkra
+2023-11-25 11:14:56,259 INFO    wandb-upload_1:17624 [upload_job.py:push():89] Uploaded file C:\Users\theho\AppData\Local\wandb\wandb\artifacts\staging\tmpy283l2hf
+2023-11-25 11:14:57,366 DEBUG   HandlerThread:17624 [handler.py:handle_request():146] handle_request: keepalive
+2023-11-25 11:14:57,587 INFO    SenderThread:17624 [sender.py:send_artifact():1458] sent artifact job-https___github.com_dmlcksghd_AI_Application_Practice.git_07.Olympic_f_ppo_train.py - {'id': 'QXJ0aWZhY3Q6NjQ4MzcwNjc3', 'state': 'PENDING', 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjExNzQ3MDU0OA==', 'latestArtifact': {'id': 'QXJ0aWZhY3Q6NjQ2NjgzMDc4', 'versionIndex': 5}}}
+2023-11-25 11:14:57,587 DEBUG   SenderThread:17624 [sender.py:send_request():407] send_request: defer
+2023-11-25 11:14:57,588 DEBUG   HandlerThread:17624 [handler.py:handle_request():146] handle_request: status_report
+2023-11-25 11:14:57,588 INFO    SenderThread:17624 [sender.py:send_request_defer():609] handle sender defer: 9
+2023-11-25 11:14:57,588 INFO    SenderThread:17624 [dir_watcher.py:finish():358] shutting down directory watcher
+2023-11-25 11:14:58,163 INFO    SenderThread:17624 [dir_watcher.py:finish():388] scan: C:\Users\theho\git_AI_Application_Practice\07.Olympic\wandb\run-20231125_111309-2lbo9nfx\files
+2023-11-25 11:14:58,163 INFO    SenderThread:17624 [dir_watcher.py:finish():402] scan save: C:\Users\theho\git_AI_Application_Practice\07.Olympic\wandb\run-20231125_111309-2lbo9nfx\files\conda-environment.yaml conda-environment.yaml
+2023-11-25 11:14:58,163 INFO    SenderThread:17624 [dir_watcher.py:finish():402] scan save: C:\Users\theho\git_AI_Application_Practice\07.Olympic\wandb\run-20231125_111309-2lbo9nfx\files\config.yaml config.yaml
+2023-11-25 11:14:58,166 INFO    SenderThread:17624 [dir_watcher.py:finish():402] scan save: C:\Users\theho\git_AI_Application_Practice\07.Olympic\wandb\run-20231125_111309-2lbo9nfx\files\output.log output.log
+2023-11-25 11:14:58,169 INFO    SenderThread:17624 [dir_watcher.py:finish():402] scan save: C:\Users\theho\git_AI_Application_Practice\07.Olympic\wandb\run-20231125_111309-2lbo9nfx\files\requirements.txt requirements.txt
+2023-11-25 11:14:58,203 INFO    SenderThread:17624 [dir_watcher.py:finish():402] scan save: C:\Users\theho\git_AI_Application_Practice\07.Olympic\wandb\run-20231125_111309-2lbo9nfx\files\wandb-metadata.json wandb-metadata.json
+2023-11-25 11:14:58,203 INFO    SenderThread:17624 [dir_watcher.py:finish():402] scan save: C:\Users\theho\git_AI_Application_Practice\07.Olympic\wandb\run-20231125_111309-2lbo9nfx\files\wandb-summary.json wandb-summary.json
+2023-11-25 11:14:58,207 INFO    SenderThread:17624 [sender.py:transition_state():613] send defer: 10
+2023-11-25 11:14:58,207 DEBUG   HandlerThread:17624 [handler.py:handle_request():146] handle_request: defer
+2023-11-25 11:14:58,208 INFO    HandlerThread:17624 [handler.py:handle_request_defer():172] handle defer: 10
+2023-11-25 11:14:58,210 DEBUG   SenderThread:17624 [sender.py:send_request():407] send_request: defer
+2023-11-25 11:14:58,210 INFO    SenderThread:17624 [sender.py:send_request_defer():609] handle sender defer: 10
+2023-11-25 11:14:58,210 INFO    SenderThread:17624 [file_pusher.py:finish():175] shutting down file pusher
+2023-11-25 11:14:58,638 INFO    wandb-upload_0:17624 [upload_job.py:push():131] Uploaded file C:\Users\theho\git_AI_Application_Practice\07.Olympic\wandb\run-20231125_111309-2lbo9nfx\files\conda-environment.yaml
+2023-11-25 11:14:59,254 ERROR   wandb-upload_2:17624 [internal_api.py:execute():370] 404 response executing GraphQL.
+2023-11-25 11:14:59,255 ERROR   wandb-upload_2:17624 [internal_api.py:execute():371] {"errors":[{"message":"run olympics-running/2lbo9nfx not found during createRunFiles","path":["createRunFiles"]}],"data":{"createRunFiles":null}}
+2023-11-25 11:14:59,255 ERROR   Thread-15 (_thread_body):17624 [step_upload.py:_handle_event():200] Failed to upload file: C:\Users\theho\git_AI_Application_Practice\07.Olympic\wandb\run-20231125_111309-2lbo9nfx\files\output.log
+Traceback (most recent call last):
+  File "C:\Users\theho\anaconda3\envs\AI_Lecture\lib\site-packages\wandb\sdk\lib\retry.py", line 131, in __call__
+    result = self._call_fn(*args, **kwargs)
+  File "C:\Users\theho\anaconda3\envs\AI_Lecture\lib\site-packages\wandb\sdk\internal\internal_api.py", line 366, in execute
+    return self.client.execute(*args, **kwargs)  # type: ignore
+  File "C:\Users\theho\anaconda3\envs\AI_Lecture\lib\site-packages\wandb\vendor\gql-0.2.0\wandb_gql\client.py", line 52, in execute
+    result = self._get_result(document, *args, **kwargs)
+  File "C:\Users\theho\anaconda3\envs\AI_Lecture\lib\site-packages\wandb\vendor\gql-0.2.0\wandb_gql\client.py", line 60, in _get_result
+    return self.transport.execute(document, *args, **kwargs)
+  File "C:\Users\theho\anaconda3\envs\AI_Lecture\lib\site-packages\wandb\sdk\lib\gql_request.py", line 59, in execute
+    request.raise_for_status()
+  File "C:\Users\theho\anaconda3\envs\AI_Lecture\lib\site-packages\requests\models.py", line 1021, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 404 Client Error: Not Found for url: https://api.wandb.ai/graphql
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\theho\anaconda3\envs\AI_Lecture\lib\concurrent\futures\thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "C:\Users\theho\anaconda3\envs\AI_Lecture\lib\site-packages\wandb\filesync\step_upload.py", line 288, in run_and_notify
+    self._do_upload_sync(event)
+  File "C:\Users\theho\anaconda3\envs\AI_Lecture\lib\site-packages\wandb\filesync\step_upload.py", line 330, in _do_upload_sync
+    job.run()
+  File "C:\Users\theho\anaconda3\envs\AI_Lecture\lib\site-packages\wandb\filesync\upload_job.py", line 57, in run
+    self.push()
+  File "C:\Users\theho\anaconda3\envs\AI_Lecture\lib\site-packages\wandb\filesync\upload_job.py", line 106, in push
+    _, upload_headers, result = self._api.upload_urls(project, [self.save_name])
+  File "C:\Users\theho\anaconda3\envs\AI_Lecture\lib\site-packages\wandb\apis\normalize.py", line 73, in wrapper
+    raise err
+  File "C:\Users\theho\anaconda3\envs\AI_Lecture\lib\site-packages\wandb\apis\normalize.py", line 41, in wrapper
+    return func(*args, **kwargs)
+  File "C:\Users\theho\anaconda3\envs\AI_Lecture\lib\site-packages\wandb\sdk\internal\internal_api.py", line 2176, in upload_urls
+    query_result = self.gql(
+  File "C:\Users\theho\anaconda3\envs\AI_Lecture\lib\site-packages\wandb\sdk\internal\internal_api.py", line 338, in gql
+    ret = self._retry_gql(
+  File "C:\Users\theho\anaconda3\envs\AI_Lecture\lib\site-packages\wandb\sdk\lib\retry.py", line 147, in __call__
+    retry_timedelta_triggered = check_retry_fn(e)
+  File "C:\Users\theho\anaconda3\envs\AI_Lecture\lib\site-packages\wandb\util.py", line 907, in no_retry_auth
+    raise CommError(
+wandb.errors.CommError: It appears that you do not have permission to access the requested resource. Please reach out to the project owner to grant you access. If you have the correct permissions, verify that there are no issues with your networking setup.(Error 404: Not Found)
+2023-11-25 11:14:59,286 ERROR   wandb-upload_3:17624 [internal_api.py:execute():370] 404 response executing GraphQL.
+2023-11-25 11:14:59,286 ERROR   wandb-upload_3:17624 [internal_api.py:execute():371] {"errors":[{"message":"run olympics-running/2lbo9nfx not found during createRunFiles","path":["createRunFiles"]}],"data":{"createRunFiles":null}}
+2023-11-25 11:14:59,287 ERROR   Thread-15 (_thread_body):17624 [step_upload.py:_handle_event():200] Failed to upload file: C:\Users\theho\git_AI_Application_Practice\07.Olympic\wandb\run-20231125_111309-2lbo9nfx\files\requirements.txt
+Traceback (most recent call last):
+  File "C:\Users\theho\anaconda3\envs\AI_Lecture\lib\site-packages\wandb\sdk\lib\retry.py", line 131, in __call__
+    result = self._call_fn(*args, **kwargs)
+  File "C:\Users\theho\anaconda3\envs\AI_Lecture\lib\site-packages\wandb\sdk\internal\internal_api.py", line 366, in execute
+    return self.client.execute(*args, **kwargs)  # type: ignore
+  File "C:\Users\theho\anaconda3\envs\AI_Lecture\lib\site-packages\wandb\vendor\gql-0.2.0\wandb_gql\client.py", line 52, in execute
+    result = self._get_result(document, *args, **kwargs)
+  File "C:\Users\theho\anaconda3\envs\AI_Lecture\lib\site-packages\wandb\vendor\gql-0.2.0\wandb_gql\client.py", line 60, in _get_result
+    return self.transport.execute(document, *args, **kwargs)
+  File "C:\Users\theho\anaconda3\envs\AI_Lecture\lib\site-packages\wandb\sdk\lib\gql_request.py", line 59, in execute
+    request.raise_for_status()
+  File "C:\Users\theho\anaconda3\envs\AI_Lecture\lib\site-packages\requests\models.py", line 1021, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 404 Client Error: Not Found for url: https://api.wandb.ai/graphql
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\theho\anaconda3\envs\AI_Lecture\lib\concurrent\futures\thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "C:\Users\theho\anaconda3\envs\AI_Lecture\lib\site-packages\wandb\filesync\step_upload.py", line 288, in run_and_notify
+    self._do_upload_sync(event)
+  File "C:\Users\theho\anaconda3\envs\AI_Lecture\lib\site-packages\wandb\filesync\step_upload.py", line 330, in _do_upload_sync
+    job.run()
+  File "C:\Users\theho\anaconda3\envs\AI_Lecture\lib\site-packages\wandb\filesync\upload_job.py", line 57, in run
+    self.push()
+  File "C:\Users\theho\anaconda3\envs\AI_Lecture\lib\site-packages\wandb\filesync\upload_job.py", line 106, in push
+    _, upload_headers, result = self._api.upload_urls(project, [self.save_name])
+  File "C:\Users\theho\anaconda3\envs\AI_Lecture\lib\site-packages\wandb\apis\normalize.py", line 73, in wrapper
+    raise err
+  File "C:\Users\theho\anaconda3\envs\AI_Lecture\lib\site-packages\wandb\apis\normalize.py", line 41, in wrapper
+    return func(*args, **kwargs)
+  File "C:\Users\theho\anaconda3\envs\AI_Lecture\lib\site-packages\wandb\sdk\internal\internal_api.py", line 2176, in upload_urls
+    query_result = self.gql(
+  File "C:\Users\theho\anaconda3\envs\AI_Lecture\lib\site-packages\wandb\sdk\internal\internal_api.py", line 338, in gql
+    ret = self._retry_gql(
+  File "C:\Users\theho\anaconda3\envs\AI_Lecture\lib\site-packages\wandb\sdk\lib\retry.py", line 147, in __call__
+    retry_timedelta_triggered = check_retry_fn(e)
+  File "C:\Users\theho\anaconda3\envs\AI_Lecture\lib\site-packages\wandb\util.py", line 907, in no_retry_auth
+    raise CommError(
+wandb.errors.CommError: It appears that you do not have permission to access the requested resource. Please reach out to the project owner to grant you access. If you have the correct permissions, verify that there are no issues with your networking setup.(Error 404: Not Found)
+2023-11-25 11:14:59,291 ERROR   wandb-upload_4:17624 [internal_api.py:execute():370] 404 response executing GraphQL.
+2023-11-25 11:14:59,291 ERROR   wandb-upload_4:17624 [internal_api.py:execute():371] {"errors":[{"message":"run olympics-running/2lbo9nfx not found during createRunFiles","path":["createRunFiles"]}],"data":{"createRunFiles":null}}
+2023-11-25 11:14:59,291 ERROR   Thread-15 (_thread_body):17624 [step_upload.py:_handle_event():200] Failed to upload file: C:\Users\theho\git_AI_Application_Practice\07.Olympic\wandb\run-20231125_111309-2lbo9nfx\files\wandb-summary.json
+Traceback (most recent call last):
+  File "C:\Users\theho\anaconda3\envs\AI_Lecture\lib\site-packages\wandb\sdk\lib\retry.py", line 131, in __call__
+    result = self._call_fn(*args, **kwargs)
+  File "C:\Users\theho\anaconda3\envs\AI_Lecture\lib\site-packages\wandb\sdk\internal\internal_api.py", line 366, in execute
+    return self.client.execute(*args, **kwargs)  # type: ignore
+  File "C:\Users\theho\anaconda3\envs\AI_Lecture\lib\site-packages\wandb\vendor\gql-0.2.0\wandb_gql\client.py", line 52, in execute
+    result = self._get_result(document, *args, **kwargs)
+  File "C:\Users\theho\anaconda3\envs\AI_Lecture\lib\site-packages\wandb\vendor\gql-0.2.0\wandb_gql\client.py", line 60, in _get_result
+    return self.transport.execute(document, *args, **kwargs)
+  File "C:\Users\theho\anaconda3\envs\AI_Lecture\lib\site-packages\wandb\sdk\lib\gql_request.py", line 59, in execute
+    request.raise_for_status()
+  File "C:\Users\theho\anaconda3\envs\AI_Lecture\lib\site-packages\requests\models.py", line 1021, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 404 Client Error: Not Found for url: https://api.wandb.ai/graphql
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\theho\anaconda3\envs\AI_Lecture\lib\concurrent\futures\thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "C:\Users\theho\anaconda3\envs\AI_Lecture\lib\site-packages\wandb\filesync\step_upload.py", line 288, in run_and_notify
+    self._do_upload_sync(event)
+  File "C:\Users\theho\anaconda3\envs\AI_Lecture\lib\site-packages\wandb\filesync\step_upload.py", line 330, in _do_upload_sync
+    job.run()
+  File "C:\Users\theho\anaconda3\envs\AI_Lecture\lib\site-packages\wandb\filesync\upload_job.py", line 57, in run
+    self.push()
+  File "C:\Users\theho\anaconda3\envs\AI_Lecture\lib\site-packages\wandb\filesync\upload_job.py", line 106, in push
+    _, upload_headers, result = self._api.upload_urls(project, [self.save_name])
+  File "C:\Users\theho\anaconda3\envs\AI_Lecture\lib\site-packages\wandb\apis\normalize.py", line 73, in wrapper
+    raise err
+  File "C:\Users\theho\anaconda3\envs\AI_Lecture\lib\site-packages\wandb\apis\normalize.py", line 41, in wrapper
+    return func(*args, **kwargs)
+  File "C:\Users\theho\anaconda3\envs\AI_Lecture\lib\site-packages\wandb\sdk\internal\internal_api.py", line 2176, in upload_urls
+    query_result = self.gql(
+  File "C:\Users\theho\anaconda3\envs\AI_Lecture\lib\site-packages\wandb\sdk\internal\internal_api.py", line 338, in gql
+    ret = self._retry_gql(
+  File "C:\Users\theho\anaconda3\envs\AI_Lecture\lib\site-packages\wandb\sdk\lib\retry.py", line 147, in __call__
+    retry_timedelta_triggered = check_retry_fn(e)
+  File "C:\Users\theho\anaconda3\envs\AI_Lecture\lib\site-packages\wandb\util.py", line 907, in no_retry_auth
+    raise CommError(
+wandb.errors.CommError: It appears that you do not have permission to access the requested resource. Please reach out to the project owner to grant you access. If you have the correct permissions, verify that there are no issues with your networking setup.(Error 404: Not Found)
+2023-11-25 11:14:59,456 INFO    wandb-upload_1:17624 [upload_job.py:push():131] Uploaded file C:\Users\theho\git_AI_Application_Practice\07.Olympic\wandb\run-20231125_111309-2lbo9nfx\files\config.yaml
+2023-11-25 11:14:59,663 INFO    Thread-15 (_thread_body):17624 [sender.py:transition_state():613] send defer: 11
+2023-11-25 11:14:59,663 DEBUG   HandlerThread:17624 [handler.py:handle_request():146] handle_request: defer
+2023-11-25 11:14:59,663 INFO    HandlerThread:17624 [handler.py:handle_request_defer():172] handle defer: 11
+2023-11-25 11:14:59,664 DEBUG   SenderThread:17624 [sender.py:send_request():407] send_request: defer
+2023-11-25 11:14:59,664 INFO    SenderThread:17624 [sender.py:send_request_defer():609] handle sender defer: 11
+2023-11-25 11:14:59,664 INFO    SenderThread:17624 [file_pusher.py:join():181] waiting for file pusher
+2023-11-25 11:14:59,664 INFO    SenderThread:17624 [sender.py:transition_state():613] send defer: 12
+2023-11-25 11:14:59,664 DEBUG   HandlerThread:17624 [handler.py:handle_request():146] handle_request: defer
+2023-11-25 11:14:59,664 INFO    HandlerThread:17624 [handler.py:handle_request_defer():172] handle defer: 12
+2023-11-25 11:14:59,664 DEBUG   SenderThread:17624 [sender.py:send_request():407] send_request: defer
+2023-11-25 11:14:59,664 INFO    SenderThread:17624 [sender.py:send_request_defer():609] handle sender defer: 12
+2023-11-25 11:14:59,665 INFO    SenderThread:17624 [file_stream.py:finish():595] file stream finish called
+2023-11-25 11:14:59,849 ERROR   FileStreamThread:17624 [file_stream.py:_handle_response():504] dropped chunk 404 Client Error: Not Found for url: https://api.wandb.ai/files/honguc/olympics-running/2lbo9nfx/file_stream
+NoneType: None
+2023-11-25 11:15:00,225 INFO    SenderThread:17624 [file_stream.py:finish():599] file stream finish is done
+2023-11-25 11:15:00,226 INFO    SenderThread:17624 [sender.py:transition_state():613] send defer: 13
+2023-11-25 11:15:00,226 DEBUG   HandlerThread:17624 [handler.py:handle_request():146] handle_request: defer
+2023-11-25 11:15:00,226 INFO    HandlerThread:17624 [handler.py:handle_request_defer():172] handle defer: 13
+2023-11-25 11:15:00,226 DEBUG   SenderThread:17624 [sender.py:send_request():407] send_request: defer
+2023-11-25 11:15:00,226 INFO    SenderThread:17624 [sender.py:send_request_defer():609] handle sender defer: 13
+2023-11-25 11:15:00,226 INFO    SenderThread:17624 [sender.py:transition_state():613] send defer: 14
+2023-11-25 11:15:00,227 DEBUG   SenderThread:17624 [sender.py:send():380] send: final
+2023-11-25 11:15:00,227 DEBUG   HandlerThread:17624 [handler.py:handle_request():146] handle_request: defer
+2023-11-25 11:15:00,227 DEBUG   SenderThread:17624 [sender.py:send():380] send: footer
+2023-11-25 11:15:00,227 INFO    HandlerThread:17624 [handler.py:handle_request_defer():172] handle defer: 14
+2023-11-25 11:15:00,227 DEBUG   SenderThread:17624 [sender.py:send_request():407] send_request: defer
+2023-11-25 11:15:00,227 INFO    SenderThread:17624 [sender.py:send_request_defer():609] handle sender defer: 14
+2023-11-25 11:15:00,228 DEBUG   HandlerThread:17624 [handler.py:handle_request():146] handle_request: poll_exit
+2023-11-25 11:15:00,228 DEBUG   HandlerThread:17624 [handler.py:handle_request():146] handle_request: server_info
+2023-11-25 11:15:00,228 DEBUG   HandlerThread:17624 [handler.py:handle_request():146] handle_request: get_summary
+2023-11-25 11:15:00,228 DEBUG   SenderThread:17624 [sender.py:send_request():407] send_request: poll_exit
+2023-11-25 11:15:00,228 DEBUG   HandlerThread:17624 [handler.py:handle_request():146] handle_request: sampled_history
+2023-11-25 11:15:00,229 DEBUG   SenderThread:17624 [sender.py:send_request():407] send_request: server_info
+2023-11-25 11:15:00,229 DEBUG   HandlerThread:17624 [handler.py:handle_request():146] handle_request: internal_messages
+2023-11-25 11:15:00,231 DEBUG   HandlerThread:17624 [handler.py:handle_request():146] handle_request: job_info
+2023-11-25 11:15:00,444 DEBUG   SenderThread:17624 [sender.py:send_request():407] send_request: job_info
+2023-11-25 11:15:00,444 INFO    MainThread:17624 [wandb_run.py:_footer_history_summary_info():3760] rendering history
+2023-11-25 11:15:00,444 INFO    MainThread:17624 [wandb_run.py:_footer_history_summary_info():3792] rendering summary
+2023-11-25 11:15:00,444 INFO    MainThread:17624 [wandb_run.py:_footer_sync_info():3719] logging synced files
+2023-11-25 11:15:00,445 DEBUG   HandlerThread:17624 [handler.py:handle_request():146] handle_request: shutdown
+2023-11-25 11:15:00,445 INFO    HandlerThread:17624 [handler.py:finish():866] shutting down handler
+2023-11-25 11:15:01,241 INFO    WriterThread:17624 [datastore.py:close():294] close: C:\Users\theho\git_AI_Application_Practice\07.Olympic\wandb\run-20231125_111309-2lbo9nfx\run-2lbo9nfx.wandb
+2023-11-25 11:15:01,454 INFO    SenderThread:17624 [sender.py:finish():1536] shutting down sender
+2023-11-25 11:15:01,454 INFO    SenderThread:17624 [file_pusher.py:finish():175] shutting down file pusher
+2023-11-25 11:15:01,454 INFO    SenderThread:17624 [file_pusher.py:join():181] waiting for file pusher

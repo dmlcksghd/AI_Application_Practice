@@ -1,0 +1,714 @@
+2023-12-10 15:45:22,293 INFO    StreamThr :3580 [internal.py:wandb_internal():86] W&B internal server running at pid: 3580, started at: 2023-12-10 15:45:22.292995
+2023-12-10 15:45:22,295 DEBUG   HandlerThread:3580 [handler.py:handle_request():146] handle_request: status
+2023-12-10 15:45:22,302 INFO    WriterThread:3580 [datastore.py:open_for_write():85] open: C:\Users\theho\git_AI_Application_Practice\Olympic\wandb\run-20231210_154522-4t76ovvu\run-4t76ovvu.wandb
+2023-12-10 15:45:22,303 DEBUG   SenderThread:3580 [sender.py:send():380] send: header
+2023-12-10 15:45:22,412 DEBUG   SenderThread:3580 [sender.py:send():380] send: run
+2023-12-10 15:45:23,490 INFO    SenderThread:3580 [dir_watcher.py:__init__():211] watching files in: C:\Users\theho\git_AI_Application_Practice\Olympic\wandb\run-20231210_154522-4t76ovvu\files
+2023-12-10 15:45:23,491 INFO    SenderThread:3580 [sender.py:_start_run_threads():1124] run started: 4t76ovvu with start time 1702190722.295996
+2023-12-10 15:45:23,507 DEBUG   HandlerThread:3580 [handler.py:handle_request():146] handle_request: check_version
+2023-12-10 15:45:23,507 DEBUG   SenderThread:3580 [sender.py:send_request():407] send_request: check_version
+2023-12-10 15:45:24,194 DEBUG   HandlerThread:3580 [handler.py:handle_request():146] handle_request: run_start
+2023-12-10 15:45:24,212 DEBUG   HandlerThread:3580 [system_info.py:__init__():32] System info init
+2023-12-10 15:45:24,213 DEBUG   HandlerThread:3580 [system_info.py:__init__():47] System info init done
+2023-12-10 15:45:24,213 INFO    HandlerThread:3580 [system_monitor.py:start():194] Starting system monitor
+2023-12-10 15:45:24,213 INFO    SystemMonitor:3580 [system_monitor.py:_start():158] Starting system asset monitoring threads
+2023-12-10 15:45:24,213 INFO    HandlerThread:3580 [system_monitor.py:probe():214] Collecting system info
+2023-12-10 15:45:24,220 INFO    SystemMonitor:3580 [interfaces.py:start():190] Started cpu monitoring
+2023-12-10 15:45:24,233 DEBUG   HandlerThread:3580 [system_info.py:probe():196] Probing system
+2023-12-10 15:45:24,233 INFO    SystemMonitor:3580 [interfaces.py:start():190] Started disk monitoring
+2023-12-10 15:45:24,245 INFO    SystemMonitor:3580 [interfaces.py:start():190] Started memory monitoring
+2023-12-10 15:45:24,261 INFO    SystemMonitor:3580 [interfaces.py:start():190] Started network monitoring
+2023-12-10 15:45:24,263 DEBUG   HandlerThread:3580 [system_info.py:_probe_git():181] Probing git
+2023-12-10 15:45:24,422 DEBUG   HandlerThread:3580 [system_info.py:_probe_git():189] Probing git done
+2023-12-10 15:45:24,422 DEBUG   HandlerThread:3580 [system_info.py:probe():244] Probing system done
+2023-12-10 15:45:24,422 DEBUG   HandlerThread:3580 [system_monitor.py:probe():223] {'os': 'Windows-10-10.0.19045-SP0', 'python': '3.10.13', 'heartbeatAt': '2023-12-10T06:45:24.233563', 'startedAt': '2023-12-10T06:45:22.279991', 'docker': None, 'cuda': None, 'args': (), 'state': 'running', 'program': 'C:\\Users\\theho\\git_AI_Application_Practice\\Olympic\\f_ppo_train.py', 'codePathLocal': 'f_ppo_train.py', 'codePath': 'Olympic\\f_ppo_train.py', 'git': {'remote': 'https://github.com/dmlcksghd/AI_Application_Practice.git', 'commit': 'a2c23821989ecbb90f212dbb78e7a5cec213b8bb'}, 'email': 'dmlcksghd', 'root': 'C:/Users/theho/git_AI_Application_Practice', 'host': 'DESKTOP-6GREP35', 'username': 'theho', 'executable': 'C:\\Users\\theho\\anaconda3\\envs\\AI_Lecture\\python.exe', 'cpu_count': 6, 'cpu_count_logical': 12, 'cpu_freq': {'current': 3400.0, 'min': 0.0, 'max': 3400.0}, 'cpu_freq_per_core': [{'current': 3400.0, 'min': 0.0, 'max': 3400.0}], 'disk': {'/': {'total': 464.688663482666, 'used': 279.8791847229004}}, 'memory': {'total': 15.948715209960938}}
+2023-12-10 15:45:24,423 INFO    HandlerThread:3580 [system_monitor.py:probe():224] Finished collecting system info
+2023-12-10 15:45:24,423 INFO    HandlerThread:3580 [system_monitor.py:probe():227] Publishing system info
+2023-12-10 15:45:24,423 DEBUG   HandlerThread:3580 [system_info.py:_save_pip():52] Saving list of pip packages installed into the current environment
+2023-12-10 15:45:24,424 DEBUG   HandlerThread:3580 [system_info.py:_save_pip():68] Saving pip packages done
+2023-12-10 15:45:24,424 DEBUG   HandlerThread:3580 [system_info.py:_save_conda():75] Saving list of conda packages installed into the current environment
+2023-12-10 15:45:24,499 INFO    Thread-16 :3580 [dir_watcher.py:_on_file_created():271] file/dir created: C:\Users\theho\git_AI_Application_Practice\Olympic\wandb\run-20231210_154522-4t76ovvu\files\requirements.txt
+2023-12-10 15:45:24,499 INFO    Thread-16 :3580 [dir_watcher.py:_on_file_created():271] file/dir created: C:\Users\theho\git_AI_Application_Practice\Olympic\wandb\run-20231210_154522-4t76ovvu\files\conda-environment.yaml
+2023-12-10 15:45:31,547 INFO    Thread-16 :3580 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\theho\git_AI_Application_Practice\Olympic\wandb\run-20231210_154522-4t76ovvu\files\conda-environment.yaml
+2023-12-10 15:45:31,676 DEBUG   HandlerThread:3580 [system_info.py:_save_conda():87] Saving conda packages done
+2023-12-10 15:45:31,677 INFO    HandlerThread:3580 [system_monitor.py:probe():229] Finished publishing system info
+2023-12-10 15:45:31,703 DEBUG   HandlerThread:3580 [handler.py:handle_request():146] handle_request: status_report
+2023-12-10 15:45:31,703 DEBUG   HandlerThread:3580 [handler.py:handle_request():146] handle_request: keepalive
+2023-12-10 15:45:31,703 DEBUG   SenderThread:3580 [sender.py:send():380] send: files
+2023-12-10 15:45:31,703 INFO    SenderThread:3580 [sender.py:_save_file():1380] saving file wandb-metadata.json with policy now
+2023-12-10 15:45:31,718 DEBUG   HandlerThread:3580 [handler.py:handle_request():146] handle_request: stop_status
+2023-12-10 15:45:31,719 DEBUG   SenderThread:3580 [sender.py:send_request():407] send_request: stop_status
+2023-12-10 15:45:31,721 DEBUG   HandlerThread:3580 [handler.py:handle_request():146] handle_request: internal_messages
+2023-12-10 15:45:32,553 INFO    Thread-16 :3580 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\theho\git_AI_Application_Practice\Olympic\wandb\run-20231210_154522-4t76ovvu\files\conda-environment.yaml
+2023-12-10 15:45:32,553 INFO    Thread-16 :3580 [dir_watcher.py:_on_file_created():271] file/dir created: C:\Users\theho\git_AI_Application_Practice\Olympic\wandb\run-20231210_154522-4t76ovvu\files\wandb-metadata.json
+2023-12-10 15:45:32,608 DEBUG   SenderThread:3580 [sender.py:send():380] send: telemetry
+2023-12-10 15:45:33,112 INFO    wandb-upload_0:3580 [upload_job.py:push():131] Uploaded file C:\Users\theho\AppData\Local\Temp\tmpwym58ao8wandb\7vxqjc9g-wandb-metadata.json
+2023-12-10 15:45:33,618 DEBUG   HandlerThread:3580 [handler.py:handle_request():146] handle_request: status_report
+2023-12-10 15:45:38,648 DEBUG   HandlerThread:3580 [handler.py:handle_request():146] handle_request: status_report
+2023-12-10 15:45:43,675 DEBUG   HandlerThread:3580 [handler.py:handle_request():146] handle_request: status_report
+2023-12-10 15:45:46,730 DEBUG   HandlerThread:3580 [handler.py:handle_request():146] handle_request: stop_status
+2023-12-10 15:45:46,730 DEBUG   SenderThread:3580 [sender.py:send_request():407] send_request: stop_status
+2023-12-10 15:45:46,735 DEBUG   HandlerThread:3580 [handler.py:handle_request():146] handle_request: internal_messages
+2023-12-10 15:45:49,002 DEBUG   HandlerThread:3580 [handler.py:handle_request():146] handle_request: status_report
+2023-12-10 15:45:54,034 DEBUG   HandlerThread:3580 [handler.py:handle_request():146] handle_request: status_report
+2023-12-10 15:45:54,692 INFO    Thread-16 :3580 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\theho\git_AI_Application_Practice\Olympic\wandb\run-20231210_154522-4t76ovvu\files\config.yaml
+2023-12-10 15:45:59,297 DEBUG   HandlerThread:3580 [handler.py:handle_request():146] handle_request: status_report
+2023-12-10 15:46:01,730 DEBUG   HandlerThread:3580 [handler.py:handle_request():146] handle_request: stop_status
+2023-12-10 15:46:01,730 DEBUG   SenderThread:3580 [sender.py:send_request():407] send_request: stop_status
+2023-12-10 15:46:01,732 DEBUG   HandlerThread:3580 [handler.py:handle_request():146] handle_request: internal_messages
+2023-12-10 15:46:05,043 DEBUG   HandlerThread:3580 [handler.py:handle_request():146] handle_request: status_report
+2023-12-10 15:46:10,069 DEBUG   HandlerThread:3580 [handler.py:handle_request():146] handle_request: status_report
+2023-12-10 15:46:15,098 DEBUG   HandlerThread:3580 [handler.py:handle_request():146] handle_request: status_report
+2023-12-10 15:46:16,742 DEBUG   HandlerThread:3580 [handler.py:handle_request():146] handle_request: stop_status
+2023-12-10 15:46:16,742 DEBUG   SenderThread:3580 [sender.py:send_request():407] send_request: stop_status
+2023-12-10 15:46:16,758 DEBUG   HandlerThread:3580 [handler.py:handle_request():146] handle_request: internal_messages
+2023-12-10 15:46:21,040 DEBUG   HandlerThread:3580 [handler.py:handle_request():146] handle_request: status_report
+2023-12-10 15:46:24,265 DEBUG   SystemMonitor:3580 [system_monitor.py:_start():172] Starting system metrics aggregation loop
+2023-12-10 15:46:24,266 DEBUG   SenderThread:3580 [sender.py:send():380] send: stats
+2023-12-10 15:46:26,276 DEBUG   HandlerThread:3580 [handler.py:handle_request():146] handle_request: status_report
+2023-12-10 15:46:31,302 DEBUG   HandlerThread:3580 [handler.py:handle_request():146] handle_request: status_report
+2023-12-10 15:46:31,729 DEBUG   HandlerThread:3580 [handler.py:handle_request():146] handle_request: internal_messages
+2023-12-10 15:46:31,748 DEBUG   HandlerThread:3580 [handler.py:handle_request():146] handle_request: stop_status
+2023-12-10 15:46:31,748 DEBUG   SenderThread:3580 [sender.py:send_request():407] send_request: stop_status
+2023-12-10 15:46:37,003 DEBUG   HandlerThread:3580 [handler.py:handle_request():146] handle_request: status_report
+2023-12-10 15:46:42,032 DEBUG   HandlerThread:3580 [handler.py:handle_request():146] handle_request: status_report
+2023-12-10 15:46:46,740 DEBUG   HandlerThread:3580 [handler.py:handle_request():146] handle_request: internal_messages
+2023-12-10 15:46:46,757 DEBUG   HandlerThread:3580 [handler.py:handle_request():146] handle_request: stop_status
+2023-12-10 15:46:46,758 DEBUG   SenderThread:3580 [sender.py:send_request():407] send_request: stop_status
+2023-12-10 15:46:47,960 DEBUG   HandlerThread:3580 [handler.py:handle_request():146] handle_request: status_report
+2023-12-10 15:46:52,986 DEBUG   HandlerThread:3580 [handler.py:handle_request():146] handle_request: status_report
+2023-12-10 15:46:54,276 DEBUG   SenderThread:3580 [sender.py:send():380] send: stats
+2023-12-10 15:46:58,297 DEBUG   HandlerThread:3580 [handler.py:handle_request():146] handle_request: status_report
+2023-12-10 15:46:59,513 INFO    Thread-16 :3580 [dir_watcher.py:_on_file_created():271] file/dir created: C:\Users\theho\git_AI_Application_Practice\Olympic\wandb\run-20231210_154522-4t76ovvu\files\output.log
+2023-12-10 15:47:01,540 INFO    Thread-16 :3580 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\theho\git_AI_Application_Practice\Olympic\wandb\run-20231210_154522-4t76ovvu\files\output.log
+2023-12-10 15:47:01,728 DEBUG   HandlerThread:3580 [handler.py:handle_request():146] handle_request: internal_messages
+2023-12-10 15:47:01,762 DEBUG   HandlerThread:3580 [handler.py:handle_request():146] handle_request: stop_status
+2023-12-10 15:47:01,762 DEBUG   SenderThread:3580 [sender.py:send_request():407] send_request: stop_status
+2023-12-10 15:47:03,999 DEBUG   HandlerThread:3580 [handler.py:handle_request():146] handle_request: status_report
+2023-12-10 15:47:09,029 DEBUG   HandlerThread:3580 [handler.py:handle_request():146] handle_request: status_report
+2023-12-10 15:47:14,057 DEBUG   HandlerThread:3580 [handler.py:handle_request():146] handle_request: status_report
+2023-12-10 15:47:16,729 DEBUG   HandlerThread:3580 [handler.py:handle_request():146] handle_request: internal_messages
+2023-12-10 15:47:16,764 DEBUG   HandlerThread:3580 [handler.py:handle_request():146] handle_request: stop_status
+2023-12-10 15:47:16,765 DEBUG   SenderThread:3580 [sender.py:send_request():407] send_request: stop_status
+2023-12-10 15:47:20,016 DEBUG   HandlerThread:3580 [handler.py:handle_request():146] handle_request: status_report
+2023-12-10 15:47:24,283 DEBUG   SenderThread:3580 [sender.py:send():380] send: stats
+2023-12-10 15:47:25,287 DEBUG   HandlerThread:3580 [handler.py:handle_request():146] handle_request: status_report
+2023-12-10 15:47:30,319 DEBUG   HandlerThread:3580 [handler.py:handle_request():146] handle_request: status_report
+2023-12-10 15:47:31,732 DEBUG   HandlerThread:3580 [handler.py:handle_request():146] handle_request: internal_messages
+2023-12-10 15:47:31,755 DEBUG   HandlerThread:3580 [handler.py:handle_request():146] handle_request: stop_status
+2023-12-10 15:47:31,756 DEBUG   SenderThread:3580 [sender.py:send_request():407] send_request: stop_status
+2023-12-10 15:47:36,104 DEBUG   HandlerThread:3580 [handler.py:handle_request():146] handle_request: status_report
+2023-12-10 15:47:41,133 DEBUG   HandlerThread:3580 [handler.py:handle_request():146] handle_request: status_report
+2023-12-10 15:47:46,159 DEBUG   HandlerThread:3580 [handler.py:handle_request():146] handle_request: status_report
+2023-12-10 15:47:46,733 DEBUG   HandlerThread:3580 [handler.py:handle_request():146] handle_request: internal_messages
+2023-12-10 15:47:46,752 DEBUG   HandlerThread:3580 [handler.py:handle_request():146] handle_request: stop_status
+2023-12-10 15:47:46,753 DEBUG   SenderThread:3580 [sender.py:send_request():407] send_request: stop_status
+2023-12-10 15:47:52,088 DEBUG   HandlerThread:3580 [handler.py:handle_request():146] handle_request: status_report
+2023-12-10 15:47:54,295 DEBUG   SenderThread:3580 [sender.py:send():380] send: stats
+2023-12-10 15:47:57,311 DEBUG   HandlerThread:3580 [handler.py:handle_request():146] handle_request: status_report
+2023-12-10 15:48:01,732 DEBUG   HandlerThread:3580 [handler.py:handle_request():146] handle_request: internal_messages
+2023-12-10 15:48:01,757 DEBUG   HandlerThread:3580 [handler.py:handle_request():146] handle_request: stop_status
+2023-12-10 15:48:01,758 DEBUG   SenderThread:3580 [sender.py:send_request():407] send_request: stop_status
+2023-12-10 15:48:03,028 DEBUG   HandlerThread:3580 [handler.py:handle_request():146] handle_request: status_report
+2023-12-10 15:48:08,054 DEBUG   HandlerThread:3580 [handler.py:handle_request():146] handle_request: status_report
+2023-12-10 15:48:13,080 DEBUG   HandlerThread:3580 [handler.py:handle_request():146] handle_request: status_report
+2023-12-10 15:48:16,739 DEBUG   HandlerThread:3580 [handler.py:handle_request():146] handle_request: internal_messages
+2023-12-10 15:48:16,765 DEBUG   HandlerThread:3580 [handler.py:handle_request():146] handle_request: stop_status
+2023-12-10 15:48:16,765 DEBUG   SenderThread:3580 [sender.py:send_request():407] send_request: stop_status
+2023-12-10 15:48:19,007 DEBUG   HandlerThread:3580 [handler.py:handle_request():146] handle_request: status_report
+2023-12-10 15:48:24,034 DEBUG   HandlerThread:3580 [handler.py:handle_request():146] handle_request: status_report
+2023-12-10 15:48:24,304 DEBUG   SenderThread:3580 [sender.py:send():380] send: stats
+2023-12-10 15:48:29,094 DEBUG   HandlerThread:3580 [handler.py:handle_request():146] handle_request: status_report
+2023-12-10 15:48:30,684 INFO    Thread-16 :3580 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\theho\git_AI_Application_Practice\Olympic\wandb\run-20231210_154522-4t76ovvu\files\output.log
+2023-12-10 15:48:31,741 DEBUG   HandlerThread:3580 [handler.py:handle_request():146] handle_request: internal_messages
+2023-12-10 15:48:31,765 DEBUG   HandlerThread:3580 [handler.py:handle_request():146] handle_request: stop_status
+2023-12-10 15:48:31,766 DEBUG   SenderThread:3580 [sender.py:send_request():407] send_request: stop_status
+2023-12-10 15:48:35,017 DEBUG   HandlerThread:3580 [handler.py:handle_request():146] handle_request: status_report
+2023-12-10 15:48:40,044 DEBUG   HandlerThread:3580 [handler.py:handle_request():146] handle_request: status_report
+2023-12-10 15:48:45,070 DEBUG   HandlerThread:3580 [handler.py:handle_request():146] handle_request: status_report
+2023-12-10 15:48:46,756 DEBUG   HandlerThread:3580 [handler.py:handle_request():146] handle_request: internal_messages
+2023-12-10 15:48:46,758 DEBUG   HandlerThread:3580 [handler.py:handle_request():146] handle_request: stop_status
+2023-12-10 15:48:46,758 DEBUG   SenderThread:3580 [sender.py:send_request():407] send_request: stop_status
+2023-12-10 15:48:51,046 DEBUG   HandlerThread:3580 [handler.py:handle_request():146] handle_request: status_report
+2023-12-10 15:48:54,317 DEBUG   SenderThread:3580 [sender.py:send():380] send: stats
+2023-12-10 15:48:56,328 DEBUG   HandlerThread:3580 [handler.py:handle_request():146] handle_request: status_report
+2023-12-10 15:49:00,899 DEBUG   HandlerThread:3580 [handler.py:handle_request():146] handle_request: partial_history
+2023-12-10 15:49:00,901 DEBUG   SenderThread:3580 [sender.py:send():380] send: history
+2023-12-10 15:49:00,901 DEBUG   SenderThread:3580 [sender.py:send_request():407] send_request: summary_record
+2023-12-10 15:49:00,903 INFO    SenderThread:3580 [sender.py:_save_file():1380] saving file wandb-summary.json with policy end
+2023-12-10 15:49:01,071 INFO    Thread-16 :3580 [dir_watcher.py:_on_file_created():271] file/dir created: C:\Users\theho\git_AI_Application_Practice\Olympic\wandb\run-20231210_154522-4t76ovvu\files\wandb-summary.json
+2023-12-10 15:49:01,744 DEBUG   HandlerThread:3580 [handler.py:handle_request():146] handle_request: internal_messages
+2023-12-10 15:49:01,745 DEBUG   HandlerThread:3580 [handler.py:handle_request():146] handle_request: status_report
+2023-12-10 15:49:01,753 DEBUG   HandlerThread:3580 [handler.py:handle_request():146] handle_request: stop_status
+2023-12-10 15:49:01,753 DEBUG   SenderThread:3580 [sender.py:send_request():407] send_request: stop_status
+2023-12-10 15:49:07,071 DEBUG   HandlerThread:3580 [handler.py:handle_request():146] handle_request: status_report
+2023-12-10 15:49:12,098 DEBUG   HandlerThread:3580 [handler.py:handle_request():146] handle_request: status_report
+2023-12-10 15:49:16,746 DEBUG   HandlerThread:3580 [handler.py:handle_request():146] handle_request: internal_messages
+2023-12-10 15:49:16,767 DEBUG   HandlerThread:3580 [handler.py:handle_request():146] handle_request: stop_status
+2023-12-10 15:49:16,767 DEBUG   SenderThread:3580 [sender.py:send_request():407] send_request: stop_status
+2023-12-10 15:49:18,030 DEBUG   HandlerThread:3580 [handler.py:handle_request():146] handle_request: status_report
+2023-12-10 15:49:23,058 DEBUG   HandlerThread:3580 [handler.py:handle_request():146] handle_request: status_report
+2023-12-10 15:49:24,319 DEBUG   SenderThread:3580 [sender.py:send():380] send: stats
+2023-12-10 15:49:28,341 DEBUG   HandlerThread:3580 [handler.py:handle_request():146] handle_request: status_report
+2023-12-10 15:49:31,749 DEBUG   HandlerThread:3580 [handler.py:handle_request():146] handle_request: internal_messages
+2023-12-10 15:49:31,760 DEBUG   HandlerThread:3580 [handler.py:handle_request():146] handle_request: stop_status
+2023-12-10 15:49:31,760 DEBUG   SenderThread:3580 [sender.py:send_request():407] send_request: stop_status
+2023-12-10 15:49:34,074 DEBUG   HandlerThread:3580 [handler.py:handle_request():146] handle_request: status_report
+2023-12-10 15:49:39,104 DEBUG   HandlerThread:3580 [handler.py:handle_request():146] handle_request: status_report
+2023-12-10 15:49:44,131 DEBUG   HandlerThread:3580 [handler.py:handle_request():146] handle_request: status_report
+2023-12-10 15:49:46,760 DEBUG   HandlerThread:3580 [handler.py:handle_request():146] handle_request: stop_status
+2023-12-10 15:49:46,760 DEBUG   SenderThread:3580 [sender.py:send_request():407] send_request: stop_status
+2023-12-10 15:49:46,762 DEBUG   HandlerThread:3580 [handler.py:handle_request():146] handle_request: internal_messages
+2023-12-10 15:49:50,087 DEBUG   HandlerThread:3580 [handler.py:handle_request():146] handle_request: status_report
+2023-12-10 15:49:54,334 DEBUG   SenderThread:3580 [sender.py:send():380] send: stats
+2023-12-10 15:49:55,338 DEBUG   HandlerThread:3580 [handler.py:handle_request():146] handle_request: status_report
+2023-12-10 15:50:00,366 DEBUG   HandlerThread:3580 [handler.py:handle_request():146] handle_request: status_report
+2023-12-10 15:50:01,765 DEBUG   HandlerThread:3580 [handler.py:handle_request():146] handle_request: stop_status
+2023-12-10 15:50:01,766 DEBUG   SenderThread:3580 [sender.py:send_request():407] send_request: stop_status
+2023-12-10 15:50:01,768 DEBUG   HandlerThread:3580 [handler.py:handle_request():146] handle_request: internal_messages
+2023-12-10 15:50:06,071 DEBUG   HandlerThread:3580 [handler.py:handle_request():146] handle_request: status_report
+2023-12-10 15:50:10,979 INFO    Thread-16 :3580 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\theho\git_AI_Application_Practice\Olympic\wandb\run-20231210_154522-4t76ovvu\files\output.log
+2023-12-10 15:50:11,893 DEBUG   HandlerThread:3580 [handler.py:handle_request():146] handle_request: status_report
+2023-12-10 15:50:16,771 DEBUG   HandlerThread:3580 [handler.py:handle_request():146] handle_request: internal_messages
+2023-12-10 15:50:16,772 DEBUG   HandlerThread:3580 [handler.py:handle_request():146] handle_request: stop_status
+2023-12-10 15:50:16,772 DEBUG   SenderThread:3580 [sender.py:send_request():407] send_request: stop_status
+2023-12-10 15:50:17,008 DEBUG   HandlerThread:3580 [handler.py:handle_request():146] handle_request: status_report
+2023-12-10 15:50:22,036 DEBUG   HandlerThread:3580 [handler.py:handle_request():146] handle_request: status_report
+2023-12-10 15:50:24,347 DEBUG   SenderThread:3580 [sender.py:send():380] send: stats
+2023-12-10 15:50:27,363 DEBUG   HandlerThread:3580 [handler.py:handle_request():146] handle_request: status_report
+2023-12-10 15:50:31,772 DEBUG   HandlerThread:3580 [handler.py:handle_request():146] handle_request: internal_messages
+2023-12-10 15:50:31,787 DEBUG   HandlerThread:3580 [handler.py:handle_request():146] handle_request: stop_status
+2023-12-10 15:50:31,787 DEBUG   SenderThread:3580 [sender.py:send_request():407] send_request: stop_status
+2023-12-10 15:50:33,020 DEBUG   HandlerThread:3580 [handler.py:handle_request():146] handle_request: status_report
+2023-12-10 15:50:38,047 DEBUG   HandlerThread:3580 [handler.py:handle_request():146] handle_request: status_report
+2023-12-10 15:50:43,073 DEBUG   HandlerThread:3580 [handler.py:handle_request():146] handle_request: status_report
+2023-12-10 15:50:45,097 DEBUG   HandlerThread:3580 [handler.py:handle_request():146] handle_request: partial_history
+2023-12-10 15:50:45,098 DEBUG   SenderThread:3580 [sender.py:send():380] send: history
+2023-12-10 15:50:45,098 DEBUG   SenderThread:3580 [sender.py:send_request():407] send_request: summary_record
+2023-12-10 15:50:45,100 INFO    SenderThread:3580 [sender.py:_save_file():1380] saving file wandb-summary.json with policy end
+2023-12-10 15:50:45,415 INFO    Thread-16 :3580 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\theho\git_AI_Application_Practice\Olympic\wandb\run-20231210_154522-4t76ovvu\files\wandb-summary.json
+2023-12-10 15:50:46,757 DEBUG   HandlerThread:3580 [handler.py:handle_request():146] handle_request: internal_messages
+2023-12-10 15:50:46,762 DEBUG   HandlerThread:3580 [handler.py:handle_request():146] handle_request: stop_status
+2023-12-10 15:50:46,762 DEBUG   SenderThread:3580 [sender.py:send_request():407] send_request: stop_status
+2023-12-10 15:50:49,015 DEBUG   HandlerThread:3580 [handler.py:handle_request():146] handle_request: status_report
+2023-12-10 15:50:54,046 DEBUG   HandlerThread:3580 [handler.py:handle_request():146] handle_request: status_report
+2023-12-10 15:50:54,362 DEBUG   SenderThread:3580 [sender.py:send():380] send: stats
+2023-12-10 15:50:59,390 DEBUG   HandlerThread:3580 [handler.py:handle_request():146] handle_request: status_report
+2023-12-10 15:51:01,758 DEBUG   HandlerThread:3580 [handler.py:handle_request():146] handle_request: internal_messages
+2023-12-10 15:51:01,764 DEBUG   HandlerThread:3580 [handler.py:handle_request():146] handle_request: stop_status
+2023-12-10 15:51:01,765 DEBUG   SenderThread:3580 [sender.py:send_request():407] send_request: stop_status
+2023-12-10 15:51:05,079 DEBUG   HandlerThread:3580 [handler.py:handle_request():146] handle_request: status_report
+2023-12-10 15:51:10,109 DEBUG   HandlerThread:3580 [handler.py:handle_request():146] handle_request: status_report
+2023-12-10 15:51:15,136 DEBUG   HandlerThread:3580 [handler.py:handle_request():146] handle_request: status_report
+2023-12-10 15:51:16,761 DEBUG   HandlerThread:3580 [handler.py:handle_request():146] handle_request: internal_messages
+2023-12-10 15:51:16,764 DEBUG   HandlerThread:3580 [handler.py:handle_request():146] handle_request: stop_status
+2023-12-10 15:51:16,764 DEBUG   SenderThread:3580 [sender.py:send_request():407] send_request: stop_status
+2023-12-10 15:51:21,063 DEBUG   HandlerThread:3580 [handler.py:handle_request():146] handle_request: status_report
+2023-12-10 15:51:24,366 DEBUG   SenderThread:3580 [sender.py:send():380] send: stats
+2023-12-10 15:51:26,377 DEBUG   HandlerThread:3580 [handler.py:handle_request():146] handle_request: status_report
+2023-12-10 15:51:31,404 DEBUG   HandlerThread:3580 [handler.py:handle_request():146] handle_request: status_report
+2023-12-10 15:51:31,763 DEBUG   HandlerThread:3580 [handler.py:handle_request():146] handle_request: stop_status
+2023-12-10 15:51:31,763 DEBUG   SenderThread:3580 [sender.py:send_request():407] send_request: stop_status
+2023-12-10 15:51:31,765 DEBUG   HandlerThread:3580 [handler.py:handle_request():146] handle_request: internal_messages
+2023-12-10 15:51:37,091 DEBUG   HandlerThread:3580 [handler.py:handle_request():146] handle_request: status_report
+2023-12-10 15:51:42,117 DEBUG   HandlerThread:3580 [handler.py:handle_request():146] handle_request: status_report
+2023-12-10 15:51:45,198 INFO    Thread-16 :3580 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\theho\git_AI_Application_Practice\Olympic\wandb\run-20231210_154522-4t76ovvu\files\output.log
+2023-12-10 15:51:46,763 DEBUG   HandlerThread:3580 [handler.py:handle_request():146] handle_request: stop_status
+2023-12-10 15:51:46,764 DEBUG   SenderThread:3580 [sender.py:send_request():407] send_request: stop_status
+2023-12-10 15:51:46,767 DEBUG   HandlerThread:3580 [handler.py:handle_request():146] handle_request: internal_messages
+2023-12-10 15:51:48,033 DEBUG   HandlerThread:3580 [handler.py:handle_request():146] handle_request: status_report
+2023-12-10 15:51:53,062 DEBUG   HandlerThread:3580 [handler.py:handle_request():146] handle_request: status_report
+2023-12-10 15:51:54,367 DEBUG   SenderThread:3580 [sender.py:send():380] send: stats
+2023-12-10 15:51:58,388 DEBUG   HandlerThread:3580 [handler.py:handle_request():146] handle_request: status_report
+2023-12-10 15:52:01,770 DEBUG   HandlerThread:3580 [handler.py:handle_request():146] handle_request: internal_messages
+2023-12-10 15:52:01,771 DEBUG   HandlerThread:3580 [handler.py:handle_request():146] handle_request: stop_status
+2023-12-10 15:52:01,771 DEBUG   SenderThread:3580 [sender.py:send_request():407] send_request: stop_status
+2023-12-10 15:52:04,002 DEBUG   HandlerThread:3580 [handler.py:handle_request():146] handle_request: status_report
+2023-12-10 15:52:09,031 DEBUG   HandlerThread:3580 [handler.py:handle_request():146] handle_request: status_report
+2023-12-10 15:52:14,059 DEBUG   HandlerThread:3580 [handler.py:handle_request():146] handle_request: status_report
+2023-12-10 15:52:16,759 DEBUG   HandlerThread:3580 [handler.py:handle_request():146] handle_request: internal_messages
+2023-12-10 15:52:16,760 DEBUG   HandlerThread:3580 [handler.py:handle_request():146] handle_request: stop_status
+2023-12-10 15:52:16,760 DEBUG   SenderThread:3580 [sender.py:send_request():407] send_request: stop_status
+2023-12-10 15:52:19,994 DEBUG   HandlerThread:3580 [handler.py:handle_request():146] handle_request: status_report
+2023-12-10 15:52:24,377 DEBUG   SenderThread:3580 [sender.py:send():380] send: stats
+2023-12-10 15:52:25,381 DEBUG   HandlerThread:3580 [handler.py:handle_request():146] handle_request: status_report
+2023-12-10 15:52:29,811 INFO    Thread-16 :3580 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\theho\git_AI_Application_Practice\Olympic\wandb\run-20231210_154522-4t76ovvu\files\output.log
+2023-12-10 15:52:31,368 DEBUG   HandlerThread:3580 [handler.py:handle_request():146] handle_request: status_report
+2023-12-10 15:52:31,776 DEBUG   HandlerThread:3580 [handler.py:handle_request():146] handle_request: stop_status
+2023-12-10 15:52:31,776 DEBUG   SenderThread:3580 [sender.py:send_request():407] send_request: stop_status
+2023-12-10 15:52:31,787 DEBUG   HandlerThread:3580 [handler.py:handle_request():146] handle_request: internal_messages
+2023-12-10 15:52:32,842 DEBUG   HandlerThread:3580 [handler.py:handle_request():146] handle_request: partial_history
+2023-12-10 15:52:32,843 DEBUG   SenderThread:3580 [sender.py:send():380] send: history
+2023-12-10 15:52:32,843 DEBUG   SenderThread:3580 [sender.py:send_request():407] send_request: summary_record
+2023-12-10 15:52:32,844 INFO    SenderThread:3580 [sender.py:_save_file():1380] saving file wandb-summary.json with policy end
+2023-12-10 15:52:33,884 INFO    Thread-16 :3580 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\theho\git_AI_Application_Practice\Olympic\wandb\run-20231210_154522-4t76ovvu\files\wandb-summary.json
+2023-12-10 15:52:36,894 DEBUG   HandlerThread:3580 [handler.py:handle_request():146] handle_request: status_report
+2023-12-10 15:52:41,922 DEBUG   HandlerThread:3580 [handler.py:handle_request():146] handle_request: status_report
+2023-12-10 15:52:46,759 DEBUG   HandlerThread:3580 [handler.py:handle_request():146] handle_request: internal_messages
+2023-12-10 15:52:46,764 DEBUG   HandlerThread:3580 [handler.py:handle_request():146] handle_request: stop_status
+2023-12-10 15:52:46,765 DEBUG   SenderThread:3580 [sender.py:send_request():407] send_request: stop_status
+2023-12-10 15:52:47,055 DEBUG   HandlerThread:3580 [handler.py:handle_request():146] handle_request: status_report
+2023-12-10 15:52:52,085 DEBUG   HandlerThread:3580 [handler.py:handle_request():146] handle_request: status_report
+2023-12-10 15:52:54,386 DEBUG   SenderThread:3580 [sender.py:send():380] send: stats
+2023-12-10 15:52:57,407 DEBUG   HandlerThread:3580 [handler.py:handle_request():146] handle_request: status_report
+2023-12-10 15:53:01,759 DEBUG   HandlerThread:3580 [handler.py:handle_request():146] handle_request: stop_status
+2023-12-10 15:53:01,759 DEBUG   SenderThread:3580 [sender.py:send_request():407] send_request: stop_status
+2023-12-10 15:53:01,761 DEBUG   HandlerThread:3580 [handler.py:handle_request():146] handle_request: internal_messages
+2023-12-10 15:53:03,026 DEBUG   HandlerThread:3580 [handler.py:handle_request():146] handle_request: status_report
+2023-12-10 15:53:08,057 DEBUG   HandlerThread:3580 [handler.py:handle_request():146] handle_request: status_report
+2023-12-10 15:53:13,083 DEBUG   HandlerThread:3580 [handler.py:handle_request():146] handle_request: status_report
+2023-12-10 15:53:16,763 DEBUG   HandlerThread:3580 [handler.py:handle_request():146] handle_request: internal_messages
+2023-12-10 15:53:16,769 DEBUG   HandlerThread:3580 [handler.py:handle_request():146] handle_request: stop_status
+2023-12-10 15:53:16,769 DEBUG   SenderThread:3580 [sender.py:send_request():407] send_request: stop_status
+2023-12-10 15:53:19,078 DEBUG   HandlerThread:3580 [handler.py:handle_request():146] handle_request: status_report
+2023-12-10 15:53:24,110 DEBUG   HandlerThread:3580 [handler.py:handle_request():146] handle_request: status_report
+2023-12-10 15:53:24,396 DEBUG   SenderThread:3580 [sender.py:send():380] send: stats
+2023-12-10 15:53:29,421 DEBUG   HandlerThread:3580 [handler.py:handle_request():146] handle_request: status_report
+2023-12-10 15:53:31,883 DEBUG   HandlerThread:3580 [handler.py:handle_request():146] handle_request: stop_status
+2023-12-10 15:53:31,883 DEBUG   HandlerThread:3580 [handler.py:handle_request():146] handle_request: internal_messages
+2023-12-10 15:53:31,884 DEBUG   SenderThread:3580 [sender.py:send_request():407] send_request: stop_status
+2023-12-10 15:53:35,167 DEBUG   HandlerThread:3580 [handler.py:handle_request():146] handle_request: status_report
+2023-12-10 15:53:40,199 DEBUG   HandlerThread:3580 [handler.py:handle_request():146] handle_request: status_report
+2023-12-10 15:53:45,232 DEBUG   HandlerThread:3580 [handler.py:handle_request():146] handle_request: status_report
+2023-12-10 15:53:46,763 DEBUG   HandlerThread:3580 [handler.py:handle_request():146] handle_request: internal_messages
+2023-12-10 15:53:46,915 DEBUG   HandlerThread:3580 [handler.py:handle_request():146] handle_request: stop_status
+2023-12-10 15:53:46,915 DEBUG   SenderThread:3580 [sender.py:send_request():407] send_request: stop_status
+2023-12-10 15:53:51,175 DEBUG   HandlerThread:3580 [handler.py:handle_request():146] handle_request: status_report
+2023-12-10 15:53:54,408 DEBUG   SenderThread:3580 [sender.py:send():380] send: stats
+2023-12-10 15:53:56,417 DEBUG   HandlerThread:3580 [handler.py:handle_request():146] handle_request: status_report
+2023-12-10 15:54:00,084 INFO    Thread-16 :3580 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\theho\git_AI_Application_Practice\Olympic\wandb\run-20231210_154522-4t76ovvu\files\output.log
+2023-12-10 15:54:01,775 DEBUG   HandlerThread:3580 [handler.py:handle_request():146] handle_request: internal_messages
+2023-12-10 15:54:01,889 DEBUG   HandlerThread:3580 [handler.py:handle_request():146] handle_request: stop_status
+2023-12-10 15:54:01,889 DEBUG   SenderThread:3580 [sender.py:send_request():407] send_request: stop_status
+2023-12-10 15:54:02,106 DEBUG   HandlerThread:3580 [handler.py:handle_request():146] handle_request: status_report
+2023-12-10 15:54:07,140 DEBUG   HandlerThread:3580 [handler.py:handle_request():146] handle_request: status_report
+2023-12-10 15:54:12,168 DEBUG   HandlerThread:3580 [handler.py:handle_request():146] handle_request: status_report
+2023-12-10 15:54:16,779 DEBUG   HandlerThread:3580 [handler.py:handle_request():146] handle_request: internal_messages
+2023-12-10 15:54:16,880 DEBUG   HandlerThread:3580 [handler.py:handle_request():146] handle_request: stop_status
+2023-12-10 15:54:16,881 DEBUG   SenderThread:3580 [sender.py:send_request():407] send_request: stop_status
+2023-12-10 15:54:17,186 DEBUG   HandlerThread:3580 [handler.py:handle_request():146] handle_request: status_report
+2023-12-10 15:54:17,901 DEBUG   HandlerThread:3580 [handler.py:handle_request():146] handle_request: partial_history
+2023-12-10 15:54:17,902 DEBUG   SenderThread:3580 [sender.py:send():380] send: history
+2023-12-10 15:54:17,902 DEBUG   SenderThread:3580 [sender.py:send_request():407] send_request: summary_record
+2023-12-10 15:54:17,903 INFO    SenderThread:3580 [sender.py:_save_file():1380] saving file wandb-summary.json with policy end
+2023-12-10 15:54:18,337 INFO    Thread-16 :3580 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\theho\git_AI_Application_Practice\Olympic\wandb\run-20231210_154522-4t76ovvu\files\wandb-summary.json
+2023-12-10 15:54:22,931 DEBUG   HandlerThread:3580 [handler.py:handle_request():146] handle_request: status_report
+2023-12-10 15:54:24,417 DEBUG   SenderThread:3580 [sender.py:send():380] send: stats
+2023-12-10 15:54:28,452 DEBUG   HandlerThread:3580 [handler.py:handle_request():146] handle_request: status_report
+2023-12-10 15:54:31,781 DEBUG   HandlerThread:3580 [handler.py:handle_request():146] handle_request: internal_messages
+2023-12-10 15:54:31,884 DEBUG   HandlerThread:3580 [handler.py:handle_request():146] handle_request: stop_status
+2023-12-10 15:54:31,885 DEBUG   SenderThread:3580 [sender.py:send_request():407] send_request: stop_status
+2023-12-10 15:54:34,183 DEBUG   HandlerThread:3580 [handler.py:handle_request():146] handle_request: status_report
+2023-12-10 15:54:39,211 DEBUG   HandlerThread:3580 [handler.py:handle_request():146] handle_request: status_report
+2023-12-10 15:54:44,238 DEBUG   HandlerThread:3580 [handler.py:handle_request():146] handle_request: status_report
+2023-12-10 15:54:46,782 DEBUG   HandlerThread:3580 [handler.py:handle_request():146] handle_request: internal_messages
+2023-12-10 15:54:46,889 DEBUG   HandlerThread:3580 [handler.py:handle_request():146] handle_request: stop_status
+2023-12-10 15:54:46,889 DEBUG   SenderThread:3580 [sender.py:send_request():407] send_request: stop_status
+2023-12-10 15:54:50,198 DEBUG   HandlerThread:3580 [handler.py:handle_request():146] handle_request: status_report
+2023-12-10 15:54:54,430 DEBUG   SenderThread:3580 [sender.py:send():380] send: stats
+2023-12-10 15:54:55,435 DEBUG   HandlerThread:3580 [handler.py:handle_request():146] handle_request: status_report
+2023-12-10 15:55:00,461 DEBUG   HandlerThread:3580 [handler.py:handle_request():146] handle_request: status_report
+2023-12-10 15:55:01,794 DEBUG   HandlerThread:3580 [handler.py:handle_request():146] handle_request: internal_messages
+2023-12-10 15:55:01,901 DEBUG   HandlerThread:3580 [handler.py:handle_request():146] handle_request: stop_status
+2023-12-10 15:55:01,901 DEBUG   SenderThread:3580 [sender.py:send_request():407] send_request: stop_status
+2023-12-10 15:55:06,163 DEBUG   HandlerThread:3580 [handler.py:handle_request():146] handle_request: status_report
+2023-12-10 15:55:11,190 DEBUG   HandlerThread:3580 [handler.py:handle_request():146] handle_request: status_report
+2023-12-10 15:55:16,216 DEBUG   HandlerThread:3580 [handler.py:handle_request():146] handle_request: status_report
+2023-12-10 15:55:16,796 DEBUG   HandlerThread:3580 [handler.py:handle_request():146] handle_request: internal_messages
+2023-12-10 15:55:16,894 DEBUG   HandlerThread:3580 [handler.py:handle_request():146] handle_request: stop_status
+2023-12-10 15:55:16,894 DEBUG   SenderThread:3580 [sender.py:send_request():407] send_request: stop_status
+2023-12-10 15:55:22,218 DEBUG   HandlerThread:3580 [handler.py:handle_request():146] handle_request: status_report
+2023-12-10 15:55:24,439 DEBUG   SenderThread:3580 [sender.py:send():380] send: stats
+2023-12-10 15:55:26,211 INFO    Thread-16 :3580 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\theho\git_AI_Application_Practice\Olympic\wandb\run-20231210_154522-4t76ovvu\files\output.log
+2023-12-10 15:55:28,189 DEBUG   HandlerThread:3580 [handler.py:handle_request():146] handle_request: status_report
+2023-12-10 15:55:31,805 DEBUG   HandlerThread:3580 [handler.py:handle_request():146] handle_request: internal_messages
+2023-12-10 15:55:31,914 DEBUG   HandlerThread:3580 [handler.py:handle_request():146] handle_request: stop_status
+2023-12-10 15:55:31,915 DEBUG   SenderThread:3580 [sender.py:send_request():407] send_request: stop_status
+2023-12-10 15:55:33,215 DEBUG   HandlerThread:3580 [handler.py:handle_request():146] handle_request: status_report
+2023-12-10 15:55:38,244 DEBUG   HandlerThread:3580 [handler.py:handle_request():146] handle_request: status_report
+2023-12-10 15:55:43,273 DEBUG   HandlerThread:3580 [handler.py:handle_request():146] handle_request: status_report
+2023-12-10 15:55:46,807 DEBUG   HandlerThread:3580 [handler.py:handle_request():146] handle_request: internal_messages
+2023-12-10 15:55:46,914 DEBUG   HandlerThread:3580 [handler.py:handle_request():146] handle_request: stop_status
+2023-12-10 15:55:46,914 DEBUG   SenderThread:3580 [sender.py:send_request():407] send_request: stop_status
+2023-12-10 15:55:49,200 DEBUG   HandlerThread:3580 [handler.py:handle_request():146] handle_request: status_report
+2023-12-10 15:55:54,226 DEBUG   HandlerThread:3580 [handler.py:handle_request():146] handle_request: status_report
+2023-12-10 15:55:54,451 DEBUG   SenderThread:3580 [sender.py:send():380] send: stats
+2023-12-10 15:55:59,477 DEBUG   HandlerThread:3580 [handler.py:handle_request():146] handle_request: status_report
+2023-12-10 15:56:01,809 DEBUG   HandlerThread:3580 [handler.py:handle_request():146] handle_request: internal_messages
+2023-12-10 15:56:01,927 DEBUG   HandlerThread:3580 [handler.py:handle_request():146] handle_request: stop_status
+2023-12-10 15:56:01,927 DEBUG   SenderThread:3580 [sender.py:send_request():407] send_request: stop_status
+2023-12-10 15:56:04,938 DEBUG   HandlerThread:3580 [handler.py:handle_request():146] handle_request: partial_history
+2023-12-10 15:56:04,939 DEBUG   SenderThread:3580 [sender.py:send():380] send: history
+2023-12-10 15:56:04,939 DEBUG   SenderThread:3580 [sender.py:send_request():407] send_request: summary_record
+2023-12-10 15:56:04,939 DEBUG   HandlerThread:3580 [handler.py:handle_request():146] handle_request: status_report
+2023-12-10 15:56:04,941 INFO    SenderThread:3580 [sender.py:_save_file():1380] saving file wandb-summary.json with policy end
+2023-12-10 15:56:05,707 INFO    Thread-16 :3580 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\theho\git_AI_Application_Practice\Olympic\wandb\run-20231210_154522-4t76ovvu\files\wandb-summary.json
+2023-12-10 15:56:09,968 DEBUG   HandlerThread:3580 [handler.py:handle_request():146] handle_request: status_report
+2023-12-10 15:56:14,995 DEBUG   HandlerThread:3580 [handler.py:handle_request():146] handle_request: status_report
+2023-12-10 15:56:16,811 DEBUG   HandlerThread:3580 [handler.py:handle_request():146] handle_request: internal_messages
+2023-12-10 15:56:16,939 DEBUG   HandlerThread:3580 [handler.py:handle_request():146] handle_request: stop_status
+2023-12-10 15:56:16,940 DEBUG   SenderThread:3580 [sender.py:send_request():407] send_request: stop_status
+2023-12-10 15:56:20,246 DEBUG   HandlerThread:3580 [handler.py:handle_request():146] handle_request: status_report
+2023-12-10 15:56:24,453 DEBUG   SenderThread:3580 [sender.py:send():380] send: stats
+2023-12-10 15:56:25,457 DEBUG   HandlerThread:3580 [handler.py:handle_request():146] handle_request: status_report
+2023-12-10 15:56:30,487 DEBUG   HandlerThread:3580 [handler.py:handle_request():146] handle_request: status_report
+2023-12-10 15:56:31,813 DEBUG   HandlerThread:3580 [handler.py:handle_request():146] handle_request: internal_messages
+2023-12-10 15:56:31,929 DEBUG   HandlerThread:3580 [handler.py:handle_request():146] handle_request: stop_status
+2023-12-10 15:56:31,930 DEBUG   SenderThread:3580 [sender.py:send_request():407] send_request: stop_status
+2023-12-10 15:56:36,174 DEBUG   HandlerThread:3580 [handler.py:handle_request():146] handle_request: status_report
+2023-12-10 15:56:41,201 DEBUG   HandlerThread:3580 [handler.py:handle_request():146] handle_request: status_report
+2023-12-10 15:56:46,228 DEBUG   HandlerThread:3580 [handler.py:handle_request():146] handle_request: status_report
+2023-12-10 15:56:46,817 DEBUG   HandlerThread:3580 [handler.py:handle_request():146] handle_request: internal_messages
+2023-12-10 15:56:46,930 DEBUG   HandlerThread:3580 [handler.py:handle_request():146] handle_request: stop_status
+2023-12-10 15:56:46,931 DEBUG   SenderThread:3580 [sender.py:send_request():407] send_request: stop_status
+2023-12-10 15:56:51,301 INFO    Thread-16 :3580 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\theho\git_AI_Application_Practice\Olympic\wandb\run-20231210_154522-4t76ovvu\files\output.log
+2023-12-10 15:56:51,554 DEBUG   HandlerThread:3580 [handler.py:handle_request():146] handle_request: status_report
+2023-12-10 15:56:54,465 DEBUG   SenderThread:3580 [sender.py:send():380] send: stats
+2023-12-10 15:56:57,481 DEBUG   HandlerThread:3580 [handler.py:handle_request():146] handle_request: status_report
+2023-12-10 15:57:01,814 DEBUG   HandlerThread:3580 [handler.py:handle_request():146] handle_request: internal_messages
+2023-12-10 15:57:01,939 DEBUG   HandlerThread:3580 [handler.py:handle_request():146] handle_request: stop_status
+2023-12-10 15:57:01,939 DEBUG   SenderThread:3580 [sender.py:send_request():407] send_request: stop_status
+2023-12-10 15:57:03,167 DEBUG   HandlerThread:3580 [handler.py:handle_request():146] handle_request: status_report
+2023-12-10 15:57:08,196 DEBUG   HandlerThread:3580 [handler.py:handle_request():146] handle_request: status_report
+2023-12-10 15:57:13,223 DEBUG   HandlerThread:3580 [handler.py:handle_request():146] handle_request: status_report
+2023-12-10 15:57:16,807 DEBUG   HandlerThread:3580 [handler.py:handle_request():146] handle_request: internal_messages
+2023-12-10 15:57:16,941 DEBUG   HandlerThread:3580 [handler.py:handle_request():146] handle_request: stop_status
+2023-12-10 15:57:16,941 DEBUG   SenderThread:3580 [sender.py:send_request():407] send_request: stop_status
+2023-12-10 15:57:18,245 DEBUG   HandlerThread:3580 [handler.py:handle_request():146] handle_request: status_report
+2023-12-10 15:57:23,262 DEBUG   HandlerThread:3580 [handler.py:handle_request():146] handle_request: status_report
+2023-12-10 15:57:24,478 DEBUG   SenderThread:3580 [sender.py:send():380] send: stats
+2023-12-10 15:57:28,498 DEBUG   HandlerThread:3580 [handler.py:handle_request():146] handle_request: status_report
+2023-12-10 15:57:31,820 DEBUG   HandlerThread:3580 [handler.py:handle_request():146] handle_request: internal_messages
+2023-12-10 15:57:31,954 DEBUG   HandlerThread:3580 [handler.py:handle_request():146] handle_request: stop_status
+2023-12-10 15:57:31,954 DEBUG   SenderThread:3580 [sender.py:send_request():407] send_request: stop_status
+2023-12-10 15:57:34,200 DEBUG   HandlerThread:3580 [handler.py:handle_request():146] handle_request: status_report
+2023-12-10 15:57:39,227 DEBUG   HandlerThread:3580 [handler.py:handle_request():146] handle_request: status_report
+2023-12-10 15:57:44,253 DEBUG   HandlerThread:3580 [handler.py:handle_request():146] handle_request: status_report
+2023-12-10 15:57:44,974 INFO    Thread-16 :3580 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\theho\git_AI_Application_Practice\Olympic\wandb\run-20231210_154522-4t76ovvu\files\output.log
+2023-12-10 15:57:46,817 DEBUG   HandlerThread:3580 [handler.py:handle_request():146] handle_request: internal_messages
+2023-12-10 15:57:46,951 DEBUG   HandlerThread:3580 [handler.py:handle_request():146] handle_request: stop_status
+2023-12-10 15:57:46,952 DEBUG   SenderThread:3580 [sender.py:send_request():407] send_request: stop_status
+2023-12-10 15:57:49,279 DEBUG   HandlerThread:3580 [handler.py:handle_request():146] handle_request: status_report
+2023-12-10 15:57:51,319 DEBUG   HandlerThread:3580 [handler.py:handle_request():146] handle_request: partial_history
+2023-12-10 15:57:51,320 DEBUG   SenderThread:3580 [sender.py:send():380] send: history
+2023-12-10 15:57:51,320 DEBUG   SenderThread:3580 [sender.py:send_request():407] send_request: summary_record
+2023-12-10 15:57:51,321 INFO    SenderThread:3580 [sender.py:_save_file():1380] saving file wandb-summary.json with policy end
+2023-12-10 15:57:52,077 INFO    Thread-16 :3580 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\theho\git_AI_Application_Practice\Olympic\wandb\run-20231210_154522-4t76ovvu\files\wandb-summary.json
+2023-12-10 15:57:54,335 DEBUG   HandlerThread:3580 [handler.py:handle_request():146] handle_request: status_report
+2023-12-10 15:57:54,486 DEBUG   SenderThread:3580 [sender.py:send():380] send: stats
+2023-12-10 15:57:59,515 DEBUG   HandlerThread:3580 [handler.py:handle_request():146] handle_request: status_report
+2023-12-10 15:58:01,807 DEBUG   HandlerThread:3580 [handler.py:handle_request():146] handle_request: internal_messages
+2023-12-10 15:58:01,944 DEBUG   HandlerThread:3580 [handler.py:handle_request():146] handle_request: stop_status
+2023-12-10 15:58:01,945 DEBUG   SenderThread:3580 [sender.py:send_request():407] send_request: stop_status
+2023-12-10 15:58:05,235 DEBUG   HandlerThread:3580 [handler.py:handle_request():146] handle_request: status_report
+2023-12-10 15:58:10,261 DEBUG   HandlerThread:3580 [handler.py:handle_request():146] handle_request: status_report
+2023-12-10 15:58:15,287 DEBUG   HandlerThread:3580 [handler.py:handle_request():146] handle_request: status_report
+2023-12-10 15:58:16,817 DEBUG   HandlerThread:3580 [handler.py:handle_request():146] handle_request: internal_messages
+2023-12-10 15:58:16,948 DEBUG   HandlerThread:3580 [handler.py:handle_request():146] handle_request: stop_status
+2023-12-10 15:58:16,948 DEBUG   SenderThread:3580 [sender.py:send_request():407] send_request: stop_status
+2023-12-10 15:58:21,275 DEBUG   HandlerThread:3580 [handler.py:handle_request():146] handle_request: status_report
+2023-12-10 15:58:24,495 DEBUG   SenderThread:3580 [sender.py:send():380] send: stats
+2023-12-10 15:58:26,514 DEBUG   HandlerThread:3580 [handler.py:handle_request():146] handle_request: status_report
+2023-12-10 15:58:31,557 DEBUG   HandlerThread:3580 [handler.py:handle_request():146] handle_request: status_report
+2023-12-10 15:58:31,822 DEBUG   HandlerThread:3580 [handler.py:handle_request():146] handle_request: internal_messages
+2023-12-10 15:58:31,960 DEBUG   HandlerThread:3580 [handler.py:handle_request():146] handle_request: stop_status
+2023-12-10 15:58:31,960 DEBUG   SenderThread:3580 [sender.py:send_request():407] send_request: stop_status
+2023-12-10 15:58:37,220 DEBUG   HandlerThread:3580 [handler.py:handle_request():146] handle_request: status_report
+2023-12-10 15:58:42,269 DEBUG   HandlerThread:3580 [handler.py:handle_request():146] handle_request: status_report
+2023-12-10 15:58:46,824 DEBUG   HandlerThread:3580 [handler.py:handle_request():146] handle_request: internal_messages
+2023-12-10 15:58:46,956 DEBUG   HandlerThread:3580 [handler.py:handle_request():146] handle_request: stop_status
+2023-12-10 15:58:46,956 DEBUG   SenderThread:3580 [sender.py:send_request():407] send_request: stop_status
+2023-12-10 15:58:48,197 DEBUG   HandlerThread:3580 [handler.py:handle_request():146] handle_request: status_report
+2023-12-10 15:58:53,227 DEBUG   HandlerThread:3580 [handler.py:handle_request():146] handle_request: status_report
+2023-12-10 15:58:54,504 DEBUG   SenderThread:3580 [sender.py:send():380] send: stats
+2023-12-10 15:58:58,525 DEBUG   HandlerThread:3580 [handler.py:handle_request():146] handle_request: status_report
+2023-12-10 15:59:01,835 DEBUG   HandlerThread:3580 [handler.py:handle_request():146] handle_request: internal_messages
+2023-12-10 15:59:01,967 DEBUG   HandlerThread:3580 [handler.py:handle_request():146] handle_request: stop_status
+2023-12-10 15:59:01,967 DEBUG   SenderThread:3580 [sender.py:send_request():407] send_request: stop_status
+2023-12-10 15:59:04,271 DEBUG   HandlerThread:3580 [handler.py:handle_request():146] handle_request: status_report
+2023-12-10 15:59:09,299 DEBUG   HandlerThread:3580 [handler.py:handle_request():146] handle_request: status_report
+2023-12-10 15:59:14,327 DEBUG   HandlerThread:3580 [handler.py:handle_request():146] handle_request: status_report
+2023-12-10 15:59:16,832 DEBUG   HandlerThread:3580 [handler.py:handle_request():146] handle_request: internal_messages
+2023-12-10 15:59:16,970 DEBUG   HandlerThread:3580 [handler.py:handle_request():146] handle_request: stop_status
+2023-12-10 15:59:16,970 DEBUG   SenderThread:3580 [sender.py:send_request():407] send_request: stop_status
+2023-12-10 15:59:20,253 DEBUG   HandlerThread:3580 [handler.py:handle_request():146] handle_request: status_report
+2023-12-10 15:59:24,515 DEBUG   SenderThread:3580 [sender.py:send():380] send: stats
+2023-12-10 15:59:25,520 DEBUG   HandlerThread:3580 [handler.py:handle_request():146] handle_request: status_report
+2023-12-10 15:59:30,547 DEBUG   HandlerThread:3580 [handler.py:handle_request():146] handle_request: status_report
+2023-12-10 15:59:31,842 DEBUG   HandlerThread:3580 [handler.py:handle_request():146] handle_request: internal_messages
+2023-12-10 15:59:31,984 DEBUG   HandlerThread:3580 [handler.py:handle_request():146] handle_request: stop_status
+2023-12-10 15:59:31,985 DEBUG   SenderThread:3580 [sender.py:send_request():407] send_request: stop_status
+2023-12-10 15:59:35,950 DEBUG   HandlerThread:3580 [handler.py:handle_request():146] handle_request: status_report
+2023-12-10 15:59:36,386 INFO    Thread-16 :3580 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\theho\git_AI_Application_Practice\Olympic\wandb\run-20231210_154522-4t76ovvu\files\output.log
+2023-12-10 15:59:40,979 DEBUG   HandlerThread:3580 [handler.py:handle_request():146] handle_request: status_report
+2023-12-10 15:59:43,881 DEBUG   HandlerThread:3580 [handler.py:handle_request():146] handle_request: partial_history
+2023-12-10 15:59:43,882 DEBUG   SenderThread:3580 [sender.py:send():380] send: history
+2023-12-10 15:59:43,882 DEBUG   SenderThread:3580 [sender.py:send_request():407] send_request: summary_record
+2023-12-10 15:59:43,883 INFO    SenderThread:3580 [sender.py:_save_file():1380] saving file wandb-summary.json with policy end
+2023-12-10 15:59:44,492 INFO    Thread-16 :3580 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\theho\git_AI_Application_Practice\Olympic\wandb\run-20231210_154522-4t76ovvu\files\wandb-summary.json
+2023-12-10 15:59:46,849 DEBUG   HandlerThread:3580 [handler.py:handle_request():146] handle_request: internal_messages
+2023-12-10 15:59:46,907 DEBUG   HandlerThread:3580 [handler.py:handle_request():146] handle_request: status_report
+2023-12-10 15:59:46,991 DEBUG   HandlerThread:3580 [handler.py:handle_request():146] handle_request: stop_status
+2023-12-10 15:59:46,992 DEBUG   SenderThread:3580 [sender.py:send_request():407] send_request: stop_status
+2023-12-10 15:59:52,327 DEBUG   HandlerThread:3580 [handler.py:handle_request():146] handle_request: status_report
+2023-12-10 15:59:54,519 DEBUG   SenderThread:3580 [sender.py:send():380] send: stats
+2023-12-10 15:59:57,533 DEBUG   HandlerThread:3580 [handler.py:handle_request():146] handle_request: status_report
+2023-12-10 16:00:01,850 DEBUG   HandlerThread:3580 [handler.py:handle_request():146] handle_request: internal_messages
+2023-12-10 16:00:01,996 DEBUG   HandlerThread:3580 [handler.py:handle_request():146] handle_request: stop_status
+2023-12-10 16:00:01,996 DEBUG   SenderThread:3580 [sender.py:send_request():407] send_request: stop_status
+2023-12-10 16:00:03,208 DEBUG   HandlerThread:3580 [handler.py:handle_request():146] handle_request: status_report
+2023-12-10 16:00:08,234 DEBUG   HandlerThread:3580 [handler.py:handle_request():146] handle_request: status_report
+2023-12-10 16:00:13,262 DEBUG   HandlerThread:3580 [handler.py:handle_request():146] handle_request: status_report
+2023-12-10 16:00:16,835 DEBUG   HandlerThread:3580 [handler.py:handle_request():146] handle_request: internal_messages
+2023-12-10 16:00:17,004 DEBUG   HandlerThread:3580 [handler.py:handle_request():146] handle_request: stop_status
+2023-12-10 16:00:17,005 DEBUG   SenderThread:3580 [sender.py:send_request():407] send_request: stop_status
+2023-12-10 16:00:18,288 DEBUG   HandlerThread:3580 [handler.py:handle_request():146] handle_request: status_report
+2023-12-10 16:00:23,316 DEBUG   HandlerThread:3580 [handler.py:handle_request():146] handle_request: status_report
+2023-12-10 16:00:24,534 DEBUG   SenderThread:3580 [sender.py:send():380] send: stats
+2023-12-10 16:00:28,554 DEBUG   HandlerThread:3580 [handler.py:handle_request():146] handle_request: status_report
+2023-12-10 16:00:31,838 DEBUG   HandlerThread:3580 [handler.py:handle_request():146] handle_request: internal_messages
+2023-12-10 16:00:32,015 DEBUG   HandlerThread:3580 [handler.py:handle_request():146] handle_request: stop_status
+2023-12-10 16:00:32,015 DEBUG   SenderThread:3580 [sender.py:send_request():407] send_request: stop_status
+2023-12-10 16:00:34,227 DEBUG   HandlerThread:3580 [handler.py:handle_request():146] handle_request: status_report
+2023-12-10 16:00:39,253 DEBUG   HandlerThread:3580 [handler.py:handle_request():146] handle_request: status_report
+2023-12-10 16:00:44,279 DEBUG   HandlerThread:3580 [handler.py:handle_request():146] handle_request: status_report
+2023-12-10 16:00:46,848 DEBUG   HandlerThread:3580 [handler.py:handle_request():146] handle_request: internal_messages
+2023-12-10 16:00:46,997 DEBUG   HandlerThread:3580 [handler.py:handle_request():146] handle_request: stop_status
+2023-12-10 16:00:46,998 DEBUG   SenderThread:3580 [sender.py:send_request():407] send_request: stop_status
+2023-12-10 16:00:49,321 DEBUG   HandlerThread:3580 [handler.py:handle_request():146] handle_request: status_report
+2023-12-10 16:00:54,349 DEBUG   HandlerThread:3580 [handler.py:handle_request():146] handle_request: status_report
+2023-12-10 16:00:54,545 DEBUG   SenderThread:3580 [sender.py:send():380] send: stats
+2023-12-10 16:00:59,570 DEBUG   HandlerThread:3580 [handler.py:handle_request():146] handle_request: status_report
+2023-12-10 16:01:01,836 DEBUG   HandlerThread:3580 [handler.py:handle_request():146] handle_request: internal_messages
+2023-12-10 16:01:02,005 DEBUG   HandlerThread:3580 [handler.py:handle_request():146] handle_request: stop_status
+2023-12-10 16:01:02,006 DEBUG   SenderThread:3580 [sender.py:send_request():407] send_request: stop_status
+2023-12-10 16:01:04,555 INFO    Thread-16 :3580 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\theho\git_AI_Application_Practice\Olympic\wandb\run-20231210_154522-4t76ovvu\files\output.log
+2023-12-10 16:01:05,452 DEBUG   HandlerThread:3580 [handler.py:handle_request():146] handle_request: status_report
+2023-12-10 16:01:10,478 DEBUG   HandlerThread:3580 [handler.py:handle_request():146] handle_request: status_report
+2023-12-10 16:01:15,505 DEBUG   HandlerThread:3580 [handler.py:handle_request():146] handle_request: status_report
+2023-12-10 16:01:16,843 DEBUG   HandlerThread:3580 [handler.py:handle_request():146] handle_request: internal_messages
+2023-12-10 16:01:17,000 DEBUG   HandlerThread:3580 [handler.py:handle_request():146] handle_request: stop_status
+2023-12-10 16:01:17,000 DEBUG   SenderThread:3580 [sender.py:send_request():407] send_request: stop_status
+2023-12-10 16:01:21,313 DEBUG   HandlerThread:3580 [handler.py:handle_request():146] handle_request: status_report
+2023-12-10 16:01:24,555 DEBUG   SenderThread:3580 [sender.py:send():380] send: stats
+2023-12-10 16:01:26,565 DEBUG   HandlerThread:3580 [handler.py:handle_request():146] handle_request: status_report
+2023-12-10 16:01:31,591 DEBUG   HandlerThread:3580 [handler.py:handle_request():146] handle_request: status_report
+2023-12-10 16:01:31,851 DEBUG   HandlerThread:3580 [handler.py:handle_request():146] handle_request: internal_messages
+2023-12-10 16:01:32,010 DEBUG   HandlerThread:3580 [handler.py:handle_request():146] handle_request: stop_status
+2023-12-10 16:01:32,010 DEBUG   SenderThread:3580 [sender.py:send_request():407] send_request: stop_status
+2023-12-10 16:01:37,353 DEBUG   HandlerThread:3580 [handler.py:handle_request():146] handle_request: status_report
+2023-12-10 16:01:42,381 DEBUG   HandlerThread:3580 [handler.py:handle_request():146] handle_request: status_report
+2023-12-10 16:01:44,180 DEBUG   HandlerThread:3580 [handler.py:handle_request():146] handle_request: partial_history
+2023-12-10 16:01:44,182 DEBUG   SenderThread:3580 [sender.py:send():380] send: history
+2023-12-10 16:01:44,182 DEBUG   SenderThread:3580 [sender.py:send_request():407] send_request: summary_record
+2023-12-10 16:01:44,183 INFO    SenderThread:3580 [sender.py:_save_file():1380] saving file wandb-summary.json with policy end
+2023-12-10 16:01:45,072 INFO    Thread-16 :3580 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\theho\git_AI_Application_Practice\Olympic\wandb\run-20231210_154522-4t76ovvu\files\wandb-summary.json
+2023-12-10 16:01:46,836 DEBUG   HandlerThread:3580 [handler.py:handle_request():146] handle_request: internal_messages
+2023-12-10 16:01:47,022 DEBUG   HandlerThread:3580 [handler.py:handle_request():146] handle_request: stop_status
+2023-12-10 16:01:47,023 DEBUG   SenderThread:3580 [sender.py:send_request():407] send_request: stop_status
+2023-12-10 16:01:48,248 DEBUG   HandlerThread:3580 [handler.py:handle_request():146] handle_request: status_report
+2023-12-10 16:01:53,274 DEBUG   HandlerThread:3580 [handler.py:handle_request():146] handle_request: status_report
+2023-12-10 16:01:54,565 DEBUG   SenderThread:3580 [sender.py:send():380] send: stats
+2023-12-10 16:01:58,585 DEBUG   HandlerThread:3580 [handler.py:handle_request():146] handle_request: status_report
+2023-12-10 16:02:01,838 DEBUG   HandlerThread:3580 [handler.py:handle_request():146] handle_request: internal_messages
+2023-12-10 16:02:02,023 DEBUG   HandlerThread:3580 [handler.py:handle_request():146] handle_request: stop_status
+2023-12-10 16:02:02,024 DEBUG   SenderThread:3580 [sender.py:send_request():407] send_request: stop_status
+2023-12-10 16:02:04,258 DEBUG   HandlerThread:3580 [handler.py:handle_request():146] handle_request: status_report
+2023-12-10 16:02:09,286 DEBUG   HandlerThread:3580 [handler.py:handle_request():146] handle_request: status_report
+2023-12-10 16:02:14,314 DEBUG   HandlerThread:3580 [handler.py:handle_request():146] handle_request: status_report
+2023-12-10 16:02:16,839 DEBUG   HandlerThread:3580 [handler.py:handle_request():146] handle_request: internal_messages
+2023-12-10 16:02:17,014 DEBUG   HandlerThread:3580 [handler.py:handle_request():146] handle_request: stop_status
+2023-12-10 16:02:17,014 DEBUG   SenderThread:3580 [sender.py:send_request():407] send_request: stop_status
+2023-12-10 16:02:20,285 DEBUG   HandlerThread:3580 [handler.py:handle_request():146] handle_request: status_report
+2023-12-10 16:02:24,577 DEBUG   SenderThread:3580 [sender.py:send():380] send: stats
+2023-12-10 16:02:25,581 DEBUG   HandlerThread:3580 [handler.py:handle_request():146] handle_request: status_report
+2023-12-10 16:02:30,609 DEBUG   HandlerThread:3580 [handler.py:handle_request():146] handle_request: status_report
+2023-12-10 16:02:31,847 DEBUG   HandlerThread:3580 [handler.py:handle_request():146] handle_request: internal_messages
+2023-12-10 16:02:32,022 DEBUG   HandlerThread:3580 [handler.py:handle_request():146] handle_request: stop_status
+2023-12-10 16:02:32,023 DEBUG   SenderThread:3580 [sender.py:send_request():407] send_request: stop_status
+2023-12-10 16:02:36,266 DEBUG   HandlerThread:3580 [handler.py:handle_request():146] handle_request: status_report
+2023-12-10 16:02:38,743 INFO    Thread-16 :3580 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\theho\git_AI_Application_Practice\Olympic\wandb\run-20231210_154522-4t76ovvu\files\output.log
+2023-12-10 16:02:42,133 DEBUG   HandlerThread:3580 [handler.py:handle_request():146] handle_request: status_report
+2023-12-10 16:02:46,859 DEBUG   HandlerThread:3580 [handler.py:handle_request():146] handle_request: internal_messages
+2023-12-10 16:02:47,010 DEBUG   HandlerThread:3580 [handler.py:handle_request():146] handle_request: stop_status
+2023-12-10 16:02:47,010 DEBUG   SenderThread:3580 [sender.py:send_request():407] send_request: stop_status
+2023-12-10 16:02:47,254 DEBUG   HandlerThread:3580 [handler.py:handle_request():146] handle_request: status_report
+2023-12-10 16:02:52,275 DEBUG   HandlerThread:3580 [handler.py:handle_request():146] handle_request: status_report
+2023-12-10 16:02:54,587 DEBUG   SenderThread:3580 [sender.py:send():380] send: stats
+2023-12-10 16:02:57,601 DEBUG   HandlerThread:3580 [handler.py:handle_request():146] handle_request: status_report
+2023-12-10 16:03:01,864 DEBUG   HandlerThread:3580 [handler.py:handle_request():146] handle_request: internal_messages
+2023-12-10 16:03:02,014 DEBUG   HandlerThread:3580 [handler.py:handle_request():146] handle_request: stop_status
+2023-12-10 16:03:02,014 DEBUG   SenderThread:3580 [sender.py:send_request():407] send_request: stop_status
+2023-12-10 16:03:03,320 DEBUG   HandlerThread:3580 [handler.py:handle_request():146] handle_request: status_report
+2023-12-10 16:03:08,347 DEBUG   HandlerThread:3580 [handler.py:handle_request():146] handle_request: status_report
+2023-12-10 16:03:13,373 DEBUG   HandlerThread:3580 [handler.py:handle_request():146] handle_request: status_report
+2023-12-10 16:03:16,865 DEBUG   HandlerThread:3580 [handler.py:handle_request():146] handle_request: internal_messages
+2023-12-10 16:03:17,019 DEBUG   HandlerThread:3580 [handler.py:handle_request():146] handle_request: stop_status
+2023-12-10 16:03:17,019 DEBUG   SenderThread:3580 [sender.py:send_request():407] send_request: stop_status
+2023-12-10 16:03:19,333 DEBUG   HandlerThread:3580 [handler.py:handle_request():146] handle_request: status_report
+2023-12-10 16:03:24,361 DEBUG   HandlerThread:3580 [handler.py:handle_request():146] handle_request: status_report
+2023-12-10 16:03:24,602 DEBUG   SenderThread:3580 [sender.py:send():380] send: stats
+2023-12-10 16:03:27,776 DEBUG   HandlerThread:3580 [handler.py:handle_request():146] handle_request: partial_history
+2023-12-10 16:03:27,777 DEBUG   SenderThread:3580 [sender.py:send():380] send: history
+2023-12-10 16:03:27,777 DEBUG   SenderThread:3580 [sender.py:send_request():407] send_request: summary_record
+2023-12-10 16:03:27,778 INFO    SenderThread:3580 [sender.py:_save_file():1380] saving file wandb-summary.json with policy end
+2023-12-10 16:03:28,388 INFO    Thread-16 :3580 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\theho\git_AI_Application_Practice\Olympic\wandb\run-20231210_154522-4t76ovvu\files\wandb-summary.json
+2023-12-10 16:03:29,793 DEBUG   HandlerThread:3580 [handler.py:handle_request():146] handle_request: status_report
+2023-12-10 16:03:31,866 DEBUG   HandlerThread:3580 [handler.py:handle_request():146] handle_request: internal_messages
+2023-12-10 16:03:32,019 DEBUG   HandlerThread:3580 [handler.py:handle_request():146] handle_request: stop_status
+2023-12-10 16:03:32,020 DEBUG   SenderThread:3580 [sender.py:send_request():407] send_request: stop_status
+2023-12-10 16:03:35,329 DEBUG   HandlerThread:3580 [handler.py:handle_request():146] handle_request: status_report
+2023-12-10 16:03:40,355 DEBUG   HandlerThread:3580 [handler.py:handle_request():146] handle_request: status_report
+2023-12-10 16:03:45,381 DEBUG   HandlerThread:3580 [handler.py:handle_request():146] handle_request: status_report
+2023-12-10 16:03:46,868 DEBUG   HandlerThread:3580 [handler.py:handle_request():146] handle_request: internal_messages
+2023-12-10 16:03:47,012 DEBUG   HandlerThread:3580 [handler.py:handle_request():146] handle_request: stop_status
+2023-12-10 16:03:47,013 DEBUG   SenderThread:3580 [sender.py:send_request():407] send_request: stop_status
+2023-12-10 16:03:51,265 DEBUG   HandlerThread:3580 [handler.py:handle_request():146] handle_request: status_report
+2023-12-10 16:03:54,612 DEBUG   SenderThread:3580 [sender.py:send():380] send: stats
+2023-12-10 16:03:56,621 DEBUG   HandlerThread:3580 [handler.py:handle_request():146] handle_request: status_report
+2023-12-10 16:04:01,647 DEBUG   HandlerThread:3580 [handler.py:handle_request():146] handle_request: status_report
+2023-12-10 16:04:01,870 DEBUG   HandlerThread:3580 [handler.py:handle_request():146] handle_request: internal_messages
+2023-12-10 16:04:02,016 DEBUG   HandlerThread:3580 [handler.py:handle_request():146] handle_request: stop_status
+2023-12-10 16:04:02,016 DEBUG   SenderThread:3580 [sender.py:send_request():407] send_request: stop_status
+2023-12-10 16:04:02,321 DEBUG   SenderThread:3580 [sender.py:send():380] send: exit
+2023-12-10 16:04:02,321 INFO    SenderThread:3580 [sender.py:send_exit():585] handling exit code: 0
+2023-12-10 16:04:02,322 INFO    SenderThread:3580 [sender.py:send_exit():587] handling runtime: 1118
+2023-12-10 16:04:02,323 INFO    SenderThread:3580 [sender.py:_save_file():1380] saving file wandb-summary.json with policy end
+2023-12-10 16:04:02,323 INFO    SenderThread:3580 [sender.py:send_exit():593] send defer
+2023-12-10 16:04:02,323 DEBUG   HandlerThread:3580 [handler.py:handle_request():146] handle_request: defer
+2023-12-10 16:04:02,323 INFO    HandlerThread:3580 [handler.py:handle_request_defer():172] handle defer: 0
+2023-12-10 16:04:02,324 DEBUG   SenderThread:3580 [sender.py:send_request():407] send_request: defer
+2023-12-10 16:04:02,324 INFO    SenderThread:3580 [sender.py:send_request_defer():609] handle sender defer: 0
+2023-12-10 16:04:02,324 INFO    SenderThread:3580 [sender.py:transition_state():613] send defer: 1
+2023-12-10 16:04:02,324 DEBUG   HandlerThread:3580 [handler.py:handle_request():146] handle_request: defer
+2023-12-10 16:04:02,324 INFO    HandlerThread:3580 [handler.py:handle_request_defer():172] handle defer: 1
+2023-12-10 16:04:02,324 DEBUG   SenderThread:3580 [sender.py:send_request():407] send_request: defer
+2023-12-10 16:04:02,324 INFO    SenderThread:3580 [sender.py:send_request_defer():609] handle sender defer: 1
+2023-12-10 16:04:02,324 INFO    SenderThread:3580 [sender.py:transition_state():613] send defer: 2
+2023-12-10 16:04:02,324 DEBUG   HandlerThread:3580 [handler.py:handle_request():146] handle_request: defer
+2023-12-10 16:04:02,325 INFO    HandlerThread:3580 [handler.py:handle_request_defer():172] handle defer: 2
+2023-12-10 16:04:02,325 INFO    HandlerThread:3580 [system_monitor.py:finish():203] Stopping system monitor
+2023-12-10 16:04:02,325 DEBUG   SystemMonitor:3580 [system_monitor.py:_start():179] Finished system metrics aggregation loop
+2023-12-10 16:04:02,325 INFO    HandlerThread:3580 [interfaces.py:finish():202] Joined cpu monitor
+2023-12-10 16:04:02,325 DEBUG   SystemMonitor:3580 [system_monitor.py:_start():183] Publishing last batch of metrics
+2023-12-10 16:04:02,325 INFO    HandlerThread:3580 [interfaces.py:finish():202] Joined disk monitor
+2023-12-10 16:04:02,326 INFO    HandlerThread:3580 [interfaces.py:finish():202] Joined memory monitor
+2023-12-10 16:04:02,326 INFO    HandlerThread:3580 [interfaces.py:finish():202] Joined network monitor
+2023-12-10 16:04:02,327 DEBUG   SenderThread:3580 [sender.py:send_request():407] send_request: defer
+2023-12-10 16:04:02,327 INFO    SenderThread:3580 [sender.py:send_request_defer():609] handle sender defer: 2
+2023-12-10 16:04:02,327 INFO    SenderThread:3580 [sender.py:transition_state():613] send defer: 3
+2023-12-10 16:04:02,327 DEBUG   SenderThread:3580 [sender.py:send():380] send: stats
+2023-12-10 16:04:02,327 DEBUG   HandlerThread:3580 [handler.py:handle_request():146] handle_request: defer
+2023-12-10 16:04:02,327 INFO    HandlerThread:3580 [handler.py:handle_request_defer():172] handle defer: 3
+2023-12-10 16:04:02,327 DEBUG   SenderThread:3580 [sender.py:send_request():407] send_request: defer
+2023-12-10 16:04:02,328 INFO    SenderThread:3580 [sender.py:send_request_defer():609] handle sender defer: 3
+2023-12-10 16:04:02,328 INFO    SenderThread:3580 [sender.py:transition_state():613] send defer: 4
+2023-12-10 16:04:02,328 DEBUG   HandlerThread:3580 [handler.py:handle_request():146] handle_request: defer
+2023-12-10 16:04:02,328 INFO    HandlerThread:3580 [handler.py:handle_request_defer():172] handle defer: 4
+2023-12-10 16:04:02,328 DEBUG   SenderThread:3580 [sender.py:send_request():407] send_request: defer
+2023-12-10 16:04:02,328 INFO    SenderThread:3580 [sender.py:send_request_defer():609] handle sender defer: 4
+2023-12-10 16:04:02,328 INFO    SenderThread:3580 [sender.py:transition_state():613] send defer: 5
+2023-12-10 16:04:02,328 DEBUG   HandlerThread:3580 [handler.py:handle_request():146] handle_request: defer
+2023-12-10 16:04:02,328 INFO    HandlerThread:3580 [handler.py:handle_request_defer():172] handle defer: 5
+2023-12-10 16:04:02,329 DEBUG   SenderThread:3580 [sender.py:send():380] send: summary
+2023-12-10 16:04:02,330 INFO    SenderThread:3580 [sender.py:_save_file():1380] saving file wandb-summary.json with policy end
+2023-12-10 16:04:02,330 DEBUG   SenderThread:3580 [sender.py:send_request():407] send_request: defer
+2023-12-10 16:04:02,330 INFO    SenderThread:3580 [sender.py:send_request_defer():609] handle sender defer: 5
+2023-12-10 16:04:02,330 INFO    SenderThread:3580 [sender.py:transition_state():613] send defer: 6
+2023-12-10 16:04:02,330 DEBUG   HandlerThread:3580 [handler.py:handle_request():146] handle_request: defer
+2023-12-10 16:04:02,330 INFO    HandlerThread:3580 [handler.py:handle_request_defer():172] handle defer: 6
+2023-12-10 16:04:02,331 DEBUG   SenderThread:3580 [sender.py:send_request():407] send_request: defer
+2023-12-10 16:04:02,331 INFO    SenderThread:3580 [sender.py:send_request_defer():609] handle sender defer: 6
+2023-12-10 16:04:02,331 INFO    SenderThread:3580 [sender.py:transition_state():613] send defer: 7
+2023-12-10 16:04:02,331 DEBUG   HandlerThread:3580 [handler.py:handle_request():146] handle_request: status_report
+2023-12-10 16:04:02,331 DEBUG   HandlerThread:3580 [handler.py:handle_request():146] handle_request: defer
+2023-12-10 16:04:02,331 INFO    HandlerThread:3580 [handler.py:handle_request_defer():172] handle defer: 7
+2023-12-10 16:04:02,331 DEBUG   SenderThread:3580 [sender.py:send_request():407] send_request: defer
+2023-12-10 16:04:02,331 INFO    SenderThread:3580 [sender.py:send_request_defer():609] handle sender defer: 7
+2023-12-10 16:04:02,823 INFO    Thread-16 :3580 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\theho\git_AI_Application_Practice\Olympic\wandb\run-20231210_154522-4t76ovvu\files\wandb-summary.json
+2023-12-10 16:04:02,868 INFO    SenderThread:3580 [sender.py:transition_state():613] send defer: 8
+2023-12-10 16:04:02,868 DEBUG   HandlerThread:3580 [handler.py:handle_request():146] handle_request: defer
+2023-12-10 16:04:02,868 INFO    HandlerThread:3580 [handler.py:handle_request_defer():172] handle defer: 8
+2023-12-10 16:04:02,869 DEBUG   SenderThread:3580 [sender.py:send_request():407] send_request: defer
+2023-12-10 16:04:02,869 INFO    SenderThread:3580 [sender.py:send_request_defer():609] handle sender defer: 8
+2023-12-10 16:04:02,869 INFO    SenderThread:3580 [job_builder.py:build():298] Attempting to build job artifact
+2023-12-10 16:04:02,870 INFO    SenderThread:3580 [job_builder.py:_get_source_type():428] is repo sourced job
+2023-12-10 16:04:03,333 DEBUG   HandlerThread:3580 [handler.py:handle_request():146] handle_request: poll_exit
+2023-12-10 16:04:03,370 INFO    SenderThread:3580 [job_builder.py:build():404] adding wandb-job metadata file
+2023-12-10 16:04:03,387 INFO    SenderThread:3580 [sender.py:transition_state():613] send defer: 9
+2023-12-10 16:04:03,387 DEBUG   SenderThread:3580 [sender.py:send_request():407] send_request: poll_exit
+2023-12-10 16:04:03,387 DEBUG   HandlerThread:3580 [handler.py:handle_request():146] handle_request: defer
+2023-12-10 16:04:03,388 DEBUG   SenderThread:3580 [sender.py:send():380] send: artifact
+2023-12-10 16:04:03,388 INFO    HandlerThread:3580 [handler.py:handle_request_defer():172] handle defer: 9
+2023-12-10 16:04:03,831 INFO    Thread-16 :3580 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\theho\git_AI_Application_Practice\Olympic\wandb\run-20231210_154522-4t76ovvu\files\output.log
+2023-12-10 16:04:04,343 DEBUG   HandlerThread:3580 [handler.py:handle_request():146] handle_request: poll_exit
+2023-12-10 16:04:05,692 INFO    wandb-upload_1:3580 [upload_job.py:push():89] Uploaded file C:\Users\theho\AppData\Local\wandb\wandb\artifacts\staging\tmptk7f6lsm
+2023-12-10 16:04:05,693 INFO    wandb-upload_0:3580 [upload_job.py:push():89] Uploaded file C:\Users\theho\AppData\Local\wandb\wandb\artifacts\staging\tmp4dce114o
+2023-12-10 16:04:07,521 INFO    SenderThread:3580 [sender.py:send_artifact():1458] sent artifact job-https___github.com_dmlcksghd_AI_Application_Practice.git_Olympic_f_ppo_train.py - {'id': 'QXJ0aWZhY3Q6NjYyOTA5NTIw', 'state': 'PENDING', 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjEyMjMzNTMwOA==', 'latestArtifact': None}}
+2023-12-10 16:04:07,522 DEBUG   SenderThread:3580 [sender.py:send_request():407] send_request: defer
+2023-12-10 16:04:07,522 DEBUG   HandlerThread:3580 [handler.py:handle_request():146] handle_request: status_report
+2023-12-10 16:04:07,522 INFO    SenderThread:3580 [sender.py:send_request_defer():609] handle sender defer: 9
+2023-12-10 16:04:07,522 INFO    SenderThread:3580 [dir_watcher.py:finish():358] shutting down directory watcher
+2023-12-10 16:04:07,862 INFO    SenderThread:3580 [dir_watcher.py:finish():388] scan: C:\Users\theho\git_AI_Application_Practice\Olympic\wandb\run-20231210_154522-4t76ovvu\files
+2023-12-10 16:04:07,863 INFO    SenderThread:3580 [dir_watcher.py:finish():402] scan save: C:\Users\theho\git_AI_Application_Practice\Olympic\wandb\run-20231210_154522-4t76ovvu\files\conda-environment.yaml conda-environment.yaml
+2023-12-10 16:04:07,863 INFO    SenderThread:3580 [dir_watcher.py:finish():402] scan save: C:\Users\theho\git_AI_Application_Practice\Olympic\wandb\run-20231210_154522-4t76ovvu\files\config.yaml config.yaml
+2023-12-10 16:04:07,866 INFO    SenderThread:3580 [dir_watcher.py:finish():402] scan save: C:\Users\theho\git_AI_Application_Practice\Olympic\wandb\run-20231210_154522-4t76ovvu\files\output.log output.log
+2023-12-10 16:04:07,869 INFO    SenderThread:3580 [dir_watcher.py:finish():402] scan save: C:\Users\theho\git_AI_Application_Practice\Olympic\wandb\run-20231210_154522-4t76ovvu\files\requirements.txt requirements.txt
+2023-12-10 16:04:07,872 INFO    SenderThread:3580 [dir_watcher.py:finish():402] scan save: C:\Users\theho\git_AI_Application_Practice\Olympic\wandb\run-20231210_154522-4t76ovvu\files\wandb-metadata.json wandb-metadata.json
+2023-12-10 16:04:07,872 INFO    SenderThread:3580 [dir_watcher.py:finish():402] scan save: C:\Users\theho\git_AI_Application_Practice\Olympic\wandb\run-20231210_154522-4t76ovvu\files\wandb-summary.json wandb-summary.json
+2023-12-10 16:04:07,875 INFO    SenderThread:3580 [sender.py:transition_state():613] send defer: 10
+2023-12-10 16:04:07,875 DEBUG   SenderThread:3580 [sender.py:send_request():407] send_request: poll_exit
+2023-12-10 16:04:07,875 DEBUG   HandlerThread:3580 [handler.py:handle_request():146] handle_request: defer
+2023-12-10 16:04:07,878 INFO    HandlerThread:3580 [handler.py:handle_request_defer():172] handle defer: 10
+2023-12-10 16:04:07,880 DEBUG   SenderThread:3580 [sender.py:send_request():407] send_request: defer
+2023-12-10 16:04:07,880 INFO    SenderThread:3580 [sender.py:send_request_defer():609] handle sender defer: 10
+2023-12-10 16:04:07,880 INFO    SenderThread:3580 [file_pusher.py:finish():175] shutting down file pusher
+2023-12-10 16:04:08,321 INFO    wandb-upload_1:3580 [upload_job.py:push():131] Uploaded file C:\Users\theho\git_AI_Application_Practice\Olympic\wandb\run-20231210_154522-4t76ovvu\files\conda-environment.yaml
+2023-12-10 16:04:09,140 INFO    wandb-upload_3:3580 [upload_job.py:push():131] Uploaded file C:\Users\theho\git_AI_Application_Practice\Olympic\wandb\run-20231210_154522-4t76ovvu\files\requirements.txt
+2023-12-10 16:04:09,377 DEBUG   HandlerThread:3580 [handler.py:handle_request():146] handle_request: keepalive
+2023-12-10 16:04:09,593 INFO    wandb-upload_0:3580 [upload_job.py:push():131] Uploaded file C:\Users\theho\git_AI_Application_Practice\Olympic\wandb\run-20231210_154522-4t76ovvu\files\config.yaml
+2023-12-10 16:04:09,817 INFO    wandb-upload_2:3580 [upload_job.py:push():131] Uploaded file C:\Users\theho\git_AI_Application_Practice\Olympic\wandb\run-20231210_154522-4t76ovvu\files\output.log
+2023-12-10 16:04:09,835 INFO    wandb-upload_4:3580 [upload_job.py:push():131] Uploaded file C:\Users\theho\git_AI_Application_Practice\Olympic\wandb\run-20231210_154522-4t76ovvu\files\wandb-summary.json
+2023-12-10 16:04:10,036 INFO    Thread-15 (_thread_body):3580 [sender.py:transition_state():613] send defer: 11
+2023-12-10 16:04:10,036 DEBUG   HandlerThread:3580 [handler.py:handle_request():146] handle_request: defer
+2023-12-10 16:04:10,036 INFO    HandlerThread:3580 [handler.py:handle_request_defer():172] handle defer: 11
+2023-12-10 16:04:10,036 DEBUG   SenderThread:3580 [sender.py:send_request():407] send_request: defer
+2023-12-10 16:04:10,036 INFO    SenderThread:3580 [sender.py:send_request_defer():609] handle sender defer: 11
+2023-12-10 16:04:10,037 INFO    SenderThread:3580 [file_pusher.py:join():181] waiting for file pusher
+2023-12-10 16:04:10,037 INFO    SenderThread:3580 [sender.py:transition_state():613] send defer: 12
+2023-12-10 16:04:10,037 DEBUG   HandlerThread:3580 [handler.py:handle_request():146] handle_request: defer
+2023-12-10 16:04:10,037 INFO    HandlerThread:3580 [handler.py:handle_request_defer():172] handle defer: 12
+2023-12-10 16:04:10,037 DEBUG   SenderThread:3580 [sender.py:send_request():407] send_request: defer
+2023-12-10 16:04:10,037 INFO    SenderThread:3580 [sender.py:send_request_defer():609] handle sender defer: 12
+2023-12-10 16:04:10,037 INFO    SenderThread:3580 [file_stream.py:finish():595] file stream finish called
+2023-12-10 16:04:10,700 INFO    SenderThread:3580 [file_stream.py:finish():599] file stream finish is done
+2023-12-10 16:04:10,700 INFO    SenderThread:3580 [sender.py:transition_state():613] send defer: 13
+2023-12-10 16:04:10,700 DEBUG   HandlerThread:3580 [handler.py:handle_request():146] handle_request: defer
+2023-12-10 16:04:10,700 INFO    HandlerThread:3580 [handler.py:handle_request_defer():172] handle defer: 13
+2023-12-10 16:04:10,700 DEBUG   SenderThread:3580 [sender.py:send_request():407] send_request: defer
+2023-12-10 16:04:10,700 INFO    SenderThread:3580 [sender.py:send_request_defer():609] handle sender defer: 13
+2023-12-10 16:04:10,700 INFO    SenderThread:3580 [sender.py:transition_state():613] send defer: 14
+2023-12-10 16:04:10,701 DEBUG   SenderThread:3580 [sender.py:send():380] send: final
+2023-12-10 16:04:10,701 DEBUG   HandlerThread:3580 [handler.py:handle_request():146] handle_request: defer
+2023-12-10 16:04:10,701 DEBUG   SenderThread:3580 [sender.py:send():380] send: footer
+2023-12-10 16:04:10,701 INFO    HandlerThread:3580 [handler.py:handle_request_defer():172] handle defer: 14
+2023-12-10 16:04:10,701 DEBUG   SenderThread:3580 [sender.py:send_request():407] send_request: defer
+2023-12-10 16:04:10,701 INFO    SenderThread:3580 [sender.py:send_request_defer():609] handle sender defer: 14
+2023-12-10 16:04:10,702 DEBUG   HandlerThread:3580 [handler.py:handle_request():146] handle_request: poll_exit
+2023-12-10 16:04:10,702 DEBUG   HandlerThread:3580 [handler.py:handle_request():146] handle_request: server_info
+2023-12-10 16:04:10,703 DEBUG   HandlerThread:3580 [handler.py:handle_request():146] handle_request: get_summary
+2023-12-10 16:04:10,703 DEBUG   SenderThread:3580 [sender.py:send_request():407] send_request: poll_exit
+2023-12-10 16:04:10,703 DEBUG   HandlerThread:3580 [handler.py:handle_request():146] handle_request: sampled_history
+2023-12-10 16:04:10,703 DEBUG   SenderThread:3580 [sender.py:send_request():407] send_request: server_info
+2023-12-10 16:04:10,704 DEBUG   HandlerThread:3580 [handler.py:handle_request():146] handle_request: internal_messages
+2023-12-10 16:04:10,706 DEBUG   HandlerThread:3580 [handler.py:handle_request():146] handle_request: job_info
+2023-12-10 16:04:10,907 DEBUG   SenderThread:3580 [sender.py:send_request():407] send_request: job_info
+2023-12-10 16:04:10,907 INFO    MainThread:3580 [wandb_run.py:_footer_history_summary_info():3760] rendering history
+2023-12-10 16:04:10,907 INFO    MainThread:3580 [wandb_run.py:_footer_history_summary_info():3792] rendering summary
+2023-12-10 16:04:10,908 INFO    MainThread:3580 [wandb_run.py:_footer_sync_info():3719] logging synced files
+2023-12-10 16:04:10,908 DEBUG   HandlerThread:3580 [handler.py:handle_request():146] handle_request: shutdown
+2023-12-10 16:04:10,908 INFO    HandlerThread:3580 [handler.py:finish():866] shutting down handler
+2023-12-10 16:04:11,720 INFO    WriterThread:3580 [datastore.py:close():294] close: C:\Users\theho\git_AI_Application_Practice\Olympic\wandb\run-20231210_154522-4t76ovvu\run-4t76ovvu.wandb
+2023-12-10 16:04:11,915 INFO    SenderThread:3580 [sender.py:finish():1536] shutting down sender
+2023-12-10 16:04:11,915 INFO    SenderThread:3580 [file_pusher.py:finish():175] shutting down file pusher
+2023-12-10 16:04:11,915 INFO    SenderThread:3580 [file_pusher.py:join():181] waiting for file pusher
