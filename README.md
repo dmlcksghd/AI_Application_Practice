@@ -24,4 +24,4 @@
    ```bash
    git clone https://github.com/dmlcksghd/AI_Application_Practice.git
 
-   
+![프로젝트 데모1](./gif/gif1.gif)
