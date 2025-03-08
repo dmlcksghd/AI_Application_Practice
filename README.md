@@ -1,6 +1,4 @@
 # AI Application Practice
-
-## gif
 ![프로젝트 데모1](./gif/gif1.gif)
 ![프로젝트 데모2](./gif/gif2.gif)
 ![프로젝트 데모3](./gif/gif3.gif)
