@@ -1,5 +1,4 @@
 # AI Application Practice
-<img src="imgs/Jidi%20logo.png" width='300px'>  <img src="imgs/ijcai-logo.png" width='300px'>
 
 ## gif
 ![프로젝트 데모1](./gif/gif1.gif)
