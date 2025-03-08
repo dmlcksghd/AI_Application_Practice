@@ -1,4 +1,5 @@
 # AI Application Practice
+<img src="imgs/Jidi%20logo.png" width='300px'>  <img src="imgs/ijcai-logo.png" width='300px'>
 
 ![프로젝트 데모1](./gif/gif1.gif)
 ![프로젝트 데모2](./gif/gif2.gif)
@@ -7,7 +8,46 @@
 ## overview
 The Running event in AI Olympics is a competitive environment where AI agents compete to reach the finish line faster than their opponent.
 
+# Competition_IJCAI2023
+source code for IJCAI 2023 Competition
+
 ## Multi-Agent Game Evaluation Platform --- Jidi (及第)
+Jidi supports online evaluation service for various games/simulators/environments/testbeds. Website: [www.jidiai.cn](www.jidiai.cn).
+
+A tutorial on Jidi: [Tutorial](https://github.com/jidiai/ai_lib/blob/master/assets/Jidi%20tutorial.pdf)
+
+## Navigation
+
+```
+|-- Competition_IJCAI2023                   // https://github.com/jidiai/Competition_IJCAI2023.git 
+	|-- agents                          // Agents that act in the environment
+	|	|-- random                  // A random agent demo
+	|	|	|-- submission.py   // A ready-to-submit random agent file
+	|-- env		                    // scripts for the environment
+	|	|-- config.py               // environment configuration file
+	|	|-- olympics_integrated.py  // The environment wrapper	
+	|-- olympics_engine		    // Game engine (https://github.com/jidiai/olympics_engine)
+	|-- rl_trainer                      // A training example of some of the sub-scenarios (for reference only)
+	|-- utils               
+	|-- run_log.py		            // run the game with provided agents (same way we evaluate your submission in the backend server)
+```
+
+---
+## Dependency
+
+>conda create -n olympics python=3.8.5
+
+>conda activate olympics
+
+>pip install -r requirements.txt
+
+---
+
+## Run a game
+
+>python olympics_engine/main.py
+
+---
 
 ## Game Rules
 Two AI agents compete on a track.
