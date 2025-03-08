@@ -1,6 +1,4 @@
 # AI Application Practice
-# Competition_IJCAI2023
-source code for IJCAI 2023 Competition
 <img src="imgs/Jidi%20logo.png" width='300px'>  <img src="imgs/ijcai-logo.png" width='300px'>
 
 ## gif
@@ -100,6 +98,9 @@ Agents must navigate obstacles and directional indicators to find the optimal pa
 4. Energy regenerates at a fixed rate, but if it reaches zero, the agent can no longer apply force.
 
 5. The game continues until all subgames are finished.
+
+### Competition_IJCAI2023
+source code for IJCAI 2023 Competition
 
 ### References
 Refer to the official AI Olympics documentation to better understand the environment and optimize strategies.
