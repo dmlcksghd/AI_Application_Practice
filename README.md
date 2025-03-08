@@ -1,15 +1,15 @@
 # AI Application Practice
+# Competition_IJCAI2023
+source code for IJCAI 2023 Competition
 <img src="imgs/Jidi%20logo.png" width='300px'>  <img src="imgs/ijcai-logo.png" width='300px'>
 
+## gif
 ![프로젝트 데모1](./gif/gif1.gif)
 ![프로젝트 데모2](./gif/gif2.gif)
 ![프로젝트 데모3](./gif/gif3.gif)
 
 ## overview
 The Running event in AI Olympics is a competitive environment where AI agents compete to reach the finish line faster than their opponent.
-
-# Competition_IJCAI2023
-source code for IJCAI 2023 Competition
 
 ## Multi-Agent Game Evaluation Platform --- Jidi (及第)
 Jidi supports online evaluation service for various games/simulators/environments/testbeds. Website: [www.jidiai.cn](www.jidiai.cn).
